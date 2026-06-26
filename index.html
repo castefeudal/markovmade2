@@ -3523,7 +3523,14 @@ body:not(.theme-light) .lead-panel {
     #main-header nav a,
     #main-header .nav-link,
     #main-header .menu-highlight-gold,
-    #main-header .menu-highlight-platinum { font-size: 9px !important; padding-inline: .58rem !important; letter-spacing: .09em !important; }
+    #main-header nav a,
+#main-header .nav-link,
+#main-header .menu-highlight-gold,
+#main-header .menu-highlight-platinum {
+    font-size: 10px !important;
+    padding-inline: .66rem !important;
+    letter-spacing: .085em !important;
+}
     #main-header nav .border-l { padding-left: .38rem !important; }
     #main-header .theme-switch-text { display: none !important; }
     #main-header a[href="#contact"] { padding-inline: .8rem !important; }
@@ -4432,10 +4439,10 @@ body:not(.theme-light) .lead-panel {
 
 <section id="services" class="section-block relative py-24 bg-obsidian text-platinum" data-insight="Инвестируйте в единственное, что нельзя отнять — в себя.">
             <div class="container mx-auto px-6 md:px-12">
-                <div class="mb-20 fade-in-up">
-                    <span class="text-[10px] font-sans tracking-luxury text-gold uppercase mb-4 block">02. УСЛУГИ</span>
-                    <h2 class="text-4xl md:text-5xl font-serif">Форматы работы</h2>
-                    <p class="mt-8 text-base text-platinum/80 font-sans max-w-2xl leading-relaxed">
+                <div class="mb-20 fade-in-up text-center flex flex-col items-center">
+    <span class="text-[10px] font-sans tracking-luxury text-gold uppercase mb-4 block">02. УСЛУГИ</span>
+    <h2 class="text-4xl md:text-5xl font-serif text-center">Форматы работы</h2>
+    <p class="mt-8 text-base text-platinum/80 font-sans max-w-2xl leading-relaxed mx-auto text-center">
                         За годы в большом спорте, глубокой теоретической и практической базой я прошел через всё: от жестких падений до триумфов. Сегодня я передаю этот опыт вам не просто через упражнения, а через <span class="text-gold font-bold">систему трансформации,</span> которая меняет <span class="text-platinum font-bold">тело, мышление и качество жизни.</span>
                     </p>
                 </div>
@@ -4684,10 +4691,12 @@ body:not(.theme-light) .lead-panel {
                 <div class="relative flex flex-col justify-center w-full px-6 md:px-16 lg:px-24 py-16 lg:py-20 bg-obsidian z-10 order-2 lg:order-none">
                     <div class="absolute top-1/2 right-0 w-[300px] h-[300px] bg-gold rounded-full blur-[180px] opacity-[0.03] pointer-events-none"></div>
                     <div class="max-w-xl relative">
-                        <div class="fade-in-up mb-8 flex items-center gap-5">
-                            <div class="h-[1px] w-12 bg-gold/60"></div>
-                            <h3 class="font-sans text-[11px] font-bold tracking-[0.25em] text-gold uppercase">ПАВЕЛ МАРКОВ — MARKOVMAFIA</h3>
-                        </div>
+                        <div class="fade-in-up mb-8 inline-flex items-center gap-3 rounded-full border border-gold/20 bg-gold/[0.04] px-5 py-3">
+    <span class="h-[1px] w-8 bg-gold/60"></span>
+    <h3 class="font-sans text-[10px] md:text-[11px] font-black tracking-[0.18em] text-gold uppercase leading-none">
+        Павел Марков <span class="text-platinum/45 mx-2">/</span> MARKOVMAFIA
+    </h3>
+</div>
 
                         <div class="max-w-4xl mx-auto px-4 md:px-0">
                             <h2 class="fade-in-up font-serif text-3xl md:text-5xl leading-[1.25] md:leading-[1.2] text-platinum mb-8 md:mb-12" style="transition-delay: 100ms;">
@@ -5881,12 +5890,9 @@ body:not(.theme-light) .lead-panel {
 
             const hasCirc = Number.isFinite(waist) && Number.isFinite(neck) && (sex === 'male' || Number.isFinite(hips));
             const flags = {
-                hasFat: fatSource !== 'модельная оценка из-за нехватки данных',
-                hasCircumferences: hasCirc,
-                hasActivity: Number.isFinite(num('body-steps')),
-                hasTraining: Number.isFinite(num('body-strength-week')) || Number.isFinite(num('body-training-age')),
-                hasSleep: Number.isFinite(num('body-sleep')) && Number.isFinite(num('body-recovery'))
-            };
+    hasFat: fatSource !== 'модельная оценка из-за нехватки данных',
+    hasCircumferences: hasCirc
+};
             const accuracy = getAccuracy('body', flags);
 
             const strong = nffmi >= (sex === 'male' ? 22 : 18)
