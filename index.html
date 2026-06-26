@@ -3378,15 +3378,16 @@ body.theme-light #contact .contact-btn > .contact-description:last-of-type {
     text-decoration: none !important;
     border: 0 !important;
     border-bottom: 0 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-    padding: .72rem .82rem !important;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / .04), 0 8px 22px rgb(0 0 0 / .16) !important;
+    text-shadow: 0 1px 12px rgb(0 0 0 / .35) !important;
+    padding: .78rem .92rem !important;
     border-radius: 999px !important;
     line-height: 1 !important;
-    color: rgb(var(--text-platinum) / .67) !important;
-    background: transparent !important;
+    color: rgb(var(--text-platinum) / .9) !important;
+    background: rgb(255 255 255 / .045) !important;
     letter-spacing: .115em !important;
-    font-size: 10px !important;
+    font-size: 10.5px !important;
+    font-weight: 900 !important;
     white-space: nowrap;
 }
 #main-header nav a::after,
@@ -3400,7 +3401,8 @@ body.theme-light #contact .contact-btn > .contact-description:last-of-type {
 #main-header .menu-highlight-gold,
 #main-header .menu-highlight-platinum {
     color: rgb(var(--color-gold)) !important;
-    background: rgb(var(--color-gold) / .095) !important;
+    background: rgb(var(--color-gold) / .14) !important;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / .08), 0 10px 28px rgb(var(--color-gold) / .11) !important;
 }
 #main-header nav .border-l {
     margin-left: .35rem !important;
@@ -3432,7 +3434,11 @@ body.theme-light #main-header::before {
 }
 body.theme-light #main-header nav.hidden.md\:flex,
 body.theme-light #main-header a[href="#hero"] { background: rgba(255,255,255,.42) !important; border-color: rgba(166,124,34,.16) !important; }
-body.theme-light #main-header nav a { color: rgba(23,20,15,.65) !important; }
+body.theme-light #main-header nav a {
+    color: rgba(23,20,15,.88) !important;
+    background: rgba(255,255,255,.52) !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.65), 0 8px 22px rgba(54,38,14,.08) !important;
+}
 body.theme-light #main-header nav a:hover,
 body.theme-light #main-header .menu-highlight-gold,
 body.theme-light #main-header .menu-highlight-platinum { color: #a67c22 !important; background: rgba(166,124,34,.10) !important; }
@@ -3895,7 +3901,7 @@ body:not(.theme-light) .lead-panel {
                                     <div class="calc-field">
                                         <label for="body-fat">Процент жира, %</label>
                                         <input id="body-fat" class="luxury-input-number calc-live" type="number" min="3" max="60" step="0.1" inputmode="decimal" placeholder="15">
-                                        <small>Если не знаете — оставьте пустым и заполните окружности в экспертном блоке.</small>
+                                        <small>Если не знаете процент жира — оставьте пустым и заполните талию, шею и бёдра ниже. Тогда сайт попробует оценить процент жира автоматически.</small>
                                     </div>
                                     <div class="calc-field">
                                         <label for="body-level">Уровень подготовки</label>
@@ -3918,83 +3924,33 @@ body:not(.theme-light) .lead-panel {
                                 </div>
 
                                 <div class="expert-shell">
-                                    <button type="button" class="expert-toggle interactive" aria-expanded="false" aria-controls="body-expert" data-expert-toggle="body-expert">
-                                        <span>Экспертные настройки</span>
-                                        <span class="text-gold/70 text-[10px] tracking-[0.2em] uppercase">Необязательно. Нужны для более точного расчёта.</span>
-                                    </button>
-                                    <div id="body-expert" class="expert-panel" hidden>
-                                        <div class="calc-grid">
-                                            <div class="calc-field">
-                                                <label for="body-fat-method">Метод оценки жира</label>
-                                                <select id="body-fat-method" class="mm-select calc-live">
-                                                    <option value="visual">Визуально</option>
-                                                    <option value="bia">BIA-весы</option>
-                                                    <option value="caliper">Калипер</option>
-                                                    <option value="dexa">DEXA</option>
-                                                    <option value="other">Другое</option>
-                                                </select>
-                                            </div>
-                                            <div class="calc-field">
-                                                <label for="body-waist">Талия, см</label>
-                                                <input id="body-waist" class="luxury-input-number calc-live" type="number" min="40" max="200" step="0.1" inputmode="decimal">
-                                            </div>
-                                            <div class="calc-field">
-                                                <label for="body-neck">Шея, см</label>
-                                                <input id="body-neck" class="luxury-input-number calc-live" type="number" min="20" max="80" step="0.1" inputmode="decimal">
-                                            </div>
-                                            <div class="calc-field">
-                                                <label for="body-hips">Бёдра, см</label>
-                                                <input id="body-hips" class="luxury-input-number calc-live" type="number" min="40" max="180" step="0.1" inputmode="decimal">
-                                                <small>Критично для Navy method у женщин.</small>
-                                            </div>
-                                            <div class="calc-field">
-                                                <label for="body-wrist">Запястье, см</label>
-                                                <input id="body-wrist" class="luxury-input-number calc-live" type="number" min="10" max="35" step="0.1" inputmode="decimal">
-                                            </div>
-                                            <div class="calc-field">
-                                                <label for="body-ankle">Щиколотка, см</label>
-                                                <input id="body-ankle" class="luxury-input-number calc-live" type="number" min="14" max="45" step="0.1" inputmode="decimal">
-                                            </div>
-                                            <div class="calc-field">
-                                                <label for="body-somatotype">Соматотип</label>
-                                                <select id="body-somatotype" class="mm-select calc-live">
-                                                    <option value="unknown">Не знаю</option>
-                                                    <option value="ecto">Эктоморф</option>
-                                                    <option value="meso" selected>Мезоморф</option>
-                                                    <option value="endo">Эндоморф</option>
-                                                </select>
-                                            </div>
-                                            <div class="calc-field">
-                                                <label for="body-training-age">Тренировочный стаж, лет</label>
-                                                <input id="body-training-age" class="luxury-input-number calc-live" type="number" min="0" max="50" step="0.5" inputmode="decimal">
-                                            </div>
-                                            <div class="calc-field">
-                                                <label for="body-strength-week">Силовые / неделя</label>
-                                                <input id="body-strength-week" class="luxury-input-number calc-live" type="number" min="0" max="14" step="1" inputmode="numeric">
-                                            </div>
-                                            <div class="calc-field">
-                                                <label for="body-steps">Шаги / день</label>
-                                                <input id="body-steps" class="luxury-input-number calc-live" type="number" min="0" max="40000" step="500" inputmode="numeric">
-                                            </div>
-                                            <div class="calc-field">
-                                                <label for="body-cardio">Кардио</label>
-                                                <select id="body-cardio" class="mm-select calc-live">
-                                                    <option value="unknown">Не указано</option>
-                                                    <option value="yes">Есть</option>
-                                                    <option value="no">Нет</option>
-                                                </select>
-                                            </div>
-                                            <div class="calc-field">
-                                                <label for="body-sleep">Сон, часов</label>
-                                                <input id="body-sleep" class="luxury-input-number calc-live" type="number" min="3" max="12" step="0.5" inputmode="decimal">
-                                            </div>
-                                            <div class="calc-field md:col-span-2">
-                                                <label for="body-recovery">Субъективное восстановление 1–10</label>
-                                                <input id="body-recovery" class="luxury-input-number calc-live" type="number" min="1" max="10" step="1" inputmode="numeric">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <button type="button" class="expert-toggle interactive" aria-expanded="false" aria-controls="body-expert" data-expert-toggle="body-expert">
+        <span>Уточнение процента жира</span>
+        <span class="text-gold/70 text-[10px] tracking-[0.2em] uppercase">Необязательно. Влияет на расчёт только если % жира не указан.</span>
+    </button>
+
+    <div id="body-expert" class="expert-panel" hidden>
+        <div class="calc-grid">
+            <div class="calc-field">
+                <label for="body-waist">Талия, см</label>
+                <input id="body-waist" class="luxury-input-number calc-live" type="number" min="40" max="200" step="0.1" inputmode="decimal">
+                <small>Нужно для примерной оценки процента жира.</small>
+            </div>
+
+            <div class="calc-field">
+                <label for="body-neck">Шея, см</label>
+                <input id="body-neck" class="luxury-input-number calc-live" type="number" min="20" max="80" step="0.1" inputmode="decimal">
+                <small>Вместе с талией помогает оценить состав тела.</small>
+            </div>
+
+            <div class="calc-field md:col-span-2">
+                <label for="body-hips">Бёдра, см</label>
+                <input id="body-hips" class="luxury-input-number calc-live" type="number" min="40" max="180" step="0.1" inputmode="decimal">
+                <small>Критично для расчёта у женщин. Для мужчин можно оставить пустым.</small>
+            </div>
+        </div>
+    </div>
+</div>
 
                                 <button type="button" class="calc-primary-btn interactive" onclick="calculateBodyComposition()" aria-label="Рассчитать композицию тела">Рассчитать композицию тела</button>
                                 <p id="body-error" class="calc-error" aria-live="polite"></p>
@@ -5226,14 +5182,15 @@ body:not(.theme-light) .lead-panel {
                     </div>
                 </div>
 
-                <div class="text-center fade-in-up">
-                    <p class="font-serif text-2xl md:text-4xl text-platinum/70 tracking-wider uppercase mb-6">
-                        Ваш результат начинается с принятого решения.
-                    </p>
-                    <div class="w-16 h-[1px] bg-gold/40 mx-auto"></div>
-                    <p class="animate-sync-text font-sans text-[10px] uppercase tracking-[0.4em] mt-6">Я жду тех, кто готов.</p>
-                </div>
-            </div>
+                <div class="max-w-4xl mx-auto text-center fade-in-up flex flex-col items-center justify-center px-4">
+    <p class="font-serif text-2xl md:text-4xl text-platinum/70 tracking-wider uppercase mb-6 text-center max-w-3xl mx-auto">
+        Ваш результат начинается с принятого решения.
+    </p>
+    <div class="w-16 h-[1px] bg-gold/40 mx-auto"></div>
+    <p class="animate-sync-text font-sans text-[10px] uppercase tracking-[0.4em] mt-6 text-center mx-auto">
+        Я жду тех, кто готов.
+    </p>
+</div>
         </section>
 
         <footer class="bg-charcoal py-12 px-6 border-t border-gold/10 relative overflow-hidden transition-colors duration-500">
@@ -5832,9 +5789,9 @@ body:not(.theme-light) .lead-panel {
             let label = 'базовая';
             let score = 45;
             if (type === 'body') {
-                if (flags.hasFat && (flags.hasActivity || flags.hasTraining)) { label = 'расширенная'; score = 70; }
-                if (flags.hasFat && flags.hasCircumferences && flags.hasActivity && flags.hasTraining && flags.hasSleep) { label = 'экспертная'; score = 92; }
-            }
+            if (flags.hasFat) { label = 'расширенная'; score = 70; }
+            if (flags.hasFat && flags.hasCircumferences) { label = 'уточнённая'; score = 86; }
+        }
             if (type === 'nutrition') {
                 if (flags.hasFat || flags.hasActivityDetails) { label = 'расширенная'; score = 72; }
                 if (flags.hasFat && flags.hasSteps && flags.hasTraining && flags.hasCardio && flags.hasWork) { label = 'экспертная'; score = 90; }
