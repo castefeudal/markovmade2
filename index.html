@@ -4036,6 +4036,311 @@ html, body { max-width: 100%; overflow-x: hidden !important; }
 img, video, canvas, svg { max-width: 100%; }
 </style>
 
+
+
+<style id="markovmade-final-polish-pass-2">
+/* === MARKOVMADE FINAL POINT POLISH — PASS 2 ===
+   Усиление гарантии, логики пути, компактности about, читаемости evolution/principles и светлой темы. */
+
+/* 1. Гарантия результата — крупный смысловой якорь, без слабой приписки. */
+.guarantee-beacon {
+    min-height: 64px !important;
+    padding: 1.12rem 1.65rem !important;
+    font-size: clamp(13px, 1.25vw, 18px) !important;
+    letter-spacing: clamp(.18em, .55vw, .34em) !important;
+    border-width: 1.5px !important;
+    border-radius: 999px !important;
+    color: rgb(var(--color-gold)) !important;
+    background:
+        radial-gradient(circle at 50% 0%, rgb(var(--color-gold) / .28), transparent 78%),
+        linear-gradient(180deg, rgb(var(--color-gold) / .18), rgb(var(--color-gold) / .055)) !important;
+    box-shadow: 0 28px 88px rgb(var(--color-gold) / .13), inset 0 1px 0 rgb(255 255 255 / .12) !important;
+}
+.guarantee-beacon::before,
+.guarantee-beacon::after {
+    width: 9px !important;
+    height: 9px !important;
+}
+.guarantee-proof-text {
+    max-width: 920px !important;
+    font-size: clamp(.98rem, 1.05vw, 1.12rem) !important;
+    line-height: 1.85 !important;
+    border-left: 2px solid rgb(var(--color-gold) / .55) !important;
+    text-align: left !important;
+}
+
+/* 2. Логика пути — блок должен продавать метод, а не быть технической связкой. */
+#brand-logic .lead-panel {
+    border-radius: 30px !important;
+    padding: clamp(1.35rem, 4vw, 3.4rem) !important;
+    background:
+        radial-gradient(circle at 12% 0%, rgb(var(--color-gold) / .14), transparent 34rem),
+        linear-gradient(135deg, rgb(255 255 255 / .050), rgb(255 255 255 / .014)) !important;
+    border-color: rgb(var(--color-gold) / .20) !important;
+}
+#brand-logic h2 {
+    max-width: 660px !important;
+    line-height: 1.04 !important;
+    letter-spacing: -.035em !important;
+}
+#brand-logic p {
+    color: rgb(var(--text-platinum) / .82) !important;
+}
+#brand-logic .bridge-card {
+    position: relative !important;
+    min-height: 230px !important;
+    border-radius: 24px !important;
+    padding: 1.45rem !important;
+    overflow: hidden !important;
+    background:
+        radial-gradient(circle at 20% 0%, rgb(var(--color-gold) / .10), transparent 70%),
+        linear-gradient(180deg, rgb(255 255 255 / .052), rgb(255 255 255 / .016)) !important;
+}
+#brand-logic .bridge-card::after {
+    content: '';
+    position: absolute;
+    left: 1.4rem;
+    right: 1.4rem;
+    bottom: 1rem;
+    height: 1px;
+    background: linear-gradient(90deg, rgb(var(--color-gold) / .55), transparent);
+    opacity: .55;
+}
+#brand-logic .bridge-card h3 { margin-top: 1.25rem !important; margin-bottom: .75rem !important; }
+#brand-logic .bridge-card p { font-size: .90rem !important; line-height: 1.72 !important; color: rgb(var(--text-platinum) / .75) !important; }
+.path-proof-strip {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: .75rem;
+    margin-top: .85rem;
+}
+.path-proof-strip span {
+    min-height: 46px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .72rem .85rem;
+    border: 1px solid rgb(var(--color-gold) / .18);
+    border-radius: 999px;
+    background: rgb(var(--color-gold) / .045);
+    color: rgb(var(--text-platinum) / .82);
+    font: 900 .66rem/1.2 'Manrope', Arial, sans-serif;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .path-proof-strip { grid-template-columns: 1fr 1fr; }
+    #brand-logic .bridge-card { min-height: auto !important; }
+}
+
+/* 3. «Твои шрамы» — компактнее, в линию, без огромного пустого экрана. */
+#about {
+    padding: clamp(2.2rem, 5vw, 4.5rem) 0 !important;
+}
+#about > .grid {
+    width: min(1480px, calc(100% - 32px));
+    margin-inline: auto;
+    border: 1px solid rgb(var(--color-gold) / .14);
+    border-radius: 32px;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgb(255 255 255 / .030), rgb(255 255 255 / .008));
+    box-shadow: 0 32px 110px rgb(0 0 0 / .24);
+}
+@media (min-width: 1024px) {
+    #about > .grid { grid-template-columns: minmax(360px, .82fr) minmax(0, 1.18fr) !important; }
+    #about .relative.w-full.h-\[60vh\].lg\:h-\[85vh\] {
+        height: clamp(460px, 58vh, 640px) !important;
+        min-height: 0 !important;
+    }
+    #about .relative.flex.flex-col.justify-center {
+        padding-top: clamp(2rem, 3.5vw, 3.5rem) !important;
+        padding-bottom: clamp(2rem, 3.5vw, 3.5rem) !important;
+    }
+}
+#about h2 {
+    font-size: clamp(2.05rem, 3.8vw, 4.25rem) !important;
+    line-height: 1.08 !important;
+    margin-bottom: clamp(1.15rem, 2vw, 1.7rem) !important;
+}
+#about .space-y-5,
+#about .md\:space-y-6 { gap: .95rem !important; }
+#about p { line-height: 1.68 !important; }
+#about .mt-10.md\:mt-14 {
+    margin-top: 1.45rem !important;
+    padding-top: .15rem !important;
+    padding-bottom: .15rem !important;
+}
+#about .mt-14 { margin-top: 2rem !important; }
+.about-inline-points {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .65rem;
+    margin-top: 1.2rem;
+}
+.about-inline-points span {
+    min-height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(var(--color-gold) / .20);
+    border-radius: 999px;
+    color: rgb(var(--color-gold));
+    background: rgb(var(--color-gold) / .045);
+    font: 900 .66rem/1 'Manrope', Arial, sans-serif;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+@media (max-width: 1023px) {
+    #about > .grid { width: min(100% - 24px, 760px); }
+    #about .relative.w-full.h-\[60vh\].lg\:h-\[85vh\] { height: 46vh !important; min-height: 360px !important; }
+}
+
+/* 4. Эволюция — раскрытый текст контрастный и читаемый в обеих темах. */
+.evolution-content.open > div {
+    background: linear-gradient(180deg, rgb(255 255 255 / .040), rgb(255 255 255 / .014));
+    border-top: 1px solid rgb(var(--color-gold) / .14);
+}
+.evolution-content p,
+.evolution-content li,
+.evolution-content .text-dim {
+    color: rgb(var(--text-platinum) / .88) !important;
+    -webkit-text-fill-color: currentColor !important;
+}
+.evolution-content h3,
+.evolution-content h4,
+.evolution-content strong {
+    color: rgb(var(--text-platinum)) !important;
+}
+.evolution-content p {
+    font-size: clamp(.94rem, .95vw, 1.03rem) !important;
+    line-height: 1.82 !important;
+}
+.evolution-card[style] { transition-delay: 0ms !important; }
+
+/* 5. Принципы — меньше воздуха между названием и объяснением, меньше воровства высоты. */
+#principles { padding-top: clamp(4rem, 8vw, 7rem) !important; padding-bottom: clamp(4rem, 8vw, 7rem) !important; }
+#principles .text-center.max-w-4xl { margin-bottom: clamp(2.4rem, 5vw, 4.2rem) !important; }
+#principles .text-center.max-w-4xl span { margin-bottom: 1.05rem !important; }
+#principles .text-center.max-w-4xl h2 { margin-bottom: 1.1rem !important; }
+#principles .grid > div {
+    padding: clamp(1.35rem, 3vw, 2.65rem) !important;
+    justify-content: flex-start !important;
+    gap: .85rem !important;
+}
+#principles .grid > div > div:first-child .flex { margin-bottom: .9rem !important; }
+#principles h3 { margin-bottom: .8rem !important; }
+#principles .transform {
+    transform: none !important;
+    opacity: .92 !important;
+}
+#principles p { line-height: 1.72 !important; }
+
+/* 6. «Сила одного касания» — упор на тело, питание, мышление и персональное приложение. */
+#contact .contact-value-card {
+    border-radius: 28px !important;
+    min-height: 100% !important;
+}
+#contact .contact-value-card p {
+    color: rgb(var(--text-platinum) / .84) !important;
+}
+#contact .value-mini-list li {
+    border-color: rgb(var(--color-gold) / .14) !important;
+    background: linear-gradient(180deg, rgb(255 255 255 / .043), rgb(255 255 255 / .014)) !important;
+}
+#contact .value-mini-list li:hover {
+    border-color: rgb(var(--color-gold) / .34) !important;
+    background: rgb(var(--color-gold) / .060) !important;
+    transform: translateY(-2px);
+}
+#contact .value-mini-list li span { max-width: 20ch; }
+
+/* 7. Белая тема — усиление читаемости всех новых и старых смысловых блоков. */
+body.theme-light {
+    --bg-obsidian: 249 246 239;
+    --bg-charcoal: 241 235 224;
+    --text-platinum: 22 19 15;
+    --color-gold: 154 112 26;
+}
+body.theme-light,
+body.theme-light .section-block {
+    color: #16130f !important;
+}
+body.theme-light .text-platinum,
+body.theme-light .text-platinum\/70,
+body.theme-light .text-platinum\/80,
+body.theme-light .text-platinum\/90,
+body.theme-light .text-dim,
+body.theme-light p,
+body.theme-light li,
+body.theme-light h1,
+body.theme-light h2,
+body.theme-light h3,
+body.theme-light h4,
+body.theme-light span {
+    -webkit-text-fill-color: currentColor;
+}
+body.theme-light .text-dim,
+body.theme-light .text-platinum\/70,
+body.theme-light .text-platinum\/80 {
+    color: rgba(22,19,15,.78) !important;
+}
+body.theme-light #brand-logic .lead-panel,
+body.theme-light #about > .grid,
+body.theme-light .evolution-card,
+body.theme-light #principles .grid > div,
+body.theme-light #contact .contact-value-card,
+body.theme-light .guarantee-proof-text {
+    background: rgba(255,255,255,.78) !important;
+    border-color: rgba(154,112,26,.24) !important;
+    box-shadow: 0 26px 80px rgba(80,54,17,.11), inset 0 1px 0 rgba(255,255,255,.86) !important;
+}
+body.theme-light #brand-logic .bridge-card,
+body.theme-light #contact .value-mini-list li,
+body.theme-light .path-proof-strip span,
+body.theme-light .about-inline-points span {
+    background: rgba(255,255,255,.72) !important;
+    border-color: rgba(154,112,26,.24) !important;
+    color: #16130f !important;
+}
+body.theme-light #brand-logic .bridge-card p,
+body.theme-light .evolution-content p,
+body.theme-light .evolution-content li,
+body.theme-light #principles p,
+body.theme-light #contact .value-mini-list li span {
+    color: rgba(22,19,15,.76) !important;
+}
+body.theme-light #contact .value-mini-list li strong,
+body.theme-light #principles h3,
+body.theme-light .evolution-content h3,
+body.theme-light .evolution-content h4 {
+    color: #16130f !important;
+}
+body.theme-light .guarantee-beacon {
+    color: #8f6416 !important;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(154,112,26,.20), transparent 78%),
+        linear-gradient(180deg, rgba(154,112,26,.16), rgba(154,112,26,.05)) !important;
+    box-shadow: 0 24px 74px rgba(154,112,26,.12), inset 0 1px 0 rgba(255,255,255,.72) !important;
+}
+body.theme-light #about img {
+    filter: grayscale(36%) contrast(97%) brightness(96%) saturate(.88) !important;
+}
+body.theme-light #about .group:hover img,
+body.theme-light #about img:hover,
+body.theme-light #about img:active {
+    filter: grayscale(0%) contrast(98%) brightness(101%) saturate(1.04) !important;
+}
+
+/* 8. Общая доводка: меньше горизонтальных рисков и более аккуратные переносы. */
+#brand-logic *, #about *, #biography *, #principles *, #contact * { min-width: 0; }
+#brand-logic p, #about p, #biography p, #principles p, #contact p { text-wrap: pretty; overflow-wrap: break-word; }
+@media (prefers-reduced-motion: reduce) {
+    .guarantee-beacon { animation: none !important; opacity: 1 !important; }
+}
+</style>
+
 </head>
 
 <body class="bg-obsidian antialiased selection:bg-gold selection:text-obsidian">
@@ -4851,12 +5156,12 @@ img, video, canvas, svg { max-width: 100%; }
 
     <div class="mt-12 mb-8 flex items-center justify-center">
         <span class="guarantee-beacon font-sans text-[10px] md:text-[11px] font-black tracking-[0.34em] uppercase text-gold text-center">
-            Гарантия результата при честной работе
+            Гарантия результата
         </span>
     </div>
 
     <p class="text-base text-platinum/80 font-sans leading-relaxed guarantee-proof-text">
-        Гарантия здесь — это не обещание чудес и случайных цифр. Это гарантия <span class="text-gold font-bold">системы, контроля и корректировок:</span> если вы честно выполняете план, ведёте отчётность и держите связь, маршрут не остаётся статичным — он адаптируется под вашу реальную жизнь, пока движение к результату не станет понятным, измеримым и управляемым.
+        Гарантия здесь — это не обещание чудес и случайных цифр. Это гарантия <span class="text-gold font-bold">системы, контроля и корректировок:</span> план не бросается после первой сложности. Мы фиксируем точку А, отслеживаем динамику, корректируем питание, тренировки, режим и мышление, чтобы путь к результату был понятным, измеримым и управляемым.
     </p>
 </div>
 
@@ -5080,13 +5385,19 @@ img, video, canvas, svg { max-width: 100%; }
                     <div class="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-10 items-center">
                         <div>
                             <span class="text-[10px] font-sans tracking-luxury text-gold uppercase mb-6 block">03. ЛОГИКА ПУТИ</span>
-                            <h2 class="font-serif text-3xl md:text-5xl leading-tight text-platinum mb-6">Сначала цифры. Потом система. Потом личная стратегия.</h2>
-                            <p class="font-sans text-dim text-base md:text-lg leading-relaxed">Расчёт даёт точку А. Услуги показывают, куда можно двигаться. Дальше важно понять, кто стоит за системой, почему этому можно доверять и на каких принципах строится работа MARKOVMADE.</p>
+                            <h2 class="font-serif text-3xl md:text-5xl leading-tight text-platinum mb-6">Не мотивация. А путь, который держит вас в реальной жизни.</h2>
+                            <p class="font-sans text-dim text-base md:text-lg leading-relaxed">Сначала мы фиксируем точку А: тело, питание, режим, энергию, мышление и главный тормоз. Потом собираем не набор советов, а персональный маршрут: что делать, что отслеживать, где усиливать дисциплину и как не развалиться при первом откате.</p>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                            <div class="bridge-card p-6 rounded-sm"><span class="text-gold font-serif text-4xl">I.</span><h3 class="font-serif text-2xl text-platinum mt-5 mb-3">Данные</h3><p class="font-sans text-sm text-dim leading-relaxed">Вес, состав тела, энергия, питание, восстановление.</p></div>
-                            <div class="bridge-card p-6 rounded-sm"><span class="text-gold font-serif text-4xl">II.</span><h3 class="font-serif text-2xl text-platinum mt-5 mb-3">Смысл</h3><p class="font-sans text-sm text-dim leading-relaxed">Что цифры реально значат и где находится слабое звено.</p></div>
-                            <div class="bridge-card p-6 rounded-sm"><span class="text-gold font-serif text-4xl">III.</span><h3 class="font-serif text-2xl text-platinum mt-5 mb-3">Действие</h3><p class="font-sans text-sm text-dim leading-relaxed">План, контроль, корректировки и спокойное движение без хаоса.</p></div>
+                            <div class="bridge-card p-6 rounded-sm"><span class="text-gold font-serif text-4xl">I.</span><h3 class="font-serif text-2xl text-platinum mt-5 mb-3">Диагностика</h3><p class="font-sans text-sm text-dim leading-relaxed">Цифры, фото, режим, энергия, питание, восстановление и мышление — собираем полную карту, а не отдельные симптомы.</p></div>
+                            <div class="bridge-card p-6 rounded-sm"><span class="text-gold font-serif text-4xl">II.</span><h3 class="font-serif text-2xl text-platinum mt-5 mb-3">Система</h3><p class="font-sans text-sm text-dim leading-relaxed">Персональный маршрут: что делать сегодня, что отслеживать каждую неделю и где не тратить силы впустую.</p></div>
+                            <div class="bridge-card p-6 rounded-sm"><span class="text-gold font-serif text-4xl">III.</span><h3 class="font-serif text-2xl text-platinum mt-5 mb-3">Сопровождение</h3><p class="font-sans text-sm text-dim leading-relaxed">Контроль, корректировки и давление структуры — чтобы результат не зависел от настроения и не ломался в быту.</p></div>
+                        </div>
+                        <div class="path-proof-strip" aria-label="Что получает человек внутри пути MARKOVMADE">
+                            <span>ясная точка А</span>
+                            <span>план без догадок</span>
+                            <span>мышление под результат</span>
+                            <span>корректировки по факту</span>
                         </div>
                     </div>
                 </div>
@@ -5114,6 +5425,12 @@ img, video, canvas, svg { max-width: 100%; }
                                 <p>Я ломаю стереотип о том, что обстоятельства сильнее человека. Моя трансформация — это 16 лет пути: от большой футбольной мечты в 13 до оглушительного кризиса. Цифры на счетах превратились в нули, а активы — в пыль. Мое перерождение началось в Китае. Не с триумфа, а с признания: <span class="italic text-platinum/90">«Я больше не тот, кем был».</span></p>
                                 <p>Я знаю вкус предательства и тяжелую тишину депрессии — <span class="italic">когда боишься проверить телефон, но еще больше боишься, что он так и будет молчать неделями.</span> Пройдя через это, я научился видеть <span class="text-platinum border-b border-gold/30">фундамент, а не обложку</span>.</p>
                                 <p>Сегодня <span class="text-platinum border-b border-gold/40 pb-0.5">MARKOVMADE</span> — это не про картинки. Это про смыслы. Я беру ваш опыт — со всеми ошибками и провалами — и превращаю его в <span class="text-platinum font-medium">твердую опору</span>. В то, что невозможно отобрать или разрушить.</p>
+
+                                <div class="about-inline-points" aria-label="Смысл блока о пути">
+                                    <span>опыт</span>
+                                    <span>система</span>
+                                    <span>опора</span>
+                                </div>
 
                                 <div class="mt-10 md:mt-14 pl-4 md:pl-6 border-l-2 border-gold/40 space-y-10 py-2">
                                     <div class="group">
@@ -5532,7 +5849,7 @@ img, video, canvas, svg { max-width: 100%; }
                         <span class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-gold/50"></span>
                     </span>
                     <p class="font-sans text-platinum/80 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mt-10">
-                        Один диалог способен изменить траекторию жизни. Я открыт для тех, кто готов к созиданию и твердым результатам.
+                        Один диалог способен изменить траекторию жизни, если после него появляется система. Я работаю не только с телом и питанием, а с мышлением, режимом, дисциплиной и качеством решений.
                     </p>
                 </div>
 
@@ -5542,7 +5859,7 @@ img, video, canvas, svg { max-width: 100%; }
                         <h4 class="font-serif text-2xl md:text-3xl text-platinum mb-4">Личное Присутствие</h4>
                         <p class="font-sans text-base md:text-lg text-platinum/80 leading-relaxed">Минск • Сочи • Москва • СПб.<br>Живой разбор тела, режима, питания, дисциплины и вашей точки А — без шаблонов и лишнего шума.</p>
                         <ul class="value-mini-list" aria-label="Что входит в личное присутствие">
-                            <li><strong>живой разбор точки А</strong><span>тело, режим, питание, цель</span></li>
+                            <li><strong>живой разбор точки А</strong><span>тело, питание, мышление, цель</span></li>
                             <li><strong>коррекция техники</strong><span>чтобы движение давало результат</span></li>
                             <li><strong>честная обратная связь</strong><span>без шаблонов и пустой мотивации</span></li>
                             <li><strong>план первых действий</strong><span>что делать сразу после встречи</span></li>
@@ -5553,7 +5870,7 @@ img, video, canvas, svg { max-width: 100%; }
                         <h4 class="font-serif text-2xl md:text-3xl text-platinum mb-4">Дистанционная Работа</h4>
                         <p class="font-sans text-base md:text-lg text-platinum/80 leading-relaxed">Эффективность без географических границ. Видеосвязь, контроль и персонализированное приложение под каждого пользователя: план, питание, задачи и прогресс отображаются структурно, понятно и по делу.</p>
                         <ul class="value-mini-list" aria-label="Что входит в дистанционную работу">
-                            <li><strong>персональное приложение</strong><span>создаётся под конкретного человека</span></li>
+                            <li><strong>персональное приложение</strong><span>план, питание, задачи и прогресс под вас</span></li>
                             <li><strong>план и задачи по неделям</strong><span>понятный маршрут без хаоса</span></li>
                             <li><strong>контроль питания и формы</strong><span>цифры, отчётность, динамика</span></li>
                             <li><strong>корректировки под жизнь</strong><span>работа, сон, срывы, график</span></li>
@@ -5562,12 +5879,12 @@ img, video, canvas, svg { max-width: 100%; }
                     <div class="glass-panel contact-value-card p-10 lg:p-12 flex flex-col items-center text-center fade-in-up transition-all duration-500 border border-gold/20 group" style="transition-delay: 200ms;">
                         <span class="contact-card-kicker font-sans text-[9px] tracking-luxury text-gold/70 uppercase mb-6 group-hover:text-gold transition-colors">ПОДХОД</span>
                         <h4 class="font-serif text-2xl md:text-3xl text-platinum mb-4">Персональный Фокус</h4>
-                        <p class="font-sans text-base md:text-lg text-platinum/80 leading-relaxed">Это не потоковая программа. Я погружаюсь в ваш запрос, отделяю главное от второстепенного и выстраиваю понятную систему действий под ваш график, тело и цель.</p>
+                        <p class="font-sans text-base md:text-lg text-platinum/80 leading-relaxed">Это не потоковая программа. Я погружаюсь в ваш запрос, отделяю главное от второстепенного и выстраиваю понятную систему действий под ваш график, тело, мышление и цель.</p>
                         <ul class="value-mini-list" aria-label="Что даёт персональный фокус">
-                            <li><strong>приоритеты без хаоса</strong><span>что реально даст результат</span></li>
+                            <li><strong>приоритеты без хаоса</strong><span>тело, питание, мышление, режим</span></li>
                             <li><strong>система под режим</strong><span>без копирования чужой жизни</span></li>
                             <li><strong>адаптация по ходу</strong><span>план меняется вместе с реальностью</span></li>
-                            <li><strong>контроль курса</strong><span>связь по делу, без воды</span></li>
+                            <li><strong>мышление и дисциплина</strong><span>опора, решения и возврат в систему</span></li>
                         </ul>
                     </div>
                 </div>
