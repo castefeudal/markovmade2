@@ -5721,6 +5721,51 @@ body.theme-light #biography > .container > p.fade-in-up {
 }
 </style>
 
+
+
+<style id="markovmade-point-fixes-v6">
+/* === MARKOVMADE POINT FIXES V6: centered signature quote + stronger contact outcome === */
+
+/* 1. Центруем фразу про пересборку личности строго по оси блока. */
+.lead-application-intro > p:first-child {
+    display: block !important;
+    width: 100% !important;
+    max-width: 980px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    text-wrap: balance !important;
+}
+
+/* 2. Усиливаем блок результата после первого контакта без агрессивной продажности. */
+.contact-outcome-panel strong {
+    max-width: 100% !important;
+    text-wrap: balance !important;
+}
+.contact-outcome-panel p {
+    max-width: 760px !important;
+    font-size: clamp(1rem, 1.08vw, 1.16rem) !important;
+    line-height: 1.82 !important;
+    color: rgb(var(--text-platinum) / .76) !important;
+}
+body.theme-light .contact-outcome-panel p {
+    color: rgba(22,19,15,.74) !important;
+}
+
+@media (max-width: 768px) {
+    .lead-application-intro > p:first-child {
+        max-width: 92vw !important;
+        font-size: clamp(1.45rem, 6vw, 2rem) !important;
+        line-height: 1.12 !important;
+    }
+    .contact-outcome-panel p {
+        max-width: none !important;
+        font-size: .98rem !important;
+        line-height: 1.72 !important;
+    }
+}
+</style>
+
 </head>
 
 <body class="bg-obsidian antialiased selection:bg-gold selection:text-obsidian">
@@ -7338,10 +7383,10 @@ body.theme-light #biography > .container > p.fade-in-up {
         <div class="contact-outcome-panel max-w-5xl mx-auto mb-16 md:mb-24 fade-in-up">
             <div>
                 <span>После первого контакта</span>
-                <strong>Человек должен уйти не с вдохновением, а с пониманием.</strong>
+                <strong>Моя задача — не вдохновить на пару дней, а собрать человека в ясную систему действий.</strong>
             </div>
             <p>
-                Где он сейчас. Что мешает. Какие действия первые. Какой формат ему подходит. Где риски. Как работать с ограничениями. И что нужно контролировать, чтобы результат не остался красивой идеей.
+                После первого контакта человек уже ясно видит себя со стороны: где сейчас тело, питание, режим, дисциплина и мышление; что тормозит прогресс; какие первые шаги дают сдвиг; какой формат работы подходит именно ему. Вместо хаоса — понятный маршрут: что делать, что отслеживать, что корректировать и как довести форму до результата, который виден в теле и чувствуется внутри.
             </p>
         </div>
 
