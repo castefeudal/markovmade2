@@ -4827,6 +4827,518 @@ body.theme-light #calculators .calc-tab.active {
 }
 </style>
 
+
+
+<style id="markovmade-targeted-icon-upgrade">
+/* === MARKOVMADE TARGETED ICON UPGRADE ===
+   Точечная надстройка: смысловые иконки, мягкое свечение ключевой фразы,
+   ориентация пользователя в hero, калькуляторах, логике пути и форматах работы. */
+.hero-proof-item {
+    position: relative !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    padding: 1.15rem 1.05rem !important;
+}
+.hero-proof-icon,
+.calc-tab-icon,
+.path-proof-icon,
+.value-mini-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+    color: rgb(var(--color-gold)) !important;
+    border: 1px solid rgb(var(--color-gold) / .26) !important;
+    background:
+        radial-gradient(circle at 50% 0%, rgb(var(--color-gold) / .18), transparent 76%),
+        rgb(var(--color-gold) / .055) !important;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / .055), 0 12px 32px rgb(var(--color-gold) / .06) !important;
+}
+.hero-proof-icon svg,
+.calc-tab-icon svg,
+.path-proof-icon svg,
+.value-mini-icon svg {
+    width: 58% !important;
+    height: 58% !important;
+    display: block !important;
+    stroke: currentColor !important;
+}
+.hero-proof-icon {
+    width: 2.55rem !important;
+    height: 2.55rem !important;
+    border-radius: 16px !important;
+    margin-bottom: .85rem !important;
+}
+.hero-proof-item strong {
+    margin-top: .1rem !important;
+}
+.hero-proof-item span:last-child {
+    max-width: 13rem !important;
+    line-height: 1.25 !important;
+}
+#calculators .calc-tab {
+    gap: .36rem !important;
+}
+#calculators .calc-tab-icon {
+    width: 2.2rem !important;
+    height: 2.2rem !important;
+    border-radius: 15px !important;
+    margin: .1rem 0 .08rem !important;
+    opacity: .82 !important;
+    transition: transform .28s ease, opacity .28s ease, border-color .28s ease, background .28s ease !important;
+}
+#calculators .calc-tab:hover .calc-tab-icon,
+#calculators .calc-tab.active .calc-tab-icon {
+    opacity: 1 !important;
+    transform: translateY(-1px) scale(1.035) !important;
+    border-color: rgb(var(--color-gold) / .48) !important;
+    background: rgb(var(--color-gold) / .105) !important;
+}
+#calculators .calc-tab-index {
+    width: auto !important;
+    height: auto !important;
+    border: 0 !important;
+    background: transparent !important;
+    font-size: clamp(1.15rem, 1.6vw, 1.55rem) !important;
+    opacity: .86 !important;
+}
+.path-proof-strip span {
+    gap: .52rem !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+    padding: .7rem .86rem !important;
+}
+.path-proof-strip span em {
+    font-style: normal !important;
+    line-height: 1.18 !important;
+}
+.path-proof-icon {
+    width: 1.72rem !important;
+    height: 1.72rem !important;
+    border-radius: 11px !important;
+}
+.one-touch-glow {
+    position: relative !important;
+    padding: .62rem .95rem !important;
+    border-radius: 999px !important;
+    border: 1px solid rgb(var(--color-gold) / .24) !important;
+    background: rgb(var(--color-gold) / .048) !important;
+    animation: oneTouchQuietGlow 4.9s ease-in-out infinite !important;
+    box-shadow: 0 0 0 rgb(var(--color-gold) / 0), inset 0 1px 0 rgb(255 255 255 / .05) !important;
+}
+.one-touch-glow::before {
+    content: '' !important;
+    position: absolute !important;
+    inset: -1px !important;
+    border-radius: inherit !important;
+    pointer-events: none !important;
+    background: linear-gradient(110deg, transparent 0%, rgb(var(--color-gold) / .30) 42%, transparent 68%) !important;
+    opacity: 0 !important;
+    transform: translateX(-42%) !important;
+    animation: oneTouchQuietSweep 4.9s ease-in-out infinite !important;
+    mix-blend-mode: screen !important;
+}
+@keyframes oneTouchQuietGlow {
+    0%, 100% { opacity: .72; text-shadow: 0 0 0 rgb(var(--color-gold) / 0); box-shadow: 0 8px 26px rgb(var(--color-gold) / .035), inset 0 1px 0 rgb(255 255 255 / .045); }
+    48%, 56% { opacity: 1; text-shadow: 0 0 18px rgb(var(--color-gold) / .36); box-shadow: 0 14px 38px rgb(var(--color-gold) / .095), inset 0 1px 0 rgb(255 255 255 / .075); }
+}
+@keyframes oneTouchQuietSweep {
+    0%, 36% { opacity: 0; transform: translateX(-60%); }
+    48% { opacity: .55; }
+    66%, 100% { opacity: 0; transform: translateX(60%); }
+}
+#contact .value-mini-list li {
+    display: grid !important;
+    grid-template-columns: 2.35rem minmax(0, 1fr) !important;
+    column-gap: .78rem !important;
+    row-gap: .18rem !important;
+    align-items: start !important;
+    padding: .86rem .92rem !important;
+}
+#contact .value-mini-list li .value-mini-icon {
+    grid-column: 1 !important;
+    grid-row: 1 / span 2 !important;
+    width: 2.1rem !important;
+    height: 2.1rem !important;
+    border-radius: 13px !important;
+    margin-top: .02rem !important;
+    max-width: none !important;
+    font: inherit !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+}
+#contact .value-mini-list li strong,
+#contact .value-mini-list li > span:not(.value-mini-icon) {
+    grid-column: 2 !important;
+    min-width: 0 !important;
+}
+#contact .value-mini-list li strong {
+    padding-top: .05rem !important;
+}
+#contact .value-mini-list li > span:not(.value-mini-icon) {
+    max-width: none !important;
+}
+body.theme-light .hero-proof-icon,
+body.theme-light .calc-tab-icon,
+body.theme-light .path-proof-icon,
+body.theme-light .value-mini-icon {
+    color: rgb(var(--color-gold)) !important;
+    border-color: rgba(154,112,26,.30) !important;
+    background: rgba(154,112,26,.075) !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.60), 0 12px 26px rgba(154,112,26,.08) !important;
+}
+body.theme-light .one-touch-glow {
+    background: rgba(154,112,26,.075) !important;
+    border-color: rgba(154,112,26,.30) !important;
+}
+body.theme-soft .one-touch-glow,
+body.theme-soft .one-touch-glow::before {
+    animation: none !important;
+    opacity: .92 !important;
+    text-shadow: none !important;
+}
+@media (max-width: 1024px) {
+    .hero-proof-item {
+        display: grid !important;
+        grid-template-columns: 2.7rem minmax(0, 1fr) !important;
+        column-gap: .85rem !important;
+        align-items: center !important;
+    }
+    .hero-proof-icon {
+        grid-row: 1 / span 2 !important;
+        margin-bottom: 0 !important;
+    }
+    .hero-proof-item strong,
+    .hero-proof-item span:last-child {
+        grid-column: 2 !important;
+    }
+}
+@media (max-width: 767px) {
+    #calculators .calc-tab {
+        display: grid !important;
+        grid-template-columns: 2.2rem 2.4rem minmax(0, 1fr) !important;
+        align-items: center !important;
+        justify-content: stretch !important;
+        text-align: left !important;
+        gap: .55rem .75rem !important;
+    }
+    #calculators .calc-tab-icon { grid-column: 1 !important; grid-row: 1 / span 2 !important; margin: 0 !important; }
+    #calculators .calc-tab-index { grid-column: 2 !important; grid-row: 1 / span 2 !important; text-align: center !important; }
+    #calculators .calc-tab-main { grid-column: 3 !important; }
+    #calculators .calc-tab-sub { grid-column: 3 !important; margin-left: 0 !important; max-width: none !important; text-align: left !important; }
+    .path-proof-strip span { justify-content: flex-start !important; }
+}
+@media (max-width: 520px) {
+    #contact .value-mini-list li {
+        grid-template-columns: 2rem minmax(0, 1fr) !important;
+        column-gap: .65rem !important;
+    }
+    #contact .value-mini-list li .value-mini-icon {
+        width: 1.85rem !important;
+        height: 1.85rem !important;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .one-touch-glow,
+    .one-touch-glow::before {
+        animation: none !important;
+    }
+}
+</style>
+
+
+
+<style id="markovmade-user-final-targeted-fix">
+/* === USER FINAL TARGETED FIX — descriptions, fonts, tabs, underline and glow === */
+
+/* 1. HERO proof typography: 01 / 02 / 03 reads cleaner and more premium. */
+.hero-proof-grid {
+    border-radius: 22px !important;
+    overflow: hidden !important;
+}
+.hero-proof-item {
+    display: grid !important;
+    grid-template-columns: auto 1fr !important;
+    grid-template-areas:
+        "icon number"
+        "icon text" !important;
+    align-items: center !important;
+    gap: .18rem .82rem !important;
+    padding: 1.08rem 1rem !important;
+}
+.hero-proof-item .hero-proof-icon {
+    grid-area: icon !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 15px !important;
+}
+.hero-proof-item strong {
+    grid-area: number !important;
+    color: rgb(var(--color-gold)) !important;
+    font-family: 'Tenor Sans', 'Manrope', Arial, sans-serif !important;
+    font-size: clamp(1.28rem, 1.9vw, 1.9rem) !important;
+    font-weight: 400 !important;
+    letter-spacing: .08em !important;
+    line-height: 1 !important;
+    text-shadow: 0 0 20px rgb(var(--color-gold) / .16) !important;
+}
+.hero-proof-item span:not(.hero-proof-icon) {
+    grid-area: text !important;
+    margin-top: .18rem !important;
+    color: rgb(var(--text-platinum) / .82) !important;
+    font-family: 'Manrope', Arial, sans-serif !important;
+    font-size: clamp(.66rem, .75vw, .78rem) !important;
+    font-weight: 900 !important;
+    letter-spacing: .135em !important;
+    line-height: 1.35 !important;
+    text-transform: uppercase !important;
+}
+
+/* 2. Calculator tabs: no Roman numerals, better readable descriptions. */
+#calculators .calc-tab {
+    display: grid !important;
+    grid-template-columns: auto 1fr !important;
+    grid-template-areas:
+        "icon main"
+        "icon sub" !important;
+    align-items: center !important;
+    justify-content: start !important;
+    text-align: left !important;
+    column-gap: .8rem !important;
+    row-gap: .12rem !important;
+    min-height: 78px !important;
+    padding: .96rem .95rem !important;
+}
+#calculators .calc-tab-index { display: none !important; }
+#calculators .calc-tab .calc-tab-icon {
+    grid-area: icon !important;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 15px !important;
+}
+#calculators .calc-tab-main {
+    grid-area: main !important;
+    color: rgb(var(--text-platinum)) !important;
+    font-family: 'Tenor Sans', 'Manrope', Arial, sans-serif !important;
+    font-size: clamp(.82rem, .86vw, .98rem) !important;
+    font-weight: 400 !important;
+    letter-spacing: .035em !important;
+    line-height: 1.16 !important;
+    text-transform: none !important;
+}
+#calculators .calc-tab-sub {
+    grid-area: sub !important;
+    margin-top: .15rem !important;
+    color: rgb(var(--text-platinum) / .64) !important;
+    font-family: 'Manrope', Arial, sans-serif !important;
+    font-size: clamp(.67rem, .72vw, .78rem) !important;
+    font-weight: 800 !important;
+    letter-spacing: .055em !important;
+    line-height: 1.32 !important;
+    text-transform: none !important;
+}
+#calculators .calc-tab.active .calc-tab-sub,
+#calculators .calc-tab:hover .calc-tab-sub {
+    color: rgb(var(--text-platinum) / .82) !important;
+}
+
+/* 3. Brand logic cards: every diagnostic/system/support item has icon + full description. */
+#brand-logic .path-stage-card {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: .8rem !important;
+}
+#brand-logic .path-stage-topline {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 1rem !important;
+    margin-bottom: .3rem !important;
+}
+#brand-logic .path-stage-number {
+    margin: 0 !important;
+    color: rgb(var(--color-gold)) !important;
+    font-family: 'Tenor Sans', 'Manrope', Arial, sans-serif !important;
+    font-size: clamp(1.15rem, 2.1vw, 1.75rem) !important;
+    font-weight: 400 !important;
+    letter-spacing: .09em !important;
+    line-height: 1 !important;
+}
+.path-stage-main-icon,
+.path-stage-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+    color: rgb(var(--color-gold)) !important;
+    border: 1px solid rgb(var(--color-gold) / .25) !important;
+    background: radial-gradient(circle at 50% 0%, rgb(var(--color-gold) / .16), transparent 72%), rgb(var(--color-gold) / .045) !important;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / .08), 0 10px 28px rgb(var(--color-gold) / .055) !important;
+}
+.path-stage-main-icon {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 16px !important;
+}
+.path-stage-icon {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 13px !important;
+    margin-top: .1rem !important;
+}
+.path-stage-main-icon svg,
+.path-stage-icon svg { width: 54% !important; height: 54% !important; }
+#brand-logic .path-stage-list {
+    display: grid !important;
+    gap: .68rem !important;
+    margin-top: .45rem !important;
+}
+#brand-logic .path-stage-list li {
+    display: grid !important;
+    grid-template-columns: auto 1fr !important;
+    grid-template-areas:
+        "ico title"
+        "ico desc" !important;
+    align-items: start !important;
+    gap: .12rem .72rem !important;
+    padding: .72rem .76rem !important;
+    border: 1px solid rgb(var(--color-gold) / .13) !important;
+    border-radius: 17px !important;
+    background: linear-gradient(180deg, rgb(255 255 255 / .036), rgb(255 255 255 / .012)) !important;
+    color: rgb(var(--text-platinum)) !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+}
+#brand-logic .path-stage-list li::before { content: none !important; }
+#brand-logic .path-stage-list .path-stage-icon { grid-area: ico !important; }
+#brand-logic .path-stage-list strong {
+    grid-area: title !important;
+    display: block !important;
+    color: rgb(var(--text-platinum) / .96) !important;
+    font-family: 'Manrope', Arial, sans-serif !important;
+    font-size: .73rem !important;
+    font-weight: 900 !important;
+    letter-spacing: .075em !important;
+    line-height: 1.22 !important;
+    text-transform: uppercase !important;
+}
+#brand-logic .path-stage-list span {
+    grid-area: desc !important;
+    display: block !important;
+    color: rgb(var(--text-platinum) / .64) !important;
+    font-family: 'Manrope', Arial, sans-serif !important;
+    font-size: .74rem !important;
+    font-weight: 650 !important;
+    letter-spacing: .005em !important;
+    line-height: 1.42 !important;
+    text-transform: none !important;
+}
+
+/* 4. About: golden premium underline for key verbs in “Твои шрамы”. */
+.about-gold-underline {
+    position: relative !important;
+    display: inline-block !important;
+    color: rgb(var(--text-platinum)) !important;
+    font-style: italic !important;
+    z-index: 1 !important;
+    padding-inline: .08em !important;
+}
+.about-gold-underline::after {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: .07em !important;
+    height: .28em !important;
+    border-radius: 999px !important;
+    background: linear-gradient(90deg, transparent, rgb(var(--color-gold) / .48), transparent) !important;
+    filter: blur(.2px) !important;
+    z-index: -1 !important;
+}
+#about .group:hover .about-gold-underline::after {
+    background: linear-gradient(90deg, transparent, rgb(var(--color-gold) / .78), transparent) !important;
+}
+
+/* 5. “Один разбор...” — exactly the same component language as “Гарантия результата”. */
+.chaos-beacon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: .75rem !important;
+    min-height: 42px !important;
+    margin: 0 auto 1.75rem !important;
+    padding: .72rem 1.15rem !important;
+    border: 1px solid rgb(var(--color-gold) / .36) !important;
+    border-radius: 999px !important;
+    color: rgb(var(--color-gold)) !important;
+    background: linear-gradient(180deg, rgb(var(--color-gold) / .105), rgb(var(--color-gold) / .032)) !important;
+    box-shadow: 0 12px 36px rgb(var(--color-gold) / .075), inset 0 1px 0 rgb(255 255 255 / .08) !important;
+    font-family: 'Manrope', Arial, sans-serif !important;
+    font-size: clamp(10px, .78vw, 12px) !important;
+    font-weight: 900 !important;
+    letter-spacing: .20em !important;
+    line-height: 1.2 !important;
+    text-transform: uppercase !important;
+    animation: guaranteeSmallBreath 4.8s ease-in-out infinite !important;
+}
+.chaos-beacon::before,
+.chaos-beacon::after {
+    content: '' !important;
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 999px !important;
+    background: rgb(var(--color-gold)) !important;
+    box-shadow: 0 0 18px rgb(var(--color-gold) / .65) !important;
+    opacity: .78 !important;
+}
+body.theme-light .chaos-beacon,
+body.theme-light .about-gold-underline {
+    color: #9a701a !important;
+}
+body.theme-light .chaos-beacon {
+    background: linear-gradient(180deg, rgba(154,112,26,.14), rgba(154,112,26,.045)) !important;
+    border-color: rgba(154,112,26,.34) !important;
+    box-shadow: 0 12px 34px rgba(154,112,26,.075), inset 0 1px 0 rgba(255,255,255,.55) !important;
+}
+body.theme-light .path-stage-main-icon,
+body.theme-light .path-stage-icon,
+body.theme-light .hero-proof-icon,
+body.theme-light .calc-tab-icon {
+    background: rgba(154,112,26,.075) !important;
+    border-color: rgba(154,112,26,.26) !important;
+}
+body.theme-light #brand-logic .path-stage-list li {
+    background: rgba(255,255,255,.62) !important;
+    border-color: rgba(154,112,26,.18) !important;
+}
+body.theme-light #brand-logic .path-stage-list strong,
+body.theme-light .hero-proof-item span:not(.hero-proof-icon),
+body.theme-light #calculators .calc-tab-main {
+    color: rgba(22,19,15,.92) !important;
+}
+body.theme-light #brand-logic .path-stage-list span,
+body.theme-light #calculators .calc-tab-sub {
+    color: rgba(22,19,15,.68) !important;
+}
+@media (max-width: 767px) {
+    .hero-proof-item,
+    #calculators .calc-tab {
+        grid-template-columns: auto 1fr !important;
+    }
+    #brand-logic .path-stage-list li {
+        padding: .68rem .72rem !important;
+    }
+    .chaos-beacon {
+        max-width: 92vw !important;
+        white-space: normal !important;
+        text-align: center !important;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .chaos-beacon { animation: none !important; opacity: 1 !important; }
+}
+</style>
+
 </head>
 
 <body class="bg-obsidian antialiased selection:bg-gold selection:text-obsidian">
@@ -4985,9 +5497,9 @@ body.theme-light #calculators .calc-tab.active {
                     </div>
 
                     <div class="hero-proof-grid fade-in-up" style="transition-delay: 320ms;">
-                        <div class="hero-proof-item"><strong>01</strong><span>цифры вместо догадок</span></div>
-                        <div class="hero-proof-item"><strong>02</strong><span>стратегия без хаоса</span></div>
-                        <div class="hero-proof-item"><strong>03</strong><span>личный разбор</span></div>
+                        <div class="hero-proof-item"><i class="hero-proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M7 15l3-3 3 2 5-7"/><path d="M18 7h2v2"/></svg></i><strong>01</strong><span>цифры вместо догадок</span></div>
+                        <div class="hero-proof-item"><i class="hero-proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M15.5 8.5l-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2z"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg></i><strong>02</strong><span>стратегия без хаоса</span></div>
+                        <div class="hero-proof-item"><i class="hero-proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.8 19c.7-3 2.6-5 5.2-5s4.5 2 5.2 5"/><path d="M16 7h5M16 11h4M16 15h5"/></svg></i><strong>03</strong><span>личный разбор</span></div>
                     </div>
                 </div>
             </div>
@@ -5054,29 +5566,29 @@ body.theme-light #calculators .calc-tab.active {
                 <div class="max-w-7xl mx-auto border border-white/10 bg-obsidian/85 backdrop-blur-md rounded-sm fade-in-up shadow-2xl relative transition-colors duration-500 overflow-hidden">
                     <div class="calc-tablist-premium grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 border-b border-white/10" role="tablist" aria-label="Калькуляторы MARKOVMADE">
                         <button type="button" class="calc-tab active" data-calc-tab="body" role="tab" aria-selected="true" aria-controls="calc-body">
-                            <span class="calc-tab-index">I</span>
+                            <i class="calc-tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/></svg></i>
                             <span class="calc-tab-main">Композиция тела</span>
-                            <span class="calc-tab-sub">FFMI / LBM / стратегия</span>
+                            <span class="calc-tab-sub">стратегия FFMI и LBM</span>
                         </button>
                         <button type="button" class="calc-tab" data-calc-tab="nutrition" role="tab" aria-selected="false" aria-controls="calc-nutrition">
-                            <span class="calc-tab-index">II</span>
+                            <i class="calc-tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v8"/><path d="M5 3v4c0 2 4 2 4 0V3"/><path d="M7 11v10"/><path d="M17 3v18"/><path d="M17 3c2.1 1.2 3 3.2 3 5.7 0 2.1-.9 3.3-3 4"/></svg></i>
                             <span class="calc-tab-main">Калории / БЖУ</span>
-                            <span class="calc-tab-sub">питание под цель</span>
+                            <span class="calc-tab-sub">питание под контроль</span>
                         </button>
                         <button type="button" class="calc-tab" data-calc-tab="recovery" role="tab" aria-selected="false" aria-controls="calc-recovery">
-                            <span class="calc-tab-index">III</span>
+                            <i class="calc-tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M20 15.5A8.5 8.5 0 0 1 8.5 4a7 7 0 1 0 11.5 11.5z"/><path d="M7 20h10"/><path d="M12 17v3"/></svg></i>
                             <span class="calc-tab-main">Восстановление</span>
-                            <span class="calc-tab-sub">сон / стресс / ЦНС</span>
+                            <span class="calc-tab-sub">сон, стресс и ЦНС</span>
                         </button>
                         <button type="button" class="calc-tab" data-calc-tab="growth" role="tab" aria-selected="false" aria-controls="calc-growth">
-                            <span class="calc-tab-index">IV</span>
+                            <i class="calc-tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l5-5 4 4 7-9"/><path d="M15 7h5v5"/><path d="M4 21h16"/></svg></i>
                             <span class="calc-tab-main">Прогресс</span>
-                            <span class="calc-tab-sub">накопление результата</span>
+                            <span class="calc-tab-sub">динамика результата</span>
                         </button>
                         <button type="button" class="calc-tab" data-calc-tab="format" role="tab" aria-selected="false" aria-controls="calc-format">
-                            <span class="calc-tab-index">V</span>
+                            <i class="calc-tab-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><path d="M14 17h6M17 14v6"/></svg></i>
                             <span class="calc-tab-main">Подбор формата</span>
-                            <span class="calc-tab-sub">как работать дальше</span>
+                            <span class="calc-tab-sub">следующий шаг без хаоса</span>
                         </button>
                     </div>
 
@@ -5886,45 +6398,57 @@ body.theme-light #calculators .calc-tab.active {
             </div>
 
             <div class="path-stage-grid" aria-label="Три этапа пути MARKOVMADE">
-                <article class="bridge-card path-stage-card">
-                    <span class="path-stage-number">I.</span>
+                <article class="bridge-card path-stage-card path-stage-card-diagnostic">
+                    <div class="path-stage-topline">
+                        <span class="path-stage-number">01</span>
+                        <i class="path-stage-main-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></i>
+                    </div>
                     <h3>Диагностика</h3>
-                    <p>Собираем карту: вес, фото, замеры, питание, сон, тренировки, стресс, график, ограничения и мышление. Не лечим «симптом», а видим всю систему.</p>
-                    <ul>
-                        <li>точка А без самообмана</li>
-                        <li>понятно, что мешает результату</li>
-                        <li>видно, с чего начинать безопасно</li>
+                    <p>Сначала фиксируем реальную точку А: тело, питание, мышление, цель, ограничения, техника движения и то, что мешает результату прямо сейчас.</p>
+                    <ul class="path-stage-list">
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></i><strong>живой разбор точки А</strong><span>тело, питание, мышление, цель, ограничения</span></li>
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20V9"/><path d="M18 20V9"/><path d="M4 9h16"/><path d="M8 5h8"/><path d="M10 5v4M14 5v4"/><path d="M9 14h6"/></svg></i><strong>коррекция техники движения</strong><span>присед, тяга, жим, тяги, дыхание, амплитуда и безопасность суставов</span></li>
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4V5z"/><path d="M8 9h8M8 13h5"/></svg></i><strong>честная обратная связь</strong><span>без шаблонов, иллюзий и пустой мотивации</span></li>
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5h10v16H5V5h4"/><path d="M9 5a3 3 0 0 1 6 0"/><path d="M8 12l2 2 4-4"/><path d="M8 17h8"/></svg></i><strong>план первых действий</strong><span>что делать сразу после встречи</span></li>
                     </ul>
                 </article>
 
-                <article class="bridge-card path-stage-card">
-                    <span class="path-stage-number">II.</span>
+                <article class="bridge-card path-stage-card path-stage-card-system">
+                    <div class="path-stage-topline">
+                        <span class="path-stage-number">02</span>
+                        <i class="path-stage-main-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.8" width="10" height="18.4" rx="2.2"/><path d="M10 6h4"/><path d="M10 16h4"/><path d="M11.7 19h.6"/></svg></i>
+                    </div>
                     <h3>Система</h3>
-                    <p>Переводим цель в конкретный маршрут: питание, тренировки, шаги, режим, контрольные точки и минимальные действия на дни, когда нет ресурса.</p>
-                    <ul>
-                        <li>план без хаоса и догадок</li>
-                        <li>структура под ваш график</li>
-                        <li>мышление, которое держит дисциплину</li>
+                    <p>После диагностики цель переводится в рабочую систему: приложение, недельный маршрут, контроль питания и понятные корректировки под вашу реальную жизнь.</p>
+                    <ul class="path-stage-list">
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.8" width="10" height="18.4" rx="2.2"/><path d="M10 6h4"/><path d="M10 16h4"/><path d="M11.7 19h.6"/></svg></i><strong>персональное приложение</strong><span>план, питание, задачи, отчёты и динамика в одном месте</span></li>
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/><path d="M8 14h.01M12 14h.01M16 14h.01"/></svg></i><strong>недельный маршрут</strong><span>что делать, когда тренироваться, что отслеживать</span></li>
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15v-3M12 15V8M16 15v-5"/><path d="M7 19l11-11"/></svg></i><strong>контроль питания и формы</strong><span>цифры, фото, замеры, самочувствие, прогресс</span></li>
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10"/><path d="M18 7h2"/><circle cx="16" cy="7" r="2"/><path d="M4 17h2"/><path d="M10 17h10"/><circle cx="8" cy="17" r="2"/></svg></i><strong>корректировки под жизнь</strong><span>работа, сон, стресс, срывы, поездки, ограничения</span></li>
                     </ul>
                 </article>
 
-                <article class="bridge-card path-stage-card">
-                    <span class="path-stage-number">III.</span>
+                <article class="bridge-card path-stage-card path-stage-card-support">
+                    <div class="path-stage-topline">
+                        <span class="path-stage-number">03</span>
+                        <i class="path-stage-main-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></i>
+                    </div>
                     <h3>Сопровождение</h3>
-                    <p>Дальше результат держится не на вдохновении, а на обратной связи: корректируем питание, нагрузку, технику, восстановление и поведение по факту.</p>
-                    <ul>
-                        <li>контроль без иллюзий</li>
-                        <li>корректировки по реальности</li>
-                        <li>возврат в систему после откатов</li>
+                    <p>Дальше система держится на обратной связи: не ломаем человека под идеальный график, а адаптируем план под реальность и возвращаем курс после откатов.</p>
+                    <ul class="path-stage-list">
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2 7.5 14 3 9.6l6.2-.9L12 3z"/></svg></i><strong>приоритеты без хаоса</strong><span>что важно сейчас, а что только ворует ресурс</span></li>
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/><path d="M8 5v4M14 10v4M10 15v4"/></svg></i><strong>система под режим</strong><span>без копирования чужой жизни и чужого графика</span></li>
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v6h-6"/></svg></i><strong>адаптация по ходу</strong><span>план меняется вместе с реальностью, а не ломается от неё</span></li>
+                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></i><strong>мышление и дисциплина</strong><span>опора, решения и возврат в систему после отката</span></li>
                     </ul>
                 </article>
             </div>
 
             <div class="path-proof-strip" aria-label="Что получает человек внутри пути MARKOVMADE">
-                <span>ясная точка А</span>
-                <span>план без догадок</span>
-                <span>мышление под результат</span>
-                <span>корректировки по факту</span>
+                <span><i class="path-proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-4.8 7-11a7 7 0 1 0-14 0c0 6.2 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></i><em>ясная точка А</em></span>
+                <span><i class="path-proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5h10v16H5V5h4"/><path d="M9 5a3 3 0 0 1 6 0"/><path d="M8 12l2 2 4-4"/><path d="M8 17h8"/></svg></i><em>план без догадок</em></span>
+                <span><i class="path-proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8a3 3 0 0 1 6-1.1A3 3 0 0 1 19 9a3 3 0 0 1-.7 5.9A3.2 3.2 0 0 1 14 19a3.5 3.5 0 0 1-6 0 3.2 3.2 0 0 1-4.3-4.1A3 3 0 0 1 5 9a3 3 0 0 1 3-1z"/><path d="M12 7v12"/></svg></i><em>мышление под результат</em></span>
+                <span><i class="path-proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10"/><path d="M18 7h2"/><circle cx="16" cy="7" r="2"/><path d="M4 17h2"/><path d="M10 17h10"/><circle cx="8" cy="17" r="2"/></svg></i><em>корректировки по факту</em></span>
             </div>
         </div>
     </div>
@@ -5961,11 +6485,11 @@ body.theme-light #calculators .calc-tab.active {
                                 <div class="mt-10 md:mt-14 pl-4 md:pl-6 border-l-2 border-gold/40 space-y-10 py-2">
                                     <div class="group">
                                         <span class="block text-[10px] md:text-xs font-sans text-gold tracking-[0.2em] uppercase mb-3 opacity-80 group-hover:opacity-100 transition-opacity">Моя цель</span>
-                                        <p class="font-serif text-xl md:text-2xl text-platinum leading-snug"><span class="italic">Выжигать</span> иллюзии, чтобы на их месте строить смыслы</p>
+                                        <p class="font-serif text-xl md:text-2xl text-platinum leading-snug"><span class="about-gold-underline italic">Выжигать</span> иллюзии, чтобы на их месте строить смыслы</p>
                                     </div>
                                     <div class="group">
                                         <span class="block text-[10px] md:text-xs font-sans text-gold tracking-[0.2em] uppercase mb-3 opacity-80 group-hover:opacity-100 transition-opacity">Моё предназначение</span>
-                                        <p class="font-serif text-xl md:text-2xl text-platinum leading-snug"><span class="italic">Дать</span> твердую почву тем, кому тесно в рамках обыденности</p>
+                                        <p class="font-serif text-xl md:text-2xl text-platinum leading-snug"><span class="about-gold-underline italic">Дать</span> твердую почву тем, кому тесно в рамках обыденности</p>
                                     </div>
                                 </div>
                             </div>
@@ -6377,9 +6901,8 @@ body.theme-light #calculators .calc-tab.active {
     <div class="container mx-auto px-6 md:px-12 relative z-20">
         <div class="text-center max-w-4xl mx-auto mb-16 md:mb-20 fade-in-up">
             <h2 class="font-serif text-4xl md:text-6xl text-platinum uppercase tracking-tight mb-6">Сила одного касания</h2>
-            <span class="font-sans text-[10px] md:text-xs font-bold tracking-[0.32em] text-gold uppercase mb-7 block relative inline-block">
+            <span class="chaos-beacon font-sans font-black uppercase text-gold text-center">
                 Один разбор может убрать месяцы хаоса
-                <span class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-gold/50"></span>
             </span>
             <p class="font-sans text-platinum/80 text-base md:text-xl leading-relaxed max-w-3xl mx-auto mt-9">
                 Ценность не в «совете на минуту». Ценность в том, что после контакта у человека появляется ясность: что происходит с телом, питанием, мышлением и режимом — и какие первые действия дадут результат без лишней суеты.
@@ -6394,10 +6917,10 @@ body.theme-light #calculators .calc-tab.active {
                     Минск • Сочи • Москва • СПб. Живой разбор, где сразу видно, что мешает форме: техника, питание, режим, дисциплина, ограничения и реальная точка А.
                 </p>
                 <ul class="value-mini-list" aria-label="Что входит в личное присутствие">
-                    <li><strong>живой разбор точки А</strong><span>тело, питание, мышление, цель, ограничения</span></li>
-                    <li><strong>коррекция техники движения</strong><span>присед, тяга, жим, тяги, дыхание, амплитуда и безопасность суставов</span></li>
-                    <li><strong>честная обратная связь</strong><span>без шаблонов, иллюзий и пустой мотивации</span></li>
-                    <li><strong>план первых действий</strong><span>что делать сразу после встречи</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></i><strong>живой разбор точки А</strong><span>тело, питание, мышление, цель, ограничения</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18c4-8 8 4 16-8"/><path d="M16 10h4v4"/><circle cx="5" cy="18" r="1.5"/><circle cx="20" cy="10" r="1.5"/></svg></i><strong>коррекция техники движения</strong><span>присед, тяга, жим, тяги, дыхание, амплитуда и безопасность суставов</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4V5z"/><path d="M8 9h8M8 13h5"/></svg></i><strong>честная обратная связь</strong><span>без шаблонов, иллюзий и пустой мотивации</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19h14"/><path d="M7 16l3-3 3 2 4-6"/><path d="M16 9h3v3"/></svg></i><strong>план первых действий</strong><span>что делать сразу после встречи</span></li>
                 </ul>
             </div>
 
@@ -6408,10 +6931,10 @@ body.theme-light #calculators .calc-tab.active {
                     Для тех, кому нужен результат без привязки к городу: видеосвязь, контроль, персональное приложение, понятные задачи и корректировки под график.
                 </p>
                 <ul class="value-mini-list" aria-label="Что входит в дистанционную работу">
-                    <li><strong>персональное приложение</strong><span>план, питание, задачи, отчёты и динамика в одном месте</span></li>
-                    <li><strong>недельный маршрут</strong><span>что делать, когда тренироваться, что отслеживать</span></li>
-                    <li><strong>контроль питания и формы</strong><span>цифры, фото, замеры, самочувствие, прогресс</span></li>
-                    <li><strong>корректировки под жизнь</strong><span>работа, сон, стресс, срывы, поездки, ограничения</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10 18h4"/><path d="M10 6h4"/></svg></i><strong>персональное приложение</strong><span>план, питание, задачи, отчёты и динамика в одном месте</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/><path d="M8 14h.01M12 14h.01M16 14h.01"/></svg></i><strong>недельный маршрут</strong><span>что делать, когда тренироваться, что отслеживать</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15v-3M12 15V8M16 15v-5"/><path d="M7 19l11-11"/></svg></i><strong>контроль питания и формы</strong><span>цифры, фото, замеры, самочувствие, прогресс</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10"/><path d="M18 7h2"/><circle cx="16" cy="7" r="2"/><path d="M4 17h2"/><path d="M10 17h10"/><circle cx="8" cy="17" r="2"/></svg></i><strong>корректировки под жизнь</strong><span>работа, сон, стресс, срывы, поездки, ограничения</span></li>
                 </ul>
             </div>
 
@@ -6422,10 +6945,10 @@ body.theme-light #calculators .calc-tab.active {
                     Это не потоковая программа. Я смотрю на человека целиком: тело, питание, мышление, режим, ограничения, цель и то, что реально мешает держать систему.
                 </p>
                 <ul class="value-mini-list" aria-label="Что даёт персональный фокус">
-                    <li><strong>приоритеты без хаоса</strong><span>что важно сейчас, а что только ворует ресурс</span></li>
-                    <li><strong>система под режим</strong><span>без копирования чужой жизни и чужого графика</span></li>
-                    <li><strong>адаптация по ходу</strong><span>план меняется вместе с реальностью, а не ломается от неё</span></li>
-                    <li><strong>мышление и дисциплина</strong><span>опора, решения и возврат в систему после отката</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2 7.5 14 3 9.6l6.2-.9L12 3z"/></svg></i><strong>приоритеты без хаоса</strong><span>что важно сейчас, а что только ворует ресурс</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/><path d="M8 5v4M14 10v4M10 15v4"/></svg></i><strong>система под режим</strong><span>без копирования чужой жизни и чужого графика</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v6h-6"/></svg></i><strong>адаптация по ходу</strong><span>план меняется вместе с реальностью, а не ломается от неё</span></li>
+                    <li><i class="value-mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></i><strong>мышление и дисциплина</strong><span>опора, решения и возврат в систему после отката</span></li>
                 </ul>
             </div>
         </div>
