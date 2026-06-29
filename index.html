@@ -5585,6 +5585,142 @@ body.theme-light #brand-logic .path-stage-card-diagnostic .path-stage-list li:nt
 }
 </style>
 
+
+
+<style id="markovmade-point-fixes-v5">
+/* === MARKOVMADE POINT FIXES V5: compact proof cards, golden evolution stats, application beacon === */
+
+/* 1. Заявка — тот же визуальный язык, что у “Гарантия результата”. */
+.lead-application-intro .lead-application-beacon {
+    width: fit-content !important;
+    margin: 0 auto !important;
+    min-height: 42px !important;
+    padding: .72rem 1.15rem !important;
+    font-size: clamp(10px, .78vw, 12px) !important;
+    letter-spacing: .20em !important;
+    line-height: 1.1 !important;
+}
+.lead-application-intro .lead-application-beacon::before,
+.lead-application-intro .lead-application-beacon::after {
+    flex: 0 0 auto !important;
+}
+
+/* 2. Hero proof cards — чуть меньше и аккуратнее, без потери читаемости. */
+.hero-proof-grid {
+    width: min(610px, 100%) !important;
+}
+.hero-proof-item {
+    min-height: 74px !important;
+    padding: .86rem .9rem .98rem !important;
+    gap: .38rem !important;
+}
+.hero-proof-icon {
+    width: 1.92rem !important;
+    height: 1.92rem !important;
+    margin-bottom: .38rem !important;
+    border-radius: 12px !important;
+}
+.hero-proof-item strong {
+    font-size: clamp(1.18rem, 1.38vw, 1.58rem) !important;
+    line-height: .98 !important;
+    letter-spacing: -0.02em !important;
+}
+.hero-proof-item span:not(.hero-proof-icon) {
+    font-size: clamp(.66rem, .72vw, .76rem) !important;
+    line-height: 1.34 !important;
+    letter-spacing: .105em !important;
+}
+
+/* 3. Эволюция — цифры 16+ / 5 / 1 выделяются золотом и адаптируются через переменные темы. */
+#biography .premium-stat {
+    position: relative !important;
+    padding: 1rem 1rem 1rem 1.15rem !important;
+    border-left: 1px solid rgb(var(--color-gold) / .66) !important;
+    background: linear-gradient(90deg, rgb(var(--color-gold) / .075), transparent 88%) !important;
+    border-radius: 0 16px 16px 0 !important;
+}
+#biography .premium-stat strong {
+    color: rgb(var(--color-gold)) !important;
+    font-family: 'Cormorant Garamond', 'Playfair Display', serif !important;
+    font-size: clamp(2.05rem, 3.1vw, 3rem) !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.045em !important;
+    line-height: .9 !important;
+    text-shadow: 0 0 22px rgb(var(--color-gold) / .18) !important;
+}
+#biography .premium-stat span {
+    color: rgb(var(--color-gold) / .78) !important;
+    font-family: 'Manrope', sans-serif !important;
+    font-size: .68rem !important;
+    font-weight: 900 !important;
+    letter-spacing: .18em !important;
+    text-transform: uppercase !important;
+}
+body.theme-light #biography .premium-stat {
+    background: linear-gradient(90deg, rgb(var(--color-gold) / .10), rgba(255,255,255,.30) 92%) !important;
+    border-left-color: rgb(var(--color-gold) / .70) !important;
+    box-shadow: 0 18px 44px rgba(46,35,20,.055) !important;
+}
+body.theme-light #biography .premium-stat strong {
+    color: rgb(var(--color-gold)) !important;
+    text-shadow: 0 0 18px rgb(var(--color-gold) / .10) !important;
+}
+body.theme-light #biography .premium-stat span {
+    color: rgb(var(--color-gold) / .82) !important;
+}
+
+/* 4. Новый текст перед эволюцией — больше веса и меньше “пояснительной” интонации. */
+#biography > .container > p.fade-in-up {
+    max-width: 920px !important;
+    color: rgb(var(--text-platinum) / .76) !important;
+    font-size: clamp(1rem, 1.05vw, 1.18rem) !important;
+    line-height: 1.82 !important;
+    letter-spacing: .01em !important;
+    border-left: 1px solid rgb(var(--color-gold) / .34) !important;
+    padding-left: 1.25rem !important;
+}
+body.theme-light #biography > .container > p.fade-in-up {
+    color: rgb(var(--text-platinum) / .78) !important;
+    border-left-color: rgb(var(--color-gold) / .42) !important;
+}
+
+@media (max-width: 640px) {
+    .hero-proof-grid { width: min(380px, 100%) !important; }
+    .hero-proof-item {
+        min-height: 68px !important;
+        padding: .78rem .78rem .88rem !important;
+    }
+    .hero-proof-icon {
+        width: 1.78rem !important;
+        height: 1.78rem !important;
+        margin-bottom: .32rem !important;
+    }
+    .hero-proof-item strong {
+        font-size: 1.32rem !important;
+    }
+    .hero-proof-item span:not(.hero-proof-icon) {
+        font-size: .64rem !important;
+        letter-spacing: .095em !important;
+    }
+    #biography .premium-stat {
+        padding: .86rem .9rem .9rem 1rem !important;
+    }
+    #biography .premium-stat strong {
+        font-size: 2rem !important;
+    }
+    #biography > .container > p.fade-in-up {
+        padding-left: 1rem !important;
+        font-size: .98rem !important;
+        line-height: 1.72 !important;
+    }
+    .lead-application-intro .lead-application-beacon {
+        max-width: 92vw !important;
+        white-space: normal !important;
+        text-align: center !important;
+    }
+}
+</style>
+
 </head>
 
 <body class="bg-obsidian antialiased selection:bg-gold selection:text-obsidian">
@@ -6771,7 +6907,7 @@ body.theme-light #brand-logic .path-stage-card-diagnostic .path-stage-list li:nt
                         <div class="premium-stat"><strong>1</strong><span>система</span></div>
                     </div>
                 </div>
-                <p class="fade-in-up max-w-3xl font-sans text-dim text-base md:text-lg leading-relaxed mb-10">Если вам стало интересно, кто стоит за расчётами, системой и подходом — вот путь. Не длинная простыня, а удобная эволюция по этапам: открывайте только то, что хочется прочитать.</p>
+                <p class="fade-in-up max-w-3xl font-sans text-dim text-base md:text-lg leading-relaxed mb-10">За каждым расчётом здесь стоит не шаблон, а путь, где спорт, кризисы, дисциплина, тело и характер пришлось собирать заново. Это не биография ради биографии — это фундамент метода MARKOVMADE: система, которая работает не в идеальных условиях, а в реальной жизни человека.</p>
                 <div class="space-y-4">
                     <article class="evolution-card rounded-sm fade-in-up" style="transition-delay: 0ms;">
                         <button type="button" class="evolution-trigger interactive" onclick="toggleEvolution(this)" aria-expanded="true">
@@ -7010,7 +7146,7 @@ body.theme-light #brand-logic .path-stage-card-diagnostic .path-stage-list li:nt
 
                 <div class="text-center mb-14 fade-in-up max-w-4xl mx-auto lead-application-intro">
                     <p class="font-serif text-2xl md:text-3xl text-platinum leading-snug tracking-wide uppercase mb-4">«Мы не просто меняем тела — мы пересобираем личности»</p>
-                    <p class="font-sans text-sm md:text-base text-gold uppercase tracking-[0.26em]">Заполните короткую заявку.</p>
+                    <p class="guarantee-beacon lead-application-beacon font-sans text-[10px] md:text-[11px] font-black tracking-[0.22em] uppercase text-gold text-center">Заполните короткую заявку.</p>
                     <p class="font-sans text-sm md:text-base text-platinum/70 leading-relaxed max-w-2xl mx-auto mt-5">
                         Можно указать ограничения, травмы, график, особенности восстановления и питания. Я работаю не только с идеальными условиями, а с реальной жизнью, где есть работа, стресс, ограничения и откаты.
                     </p>
