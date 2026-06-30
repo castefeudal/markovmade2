@@ -6120,6 +6120,123 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
 @media (max-width: 640px) { .mm-v15-step { grid-template-columns: 42px 1fr !important; padding: 16px !important; } .mm-v15-step .mm-v13-step-num { font-size: 1.6rem !important; } .mm-v15-card { border-radius: 20px !important; } }
 </style>
 
+
+
+<style id="markovmade-v16-final-lead-polish">
+/* === V16: final lead polish — fewer repeats, stronger CTA, clearer bilingual states === */
+.mm-v16-key {
+    display:inline-flex;
+    align-items:center;
+    margin-right:.45rem;
+    padding:.2rem .5rem;
+    border-radius:999px;
+    border:1px solid rgb(var(--color-gold) / .28);
+    background:rgb(var(--color-gold) / .065);
+    color:rgb(var(--color-gold));
+    font-style:normal;
+    font-family:'Manrope',sans-serif;
+    font-size:.58rem;
+    font-weight:950;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    vertical-align:middle;
+}
+.mm-v15-step-mark {
+    background: linear-gradient(90deg, rgb(var(--color-gold) / .12), transparent 78%);
+    border-bottom: 1px solid rgb(var(--color-gold) / .58);
+    padding: 0 .12em .05em;
+}
+.mm-service-route span {
+    min-height:74px;
+    display:flex !important;
+    flex-direction:column;
+    justify-content:center;
+    gap:.16rem;
+}
+.mm-service-route b {
+    display:inline-flex !important;
+    width:max-content;
+    padding:.18rem .48rem;
+    border-radius:999px;
+    background:rgb(var(--color-gold) / .09);
+    border:1px solid rgb(var(--color-gold) / .22);
+    color:rgb(var(--color-gold)) !important;
+    line-height:1.1;
+}
+.mm-v13-copy strong,
+.mm-v13-card h3,
+.mm-v13-bridge-main h2,
+.mm-v13-quiz h3 { text-wrap: balance; }
+.mm-v13-mini b { font-size:.7rem !important; }
+.mm-v13-quiz-result {
+    border-color: rgb(var(--color-gold) / .18) !important;
+    background: linear-gradient(180deg, rgb(var(--color-gold) / .06), rgba(255,255,255,.018)) !important;
+}
+body.theme-light .mm-v16-key,
+body.theme-light .mm-service-route b {
+    background:rgba(166,124,34,.10);
+    border-color:rgba(166,124,34,.28);
+}
+@media (max-width:720px){
+    .mm-v16-key{margin:.15rem .35rem .2rem 0;}
+    .mm-service-route span{min-height:auto;}
+}
+</style>
+
+<script id="markovmade-v16-dynamic-i18n">
+(function(){
+  'use strict';
+  var exact = {
+    'Нужен мышечный фундамент':'Muscle foundation needed',
+    'Нормальная база':'Normal base',
+    'Атлетичная форма':'Athletic form',
+    'Фитнес-форма':'Fitness form',
+    'Очень сильная мышечная база':'Very strong muscle base',
+    'Экстремально высокий уровень мышечной массы':'Extremely high level of muscle mass',
+    'Умеренный дефицит, силовые 3–5 раз в неделю, шаги и контроль талии раз в 7 дней.':'Moderate deficit, strength training 3–5 times per week, steps and waist control every 7 days.',
+    'Умеренный профицит, прогрессия в базовых движениях и контроль набора жировой массы.':'Moderate surplus, progression in key lifts and control of fat gain.',
+    'Рекомпозиция: белок, силовая прогрессия, умеренная активность и стабильный сон.':'Recomposition: protein, strength progression, moderate activity and stable sleep.',
+    'Поддержание формы без лишней агрессии: восстановление, силовые и контроль энергии.':'Maintenance without excessive aggression: recovery, strength training and energy control.',
+    'Поддержание с точечной коррекцией питания и тренировок по динамике формы.':'Maintenance with precise nutrition and training adjustments based on form dynamics.',
+    'Проверить через 10–14 дней: средний вес за неделю, талию, силовые и самочувствие.':'Check after 10–14 days: weekly average weight, waist, strength and well-being.',
+    'Главный риск — переоценить мотивацию и недооценить среду. Упростите минимум действия.':'The main risk is overestimating motivation and underestimating environment. Simplify the minimum action.',
+    'Сначала выполните расчёт на сайте MARKOVMADE.':'Run the MARKOVMADE assessment first.'
+  };
+  var parts = [
+    ['Жир:', 'Fat:'], ['жир —', 'body fat —'], ['жир ', 'body fat '], ['жировой массы', 'fat mass'], ['жировая масса', 'fat mass'], ['Жировая масса', 'Fat mass'],
+    ['Точность модели:', 'Model accuracy:'], ['точность модели:', 'model accuracy:'], ['кг','kg'], ['ккал','kcal'],
+    ['указан вручную','entered manually'], ['оценка Navy method','Navy method estimate'], ['модельная оценка из-за нехватки данных','model estimate due to insufficient data'],
+    ['больше углеводов вокруг тренировки.','more carbs around training.'], ['чуть ниже калории, белок оставить стабильным.','slightly lower calories, keep protein stable.'],
+    ['белки —','protein —'], ['жиры —','fats —'], ['углеводы —','carbs —'], ['Тренировочный день','Training day'], ['день отдыха','rest day'],
+    ['мужчина','male'], ['женщина','female'], ['сухая масса','lean mass'], ['Сухая масса','Lean mass'], ['Результат:','Result:'], ['Мои данные:','My data:'], ['Статус:','Status:'],
+    ['Здравствуйте, Павел. Я прошёл расчёт на сайте MARKOVMADE.','Hello, Pavel. I completed the MARKOVMADE assessment.'], ['Хочу получить разбор и понять, какая стратегия мне подойдёт.','I want an audit and to understand which strategy fits me.']
+  ];
+  function isEn(){
+    try { return document.documentElement.lang === 'en' || localStorage.getItem('markovmade_lang') === 'en'; } catch(e){ return document.documentElement.lang === 'en'; }
+  }
+  window.__mmDynamicTranslate = function(value){
+    var s = String(value == null ? '' : value);
+    if (!isEn()) return s;
+    if (exact[s]) return exact[s];
+    parts.forEach(function(pair){ s = s.split(pair[0]).join(pair[1]); });
+    return s;
+  };
+  function applyVisibleCalcLang(){
+    var ids=['body-status','body-strong','body-weak','body-strategy','body-accuracy','nutri-training-day','nutri-rest-day','nutri-check','nutrition-accuracy','recovery-accuracy','growth-risk'];
+    ids.forEach(function(id){
+      var el=document.getElementById(id);
+      if(!el) return;
+      if(!el.dataset.ruDynamicText) el.dataset.ruDynamicText=el.textContent || '';
+      el.textContent = isEn() ? window.__mmDynamicTranslate(el.dataset.ruDynamicText) : el.dataset.ruDynamicText;
+    });
+  }
+  window.__mmApplyVisibleCalcLang = applyVisibleCalcLang;
+  document.addEventListener('click', function(e){
+    if(e.target && e.target.closest && e.target.closest('[data-lang-toggle]')) setTimeout(applyVisibleCalcLang, 140);
+  }, true);
+})();
+</script>
+
 </head>
 
 <body class="bg-obsidian antialiased selection:bg-gold selection:text-obsidian">
@@ -6330,25 +6447,25 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
 
         <!-- CALCULATORS / РАСЧЁТ -->
         
-<section id="decision-hub" class="mm-v13-section mm-v15-section py-18 md:py-24" data-insight="Человек быстрее оставляет заявку, когда узнаёт себя и видит конкретную пользу.">
+<section id="decision-hub" class="mm-v13-section mm-v15-section py-18 md:py-24" data-insight="Чёткая заявка появляется там, где человек узнаёт свою ситуацию и видит следующий шаг.">
   <div class="mm-v13-inner">
     <div class="mm-v13-hero-panel mm-v15-hero-panel fade-in-up">
       <div class="mm-v13-head" style="margin-bottom:28px">
         <span class="mm-v13-kicker">Кому это нужно</span>
-        <h2 class="mm-v13-title">Если вы узнаёте себя — разбор уже <span class="mm-v13-goldline">экономит месяцы хаоса</span>.</h2>
-        <p class="mm-v13-copy">Я работаю с теми, кто устал собирать форму на догадках: тренировки есть, питание вроде есть, желание есть — но нет ясной системы, которая выдерживает реальный режим, стресс, откаты и ограничения.</p>
+        <h2 class="mm-v13-title">Узнали себя? Значит, пора перестать <span class="mm-v13-goldline">чинить форму вслепую</span>.</h2>
+        <p class="mm-v13-copy">Я работаю с теми, кто хочет не очередной рывок на мотивации, а трезвый разбор: что реально тормозит форму, где теряется ресурс и какой первый шаг даст заметный сдвиг.</p>
         <div class="mm-v13-chipline mm-v15-chipline" aria-label="Ситуации, с которыми приходят">
-          <span class="mm-v13-chip">форма стоит</span><span class="mm-v13-chip">режим ломается</span><span class="mm-v13-chip">питание плавает</span><span class="mm-v13-chip">нет контроля</span><span class="mm-v13-chip">срывы повторяются</span><span class="mm-v13-chip">нужен личный маршрут</span>
+          <span class="mm-v13-chip">форма не двигается</span><span class="mm-v13-chip">энергии мало</span><span class="mm-v13-chip">питание нестабильно</span><span class="mm-v13-chip">режим проседает</span><span class="mm-v13-chip">нет внешнего взгляда</span><span class="mm-v13-chip">нужна точная настройка</span>
         </div>
       </div>
       <div class="mm-v13-grid three mm-v15-tight-grid">
-        <article class="mm-v13-card mm-v15-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="M12 4v16"/><circle cx="12" cy="12" r="7"/></svg></span><h3>Вы не понимаете, что тормозит</h3><p>Вес, форма, энергия или дисциплина стоят на месте — и уже непонятно, проблема в питании, тренировках, восстановлении или режиме.</p></article>
-        <article class="mm-v13-card mm-v15-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V5"/><path d="M5 19h14"/><path d="M8 16l3-4 3 2 4-7"/></svg></span><h3>Система не держится</h3><p>Вы начинаете сильно, но жизнь возвращает хаос: работа, сон, стресс, поездки, срывы и отсутствие понятных правил коррекции.</p></article>
-        <article class="mm-v13-card mm-v15-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Нужен взгляд со стороны</h3><p>Не общий шаблон, а честный разбор вашей ситуации: что убрать, что оставить, что делать первым и какой формат даст самый быстрый сдвиг.</p></article>
+        <article class="mm-v13-card mm-v15-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="M12 4v16"/><circle cx="12" cy="12" r="7"/></svg></span><h3>Непонятно, где слабое звено</h3><p>Форма не меняется, хотя усилия есть. Нужно отделить реальную причину от ощущения: питание, нагрузка, сон, стресс или стратегия.</p></article>
+        <article class="mm-v13-card mm-v15-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V5"/><path d="M5 19h14"/><path d="M8 16l3-4 3 2 4-7"/></svg></span><h3>Рывки не складываются в результат</h3><p>Старт есть, но темп быстро падает. Нужны правила, которые выдерживают работу, усталость, поездки и обычные человеческие откаты.</p></article>
+        <article class="mm-v13-card mm-v15-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Нужна честная настройка курса</h3><p>Не универсальный шаблон, а точная настройка: что убрать, что усилить, где не тратить ресурс и с чего начать без лишнего давления.</p></article>
       </div>
       <div class="mm-v13-cta-row" style="justify-content:center">
-        <a href="#calculators" class="mm-v13-cta interactive" data-analytics="v15_hub_calculators">Понять свою точку А</a>
-        <a href="#contact" class="mm-v13-cta secondary interactive" data-analytics="v15_hub_contact">Оставить заявку на разбор</a>
+        <a href="#calculators" class="mm-v13-cta interactive" data-analytics="v15_hub_calculators">Увидеть свою ситуацию</a>
+        <a href="#contact" class="mm-v13-cta secondary interactive" data-analytics="v15_hub_contact">Хочу персональный разбор</a>
       </div>
     </div>
   </div>
@@ -6972,17 +7089,17 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
     <div class="mm-v13-bridge mm-v15-bridge fade-in-up">
       <div class="mm-v13-bridge-main mm-v15-bridge-main">
         <span class="mm-v13-kicker">После расчёта</span>
-        <h2>Расчёт показал факты. Я превращаю их в решение.</h2>
-        <p>Сами по себе FFMI, КБЖУ, восстановление и динамика ничего не меняют. Ценность начинается там, где цифры превращаются в приоритеты: что делать первым, что контролировать, где риск отката и какой формат работы подходит под ваш режим.</p>
+        <h2>Цифры уже есть. Теперь им нужен смысл и действие.</h2>
+        <p>Расчёт показывает не финальный ответ, а карту входа. Я помогаю понять, какие показатели важны сейчас, где не стоит давить сильнее и какой шаг даст максимальную отдачу без перегруза.</p>
         <div class="mm-v13-cta-row">
-          <a href="#contact" class="mm-v13-cta interactive" data-analytics="v15_calc_contact">Разобрать мои показатели</a>
-          <a href="#services" class="mm-v13-cta secondary interactive" data-analytics="v15_calc_services">Выбрать формат работы</a>
+          <a href="#contact" class="mm-v13-cta interactive" data-analytics="v15_calc_contact">Разобрать мои цифры</a>
+          <a href="#services" class="mm-v13-cta secondary interactive" data-analytics="v15_calc_services">Подобрать формат</a>
         </div>
       </div>
       <div class="mm-v13-mini-list mm-v15-mini-list">
-        <div class="mm-v13-mini"><b>Показатели</b>Что говорят цифры о теле, питании и восстановлении.</div>
-        <div class="mm-v13-mini"><b>Приоритет</b>Что даст сдвиг быстрее всего без перегруза.</div>
-        <div class="mm-v13-mini"><b>Контроль</b>Что отслеживать, чтобы результат не развалился по дороге.</div>
+        <div class="mm-v13-mini"><b>Сигналы</b>Что тело уже показывает через вес, форму, сон и энергию.</div>
+        <div class="mm-v13-mini"><b>Решение</b>Куда направить усилия, чтобы не сливать ресурс впустую.</div>
+        <div class="mm-v13-mini"><b>Опора</b>Какие метрики держат курс, когда мотивация проседает.</div>
       </div>
     </div>
   </div>
@@ -7021,7 +7138,7 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
                             <div class="flex flex-col gap-2 md:w-1/2">
                                 <h3 class="font-serif text-2xl md:text-3xl text-platinum group-hover:text-gold transition-colors duration-300">💪 Архитектура Мужской Силы</h3>
                                 <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300 service-header-sub">Построение тела, которое вызывает уважение без слов. Силовой и функциональный тренинг, питание и мышление в одной системе.</p>
-                                <div class="mm-service-route"><span><b>Для кого:</b>если нужен старт без хаоса и тело, которое говорит за вас.</span><span><b>Результат:</b>точка А, силовой маршрут, питание и первые действия под ваш режим.</span></div>
+                                <div class="mm-service-route"><span><b>Подходит:</b>если нужен старт без хаоса и тело, которое говорит за вас.</span><span><b>На выходе:</b>точка А, силовой маршрут, питание и первые действия под ваш режим.</span></div>
                             </div>
                             <div class="md:w-1/4 flex justify-end">
                                 <div class="rotate-icon w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-gold/50 transition-colors duration-300">
@@ -7070,7 +7187,7 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
                             <div class="flex flex-col gap-2 md:w-1/2">
                                 <h3 class="font-serif text-2xl md:text-3xl text-platinum group-hover:text-gold transition-colors duration-300">✨ Скульптура Тела & Женственность</h3>
                                 <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300 service-header-sub">Умный подход к стройности, качеству тела и самочувствию без изнурительных диет, хаоса и вечных откатов.</p>
-                                <div class="mm-service-route"><span><b>Для кого:</b>если нужен результат без голодовок, вины и бесконечных срывов.</span><span><b>Результат:</b>стройность, контроль питания, понятная динамика и спокойная работа с телом.</span></div>
+                                <div class="mm-service-route"><span><b>Подходит:</b>если нужен результат без голодовок, вины и бесконечных срывов.</span><span><b>На выходе:</b>стройность, контроль питания, понятная динамика и спокойная работа с телом.</span></div>
                             </div>
                             <div class="md:w-1/4 flex justify-end">
                                 <div class="rotate-icon w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-gold/50 transition-colors duration-300">
@@ -7119,7 +7236,7 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
                             <div class="flex flex-col gap-2 md:w-1/2">
                                 <h3 class="font-serif text-2xl md:text-3xl text-platinum group-hover:text-gold transition-colors duration-300">🥗 Клиническая Нутрициология</h3>
                                 <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300 service-header-sub">Биохимия продуктивности: питание, дефициты, энергия, кожа и восстановление через систему, а не случайные советы.</p>
-                                <div class="mm-service-route"><span><b>Для кого:</b>если питание, энергия, кожа и самочувствие требуют точной настройки.</span><span><b>Результат:</b>понятная стратегия питания, восстановления и контроля состояния.</span></div>
+                                <div class="mm-service-route"><span><b>Подходит:</b>если питание, энергия, кожа и самочувствие требуют точной настройки.</span><span><b>На выходе:</b>понятная стратегия питания, восстановления и контроля состояния.</span></div>
                             </div>
                             <div class="md:w-1/4 flex justify-end">
                                 <div class="rotate-icon w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-gold/50 transition-colors duration-300">
@@ -7168,7 +7285,7 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
                             <div class="flex flex-col gap-2 md:w-1/2">
                                 <h3 class="font-serif text-2xl md:text-3xl text-platinum group-hover:text-gold transition-colors duration-300">🧠 Психология & Менторство</h3>
                                 <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300 service-header-sub">Честный диалог для сильных решений: цели, режим, дисциплина, кризисы и масштаб личности без пустой мотивации.</p>
-                                <div class="mm-service-route"><span><b>Для кого:</b>если нужно собрать тело, режим, мышление и цели в одну траекторию.</span><span><b>Результат:</b>приоритеты, ясность, дисциплина и движение без распада.</span></div>
+                                <div class="mm-service-route"><span><b>Подходит:</b>если нужно собрать тело, режим, мышление и цели в одну траекторию.</span><span><b>На выходе:</b>приоритеты, ясность, дисциплина и движение без распада.</span></div>
                             </div>
                             <div class="md:w-1/4 flex justify-end">
                                 <div class="rotate-icon w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-gold/50 transition-colors duration-300">
@@ -7230,21 +7347,21 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
   <div class="mm-v13-inner">
     <div class="mm-v13-head fade-in-up">
       <span class="mm-v13-kicker">Как это работает</span>
-      <h2 class="mm-v13-title">Меньше шума. Больше ясности, контроля и действия.</h2>
-      <p class="mm-v13-copy">Я не продаю ощущение «новой жизни с понедельника». Я быстро собираю вашу ситуацию в понятную систему: где вы сейчас, что мешает, что делать первым и как не потерять результат, когда начинается реальная жизнь.</p>
+      <h2 class="mm-v13-title">Коротко, честно и по делу: от вводных к понятному решению.</h2>
+      <p class="mm-v13-copy">Я не растягиваю путь и не упаковываю очевидное в сложные слова. Моя работа — быстро увидеть главное, отсечь лишнее и собрать такой порядок действий, который можно выполнять в вашей реальной жизни.</p>
     </div>
     <div class="mm-v13-process mm-v15-process">
       <div class="mm-v13-steps mm-v15-steps fade-in-up">
-        <div class="mm-v13-step mm-v15-step"><span class="mm-v13-step-num">01</span><div><strong><span class="mm-v15-step-mark">Вы оставляете вводные</span></strong><span>Цель, проблема, ограничения, график, питание и тренировки — я вижу не абстрактное «хочу форму», а вашу реальную ситуацию.</span></div></div>
-        <div class="mm-v13-step mm-v15-step"><span class="mm-v13-step-num">02</span><div><strong><span class="mm-v15-step-mark">Я разбираю точку А</span></strong><span>По фактам: тело, питание, восстановление, дисциплина, риски и слабые места — становится понятно, что исправлять первым.</span></div></div>
-        <div class="mm-v13-step mm-v15-step"><span class="mm-v13-step-num">03</span><div><strong><span class="mm-v15-step-mark">Собираем маршрут</span></strong><span>Первые действия, контрольные точки, формат работы и корректировки под реальность — чтобы путь не рассыпался после первого отката.</span></div></div>
+        <div class="mm-v13-step mm-v15-step"><span class="mm-v13-step-num">01</span><div><strong><span class="mm-v15-step-mark">Вы оставляете вводные</span></strong><span><em class="mm-v16-key">контекст</em> цель, ограничения, график, питание, тренировки и главный стопор — без лишних анкет и воды.</span></div></div>
+        <div class="mm-v13-step mm-v15-step"><span class="mm-v13-step-num">02</span><div><strong><span class="mm-v15-step-mark">Я разбираю точку А</span></strong><span><em class="mm-v16-key">диагностика</em> смотрю на тело, режим, восстановление, питание и поведение — становится видно, где теряется результат.</span></div></div>
+        <div class="mm-v13-step mm-v15-step"><span class="mm-v13-step-num">03</span><div><strong><span class="mm-v15-step-mark">Собираем маршрут</span></strong><span><em class="mm-v16-key">маршрут</em> первые действия, точки контроля и формат работы — чтобы движение было не жёстким, а управляемым.</span></div></div>
       </div>
       <div class="fade-in-up">
         <div class="mm-v13-compare mm-v15-compare">
-          <div class="mm-v13-col"><h3>До</h3><div class="mm-v13-row">Догадки и распыление</div><div class="mm-v13-row">Питание без правил</div><div class="mm-v13-row">Откаты после стресса</div><div class="mm-v13-row">Мотивация вместо контроля</div></div>
-          <div class="mm-v13-col"><h3>После</h3><div class="mm-v13-row">Ясная точка А</div><div class="mm-v13-row">Первые действия</div><div class="mm-v13-row">Корректировки под жизнь</div><div class="mm-v13-row">Система, которую можно удержать</div></div>
+          <div class="mm-v13-col"><h3>До</h3><div class="mm-v13-row">Слепые попытки</div><div class="mm-v13-row">Разрозненные действия</div><div class="mm-v13-row">Срыв курса при нагрузке</div><div class="mm-v13-row">Ставка на настроение</div></div>
+          <div class="mm-v13-col"><h3>После</h3><div class="mm-v13-row">Понятная картина</div><div class="mm-v13-row">Точный старт</div><div class="mm-v13-row">Настройки по факту</div><div class="mm-v13-row">План, который держится</div></div>
         </div>
-        <div class="mm-v13-promise mm-v15-promise"><b>Без инфобизнесовой магии:</b> я не обещаю чудо за 7 дней. Я даю ясность, систему, честную обратную связь и корректировки, которые помогают двигаться по фактам, а не по настроению.</div>
+        <div class="mm-v13-promise mm-v15-promise"><b>Без инфобизнесовой магии:</b> я не обещаю чудо за 7 дней. Я даю трезвую оценку, понятный порядок действий, честную обратную связь и корректировки, которые возвращают движение, когда идеальные условия заканчиваются.</div>
       </div>
     </div>
   </div>
@@ -7635,14 +7752,14 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
                     <p class="font-serif text-2xl md:text-3xl text-platinum leading-snug tracking-wide uppercase mb-4">«Мы не просто меняем тела — мы пересобираем личности»</p>
                     <p class="guarantee-beacon lead-application-beacon font-sans text-[10px] md:text-[11px] font-black tracking-[0.22em] uppercase text-gold text-center">Заполните короткую заявку.</p>
                     <p class="font-sans text-sm md:text-base text-platinum/70 leading-relaxed max-w-2xl mx-auto mt-5">
-                        Можно указать ограничения, травмы, график, особенности восстановления и питания. Я работаю не только с идеальными условиями, а с реальной жизнью, где есть работа, стресс, ограничения и откаты.
+                        Опишите цель, ограничения, график и главный стопор. Этого достаточно, чтобы я увидел ситуацию не в теории, а в вашей реальности — и предложил точный следующий шаг.
                     </p>
                 </div>
 
                 
 <div id="request-quiz" class="mm-v13-quiz fade-in-up">
   <h3>Соберите заявку за 7 секунд</h3>
-  <p>Выберите главное — и я сразу вижу цель, проблему и точку входа. Заявка становится не общей, а конкретной.</p>
+  <p>Отметьте цель и главный стопор — заявка сразу становится конкретной, а не общей фразой «хочу привести себя в форму».</p>
   <div class="mm-v13-quiz-label">Главная цель</div>
   <div class="mm-v13-quiz-grid" data-quiz-group="goal">
     <button type="button" class="mm-v13-option interactive" data-value="снизить вес">снизить вес</button>
@@ -7661,7 +7778,7 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
     <button type="button" class="mm-v13-option interactive" data-value="стресс">стресс</button>
     <button type="button" class="mm-v13-option interactive" data-value="нехватка времени">нехватка времени</button>
   </div>
-  <div class="mm-v13-quiz-result" id="quiz-summary">Выберите пункты выше — и заявка станет точнее.</div>
+  <div class="mm-v13-quiz-result" id="quiz-summary">Отметьте пункты выше — и я получу нормальный контекст для ответа.</div>
   <div class="mm-v13-cta-row" style="justify-content:center;margin-top:20px">
     <a id="quiz-telegram-link" href="https://t.me/markovmade?text=Здравствуйте!%20Хочу%20разобрать%20мою%20ситуацию%20и%20понять%20формат%20работы%20MARKOVMADE." target="_blank" class="mm-v13-cta interactive" data-analytics="v13_quiz_telegram">Отправить заявку в Telegram</a>
     <a href="https://wa.me/79819722516" target="_blank" class="mm-v13-cta secondary interactive" data-analytics="v13_quiz_whatsapp">Написать в WhatsApp</a>
@@ -8443,7 +8560,10 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
 
         function setText(id, value) {
             const el = document.getElementById(id);
-            if (el) el.textContent = value;
+            if (el) {
+                el.dataset.ruDynamicText = String(value == null ? '' : value);
+                el.textContent = (typeof window.__mmDynamicTranslate === 'function') ? window.__mmDynamicTranslate(value) : value;
+            }
         }
 
         function setHTML(id, value) {
@@ -9806,8 +9926,8 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
         ? 'Hello! I want a MARKOVMADE audit. Goal: '+(goals.length?goals.join(', '):defaultGoal)+'. Blocker: '+(blockers.length?blockers.join(', '):defaultBlocker)+'. I want to understand my point A, work format and first actions.'
         : 'Здравствуйте! Хочу разбор MARKOVMADE. Цель: '+(goals.length?goals.join(', '):defaultGoal)+'. Мешает: '+(blockers.length?blockers.join(', '):defaultBlocker)+'. Хочу понять точку А, формат работы и первые действия.';
       if(summary) summary.textContent=en
-        ? 'Request assembled: goal — '+(goals.length?goals.join(', '):emptyGoal)+'; blocker — '+(blockers.length?blockers.join(', '):emptyBlocker)+'.'
-        : 'Заявка собрана: цель — '+(goals.length?goals.join(', '):emptyGoal)+'; мешает — '+(blockers.length?blockers.join(', '):emptyBlocker)+'.';
+        ? 'Request context: goal — '+(goals.length?goals.join(', '):emptyGoal)+'; blocker — '+(blockers.length?blockers.join(', '):emptyBlocker)+'.'
+        : 'Контекст заявки: цель — '+(goals.length?goals.join(', '):emptyGoal)+'; стопор — '+(blockers.length?blockers.join(', '):emptyBlocker)+'.';
       if(tg) tg.href='https://t.me/markovmade?text='+encodeURIComponent(text);
     }
     window.mmV13QuizUpdate = update;
@@ -10267,7 +10387,7 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
   "Правильное окружение и нетворкинг. Здесь ваши идеи находят поддержку и реальное воплощение.": "The right environment and networking. Here your ideas find support and real implementation.",
   "«Мы не просто меняем тела — мы пересобираем личности»": "“We do not just change bodies — we rebuild personalities”",
   "Заполните короткую заявку.": "Fill out a short request.",
-  "Можно указать ограничения, травмы, график, особенности восстановления и питания. Я работаю не только с идеальными условиями, а с реальной жизнью, где есть работа, стресс, ограничения и откаты.": "You can specify limitations, injuries, schedule, recovery, and nutrition specifics. I work not only with ideal conditions, but with real life — work, stress, limitations, and setbacks.",
+  "Опишите цель, ограничения, график и главный стопор. Этого достаточно, чтобы я увидел ситуацию не в теории, а в вашей реальности — и предложил точный следующий шаг.": "You can specify limitations, injuries, schedule, recovery, and nutrition specifics. I work not only with ideal conditions, but with real life — work, stress, limitations, and setbacks.",
   "Имя / контакт": "Name / contact",
   "Добавить рост / вес / возраст / опыт": "Add height / weight / age / experience",
   "Необязательно": "Optional",
@@ -10445,7 +10565,7 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
   'Выбрать первые действия, которые можно удержать.': 'Choose first actions you can actually sustain.',
   'Не бросать': 'Do not quit',
   'Корректировать питание, тренировки и режим по факту.': 'Adjust nutrition, training and routine based on facts.',
-  'Разобрать мои показатели': 'Analyze my numbers',
+  'Разобрать мои цифры': 'Analyze my numbers',
   'Выбрать формат': 'Choose format',
   'Для кого:': 'For whom:',
   'Результат:': 'Result:',
@@ -10478,7 +10598,7 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
   'Без ложной магии:': 'No false magic:',
   'я не обещаю чудо за 7 дней. Я даю систему, честную обратную связь, контроль и корректировки, которые помогают удерживать результат в реальной жизни.': 'I do not promise a miracle in 7 days. I give a system, honest feedback, control and adjustments that help hold results in real life.',
   'Соберите заявку за 7 секунд': 'Build your request in 7 seconds',
-  'Выберите главное — и я сразу вижу цель, проблему и точку входа. Заявка становится не общей, а конкретной.': 'Choose the key points — and I immediately see your goal, problem and entry point. The request becomes specific instead of generic.',
+  'Отметьте цель и главный стопор — заявка сразу становится конкретной, а не общей фразой «хочу привести себя в форму».': 'Choose the key points — and I immediately see your goal, problem and entry point. The request becomes specific instead of generic.',
   'Главная цель': 'Main goal',
   'Что мешает': 'What blocks you',
   'снизить вес': 'lose weight',
@@ -10492,7 +10612,7 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
   'нет понимания': 'no clarity',
   'стресс': 'stress',
   'нехватка времени': 'lack of time',
-  'Выберите пункты выше — и заявка станет точнее.': 'Choose the points above — and your request becomes more precise.',
+  'Отметьте пункты выше — и я получу нормальный контекст для ответа.': 'Choose the points above — and your request becomes more precise.',
   'Отправить заявку в Telegram': 'Send request in Telegram',
   'Написать в WhatsApp': 'Write on WhatsApp',
   'Построение тела, которое вызывает уважение без слов. Силовой и функциональный тренинг, питание и мышление в одной системе.': 'Building a body that earns respect without words. Strength and functional training, nutrition and mindset in one system.',
@@ -10503,27 +10623,27 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
   'Если вы узнаёте себя — разбор уже': 'If you recognize yourself here, the audit already',
   'Если вы узнаёте себя — разбор уже экономит месяцы хаоса.': 'If you recognize yourself here, the audit already saves months of chaos.',
   'экономит месяцы хаоса': 'saves months of chaos',
-  'Я работаю с теми, кто устал собирать форму на догадках: тренировки есть, питание вроде есть, желание есть — но нет ясной системы, которая выдерживает реальный режим, стресс, откаты и ограничения.': 'I work with people who are tired of building their shape on guesses: training exists, nutrition sort of exists, the desire is there — but there is no clear system that survives real routine, stress, setbacks and limitations.',
+  'Я работаю с теми, кто хочет не очередной рывок на мотивации, а трезвый разбор: что реально тормозит форму, где теряется ресурс и какой первый шаг даст заметный сдвиг.': 'I work with people who are tired of building their shape on guesses: training exists, nutrition sort of exists, the desire is there — but there is no clear system that survives real routine, stress, setbacks and limitations.',
   'форма стоит': 'stuck shape',
-  'Вы не понимаете, что тормозит': 'You do not see what blocks you',
-  'Вес, форма, энергия или дисциплина стоят на месте — и уже непонятно, проблема в питании, тренировках, восстановлении или режиме.': 'Weight, shape, energy or discipline are stuck — and it is no longer clear whether the issue is nutrition, training, recovery or routine.',
-  'Система не держится': 'The system does not hold',
-  'Вы начинаете сильно, но жизнь возвращает хаос: работа, сон, стресс, поездки, срывы и отсутствие понятных правил коррекции.': 'You start strong, but life brings chaos back: work, sleep, stress, travel, breakdowns and no clear rules for adjustment.',
-  'Нужен взгляд со стороны': 'You need an outside view',
-  'Не общий шаблон, а честный разбор вашей ситуации: что убрать, что оставить, что делать первым и какой формат даст самый быстрый сдвиг.': 'Not a generic template, but an honest audit of your situation: what to remove, what to keep, what to do first and which format creates the fastest shift.',
-  'Понять свою точку А': 'Understand my point A',
-  'Оставить заявку на разбор': 'Request an audit',
-  'Расчёт показал факты. Я превращаю их в решение.': 'The assessment showed the facts. I turn them into a decision.',
-  'Сами по себе FFMI, КБЖУ, восстановление и динамика ничего не меняют. Ценность начинается там, где цифры превращаются в приоритеты: что делать первым, что контролировать, где риск отката и какой формат работы подходит под ваш режим.': 'FFMI, macros, recovery and dynamics change nothing by themselves. Value starts when numbers become priorities: what to do first, what to control, where the setback risk is and which work format fits your routine.',
-  'Выбрать формат работы': 'Choose work format',
+  'Непонятно, где слабое звено': 'You do not see what blocks you',
+  'Форма не меняется, хотя усилия есть. Нужно отделить реальную причину от ощущения: питание, нагрузка, сон, стресс или стратегия.': 'Weight, shape, energy or discipline are stuck — and it is no longer clear whether the issue is nutrition, training, recovery or routine.',
+  'Рывки не складываются в результат': 'The system does not hold',
+  'Старт есть, но темп быстро падает. Нужны правила, которые выдерживают работу, усталость, поездки и обычные человеческие откаты.': 'You start strong, but life brings chaos back: work, sleep, stress, travel, breakdowns and no clear rules for adjustment.',
+  'Нужна честная настройка курса': 'You need an outside view',
+  'Не универсальный шаблон, а точная настройка: что убрать, что усилить, где не тратить ресурс и с чего начать без лишнего давления.': 'Not a generic template, but an honest audit of your situation: what to remove, what to keep, what to do first and which format creates the fastest shift.',
+  'Увидеть свою ситуацию': 'Understand my point A',
+  'Хочу персональный разбор': 'Request an audit',
+  'Цифры уже есть. Теперь им нужен смысл и действие.': 'The assessment showed the facts. I turn them into a decision.',
+  'Расчёт показывает не финальный ответ, а карту входа. Я помогаю понять, какие показатели важны сейчас, где не стоит давить сильнее и какой шаг даст максимальную отдачу без перегруза.': 'FFMI, macros, recovery and dynamics change nothing by themselves. Value starts when numbers become priorities: what to do first, what to control, where the setback risk is and which work format fits your routine.',
+  'Подобрать формат': 'Choose work format',
   'Показатели': 'Indicators',
   'Что говорят цифры о теле, питании и восстановлении.': 'What the numbers say about body, nutrition and recovery.',
   'Приоритет': 'Priority',
   'Что даст сдвиг быстрее всего без перегруза.': 'What creates the fastest shift without overload.',
   'Контроль': 'Control',
   'Что отслеживать, чтобы результат не развалился по дороге.': 'What to track so the result does not fall apart on the way.',
-  'Меньше шума. Больше ясности, контроля и действия.': 'Less noise. More clarity, control and action.',
-  'Я не продаю ощущение «новой жизни с понедельника». Я быстро собираю вашу ситуацию в понятную систему: где вы сейчас, что мешает, что делать первым и как не потерять результат, когда начинается реальная жизнь.': 'I do not sell the feeling of a “new life from Monday.” I quickly organize your situation into a clear system: where you are now, what blocks you, what to do first and how not to lose the result when real life begins.',
+  'Коротко, честно и по делу: от вводных к понятному решению.': 'Less noise. More clarity, control and action.',
+  'Я не растягиваю путь и не упаковываю очевидное в сложные слова. Моя работа — быстро увидеть главное, отсечь лишнее и собрать такой порядок действий, который можно выполнять в вашей реальной жизни.': 'I do not sell the feeling of a “new life from Monday.” I quickly organize your situation into a clear system: where you are now, what blocks you, what to do first and how not to lose the result when real life begins.',
   'Цель, проблема, ограничения, график, питание и тренировки — я вижу не абстрактное «хочу форму», а вашу реальную ситуацию.': 'Goal, problem, limitations, schedule, nutrition and training — I see not an abstract “I want shape,” but your real situation.',
   'По фактам: тело, питание, восстановление, дисциплина, риски и слабые места — становится понятно, что исправлять первым.': 'Based on facts: body, nutrition, recovery, discipline, risks and weak spots — it becomes clear what to fix first.',
   'Первые действия, контрольные точки, формат работы и корректировки под реальность — чтобы путь не рассыпался после первого отката.': 'First actions, control points, work format and adjustments to reality — so the path does not fall apart after the first setback.',
@@ -10534,8 +10654,63 @@ body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-g
   'Первые действия': 'First actions',
   'Система, которую можно удержать': 'A system you can sustain',
   'Без инфобизнесовой магии:': 'No infobusiness magic:',
-  'я не обещаю чудо за 7 дней. Я даю ясность, систему, честную обратную связь и корректировки, которые помогают двигаться по фактам, а не по настроению.': 'I do not promise a miracle in 7 days. I give clarity, a system, honest feedback and adjustments that help you move by facts, not by mood.',
-  "Скопировано": "Copied"
+  'я не обещаю чудо за 7 дней. Я даю трезвую оценку, понятный порядок действий, честную обратную связь и корректировки, которые возвращают движение, когда идеальные условия заканчиваются.': 'I do not promise a miracle in 7 days. I give clarity, a system, honest feedback and adjustments that help you move by facts, not by mood.',
+  "Скопировано": "Copied",
+  "Чёткая заявка появляется там, где человек узнаёт свою ситуацию и видит следующий шаг.": "A precise request appears when a person recognizes their situation and sees the next step.",
+  "Узнали себя? Значит, пора перестать чинить форму вслепую.": "Recognize yourself here? Then it is time to stop fixing your shape blindly.",
+  "чинить форму вслепую": "fixing your shape blindly",
+  "Я работаю с теми, кто хочет не очередной рывок на мотивации, а трезвый разбор: что реально тормозит форму, где теряется ресурс и какой первый шаг даст заметный сдвиг.": "I work with people who do not need another motivational sprint, but a clear audit: what truly blocks their shape, where resources are leaking, and which first step creates a visible shift.",
+  "форма не двигается": "shape is not moving",
+  "энергии мало": "low energy",
+  "питание нестабильно": "unstable nutrition",
+  "режим проседает": "routine drops",
+  "нет внешнего взгляда": "no outside view",
+  "нужна точная настройка": "needs precise tuning",
+  "Непонятно, где слабое звено": "The weak link is unclear",
+  "Форма не меняется, хотя усилия есть. Нужно отделить реальную причину от ощущения: питание, нагрузка, сон, стресс или стратегия.": "The shape is not changing even though effort exists. The real cause has to be separated from the feeling: nutrition, load, sleep, stress, or strategy.",
+  "Рывки не складываются в результат": "Effort does not add up to results",
+  "Старт есть, но темп быстро падает. Нужны правила, которые выдерживают работу, усталость, поездки и обычные человеческие откаты.": "The start is there, but the pace drops fast. You need rules that survive work, fatigue, travel, and normal human setbacks.",
+  "Нужна честная настройка курса": "You need an honest course correction",
+  "Не универсальный шаблон, а точная настройка: что убрать, что усилить, где не тратить ресурс и с чего начать без лишнего давления.": "Not a universal template, but precise tuning: what to remove, what to strengthen, where not to waste resources, and where to start without extra pressure.",
+  "Увидеть свою ситуацию": "See my situation clearly",
+  "Хочу персональный разбор": "I want a personal audit",
+  "Цифры уже есть. Теперь им нужен смысл и действие.": "The numbers are here. Now they need meaning and action.",
+  "Расчёт показывает не финальный ответ, а карту входа. Я помогаю понять, какие показатели важны сейчас, где не стоит давить сильнее и какой шаг даст максимальную отдачу без перегруза.": "The assessment is not the final answer — it is the entry map. I help you understand which indicators matter now, where not to push harder, and which step creates the highest return without overload.",
+  "Разобрать мои цифры": "Audit my numbers",
+  "Подобрать формат": "Select the format",
+  "Сигналы": "Signals",
+  "Что тело уже показывает через вес, форму, сон и энергию.": "What the body already shows through weight, shape, sleep, and energy.",
+  "Решение": "Decision",
+  "Куда направить усилия, чтобы не сливать ресурс впустую.": "Where to direct effort so resources are not wasted.",
+  "Опора": "Support point",
+  "Какие метрики держат курс, когда мотивация проседает.": "Which metrics keep the course when motivation drops.",
+  "Коротко, честно и по делу: от вводных к понятному решению.": "Short, honest, and direct: from inputs to a clear decision.",
+  "Я не растягиваю путь и не упаковываю очевидное в сложные слова. Моя работа — быстро увидеть главное, отсечь лишнее и собрать такой порядок действий, который можно выполнять в вашей реальной жизни.": "I do not stretch the path or wrap the obvious in complicated words. My work is to quickly see what matters, cut the excess, and assemble an order of action that can be followed in your real life.",
+  "контекст": "context",
+  "цель, ограничения, график, питание, тренировки и главный стопор — без лишних анкет и воды.": "goal, limitations, schedule, nutrition, training, and the main blocker — without endless forms or fluff.",
+  "диагностика": "diagnosis",
+  "смотрю на тело, режим, восстановление, питание и поведение — становится видно, где теряется результат.": "I look at the body, routine, recovery, nutrition, and behavior — it becomes clear where the result is being lost.",
+  "маршрут": "route",
+  "первые действия, точки контроля и формат работы — чтобы движение было не жёстким, а управляемым.": "first actions, control points, and work format — so movement is not rigid, but manageable.",
+  "Слепые попытки": "Blind attempts",
+  "Разрозненные действия": "Scattered actions",
+  "Срыв курса при нагрузке": "Losing course under pressure",
+  "Ставка на настроение": "Relying on mood",
+  "Понятная картина": "Clear picture",
+  "Точный старт": "Precise start",
+  "Настройки по факту": "Fact-based adjustments",
+  "План, который держится": "A plan that holds",
+  "я не обещаю чудо за 7 дней. Я даю трезвую оценку, понятный порядок действий, честную обратную связь и корректировки, которые возвращают движение, когда идеальные условия заканчиваются.": "I do not promise a miracle in 7 days. I give a sober assessment, a clear order of action, honest feedback, and adjustments that restore movement when ideal conditions end.",
+  "Подходит:": "Fits:",
+  "На выходе:": "Outcome:",
+  "Опишите цель, ограничения, график и главный стопор. Этого достаточно, чтобы я увидел ситуацию не в теории, а в вашей реальности — и предложил точный следующий шаг.": "Describe your goal, limitations, schedule, and main blocker. That is enough for me to see the situation not in theory, but in your reality — and suggest the precise next step.",
+  "Отметьте цель и главный стопор — заявка сразу становится конкретной, а не общей фразой «хочу привести себя в форму».": "Mark your goal and main blocker — the request becomes specific instead of a generic “I want to get in shape.”",
+  "Отметьте пункты выше — и я получу нормальный контекст для ответа.": "Mark the points above — and I get proper context for a reply.",
+  "Контекст заявки: цель —": "Request context: goal —",
+  "стопор —": "blocker —",
+  "Жир:": "Fat:",
+  "Жир": "Fat",
+  "жир": "body fat"
 };
     var ATTR_DICT = {
   "Сменить тему: тёмная / светлая": "Switch theme: dark / light",
