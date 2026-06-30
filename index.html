@@ -5981,256 +5981,116 @@ body.theme-soft .hero-gold-emphasis::after {
 </style>
 
 
-
-<style id="markovmade-conversion-v12-css">
-/* === V12 CONVERSION SYSTEM: recognition -> clarity -> format -> request === */
-.mm-conversion-section {
-    position: relative;
-    overflow: hidden;
-    background: rgb(var(--bg-obsidian));
-    color: rgb(var(--text-platinum));
-    border-top: 1px solid rgb(var(--color-gold) / .12);
-}
-.mm-conversion-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background:
-        radial-gradient(circle at 15% 10%, rgb(var(--color-gold) / .08), transparent 32%),
-        radial-gradient(circle at 85% 80%, rgba(255,255,255,.035), transparent 36%);
-    opacity: .9;
-}
-.mm-section-inner { position: relative; z-index: 2; width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
-.mm-section-head { max-width: 820px; margin: 0 auto 48px; text-align: center; }
-.mm-kicker {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 34px;
-    padding: .55rem .95rem;
-    margin-bottom: 1.25rem;
-    border: 1px solid rgb(var(--color-gold) / .26);
-    border-radius: 999px;
-    color: rgb(var(--color-gold));
-    background: rgb(var(--color-gold) / .045);
-    font-family: 'Manrope', sans-serif;
-    font-size: .62rem;
-    font-weight: 900;
-    letter-spacing: .22em;
-    text-transform: uppercase;
-}
-.mm-section-title {
-    font-family: 'Cormorant Garamond', 'Tenor Sans', serif;
-    font-size: clamp(2.45rem, 5.5vw, 5.35rem);
-    line-height: .98;
-    letter-spacing: -.045em;
-    color: rgb(var(--text-platinum));
-    margin: 0 0 1.25rem;
-    text-wrap: balance;
-}
-.mm-section-copy {
-    font-family: 'Manrope', sans-serif;
-    font-size: clamp(.98rem, 1.6vw, 1.18rem);
-    line-height: 1.78;
-    color: rgb(var(--text-platinum) / .74);
-    margin: 0 auto;
-    max-width: 780px;
-}
-.mm-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-.mm-card-grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.mm-card-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.mm-premium-card {
-    position: relative;
-    min-height: 100%;
-    border: 1px solid rgba(255,255,255,.08);
-    background: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.014));
-    border-radius: 24px;
-    padding: 28px;
-    box-shadow: 0 28px 90px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.04);
-    transition: transform .35s ease, border-color .35s ease, background .35s ease;
-}
-.mm-premium-card:hover { transform: translateY(-4px); border-color: rgb(var(--color-gold) / .36); background: linear-gradient(180deg, rgb(var(--color-gold) / .055), rgba(255,255,255,.018)); }
-.mm-card-icon {
-    width: 44px; height: 44px; border-radius: 999px;
-    display: inline-flex; align-items: center; justify-content: center;
-    color: rgb(var(--color-gold));
-    border: 1px solid rgb(var(--color-gold) / .25);
-    background: rgb(var(--color-gold) / .055);
-    margin-bottom: 20px;
-}
-.mm-card-icon svg { width: 21px; height: 21px; }
-.mm-premium-card h3,
-.mm-premium-card h4 {
-    margin: 0 0 .85rem;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-    font-size: clamp(1.42rem, 2vw, 2rem);
-    line-height: 1.08;
-    letter-spacing: -.02em;
-    color: rgb(var(--text-platinum));
-}
-.mm-premium-card p,
-.mm-premium-card li {
-    font-family: 'Manrope', sans-serif;
-    font-size: .93rem;
-    line-height: 1.68;
-    color: rgb(var(--text-platinum) / .72);
-}
-.mm-premium-card ul { display: grid; gap: 12px; }
-.mm-premium-card li { display: flex; gap: 10px; align-items: flex-start; }
-.mm-premium-card li::before { content: none !important; }
-.mm-premium-card li span.mm-dot,
-.mm-inline-dot {
-    width: 7px; height: 7px; min-width: 7px; margin-top: .62em; border-radius: 999px; background: rgb(var(--color-gold)); box-shadow: 0 0 14px rgb(var(--color-gold) / .35);
-}
-.mm-cta-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; margin-top: 34px; }
-.mm-cta-pill {
-    min-height: 52px;
-    display: inline-flex; align-items: center; justify-content: center;
-    padding: .95rem 1.35rem;
-    border-radius: 999px;
-    border: 1px solid rgb(var(--color-gold) / .32);
-    color: rgb(var(--color-gold));
-    background: rgb(var(--color-gold) / .045);
-    font-family: 'Manrope', sans-serif;
-    font-size: .68rem;
-    font-weight: 900;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    transition: all .35s ease;
-}
-.mm-cta-pill:hover { background: rgb(var(--color-gold)); color: rgb(var(--bg-obsidian)); transform: translateY(-2px); box-shadow: 0 18px 45px rgb(var(--color-gold) / .13); }
-.mm-cta-pill.secondary { color: rgb(var(--text-platinum) / .76); border-color: rgba(255,255,255,.12); background: rgba(255,255,255,.025); }
-.mm-cta-pill.secondary:hover { color: rgb(var(--color-gold)); border-color: rgb(var(--color-gold) / .45); background: rgb(var(--color-gold) / .045); }
-.mm-scenario-card { min-height: 178px; display: flex; flex-direction: column; justify-content: space-between; }
-.mm-scenario-card .mm-scenario-quote { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.45rem, 2.4vw, 2.1rem); line-height: 1.08; color: rgb(var(--text-platinum)); }
-.mm-scenario-card .mm-scenario-label { margin-top: 1.35rem; color: rgb(var(--color-gold)); font-family: 'Manrope', sans-serif; font-size: .62rem; font-weight: 900; letter-spacing: .2em; text-transform: uppercase; }
-.mm-proof-list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.08); border-radius: 24px; overflow: hidden; }
-.mm-proof-item { padding: 26px 22px; background: rgb(var(--bg-obsidian) / .74); }
-.mm-proof-item strong { display: block; margin-bottom: .7rem; color: rgb(var(--color-gold)); font-family: 'Manrope', sans-serif; font-size: .66rem; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
-.mm-proof-item span { color: rgb(var(--text-platinum) / .74); font-size: .92rem; line-height: 1.55; }
-.mm-process-grid { counter-reset: process; }
-.mm-process-card { padding-left: 82px; }
-.mm-process-card::before {
-    counter-increment: process;
-    content: '0' counter(process);
-    position: absolute;
-    left: 26px; top: 30px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.35rem;
-    line-height: 1;
-    color: rgb(var(--color-gold));
-    opacity: .95;
-}
-.mm-before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; border-radius: 26px; overflow: hidden; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.08); }
-.mm-ba-col { background: rgba(255,255,255,.026); padding: 30px; }
-.mm-ba-col h3 { color: rgb(var(--color-gold)); margin-bottom: 22px; }
-.mm-ba-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 13px 0; border-top: 1px solid rgba(255,255,255,.08); font-family: 'Manrope', sans-serif; color: rgb(var(--text-platinum) / .78); }
-.mm-ba-row:first-of-type { border-top: 0; }
-.mm-antipromise-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.mm-antipromise-card.no { border-color: rgba(255,255,255,.10); }
-.mm-antipromise-card.yes { border-color: rgb(var(--color-gold) / .28); background: radial-gradient(circle at 15% 0%, rgb(var(--color-gold) / .10), transparent 38%), linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.012)); }
-.mm-quiz-shell { border: 1px solid rgb(var(--color-gold) / .18); background: radial-gradient(circle at 50% 0%, rgb(var(--color-gold) / .07), transparent 48%), rgba(255,255,255,.018); border-radius: 28px; padding: clamp(22px, 4vw, 42px); }
-.mm-quiz-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
-.mm-quiz-option {
-    min-height: 48px;
-    border: 1px solid rgba(255,255,255,.10);
-    border-radius: 999px;
-    padding: .75rem .95rem;
-    background: rgba(255,255,255,.024);
-    color: rgb(var(--text-platinum) / .78);
-    font-family: 'Manrope', sans-serif;
-    font-size: .74rem;
-    font-weight: 800;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    transition: all .25s ease;
-}
-.mm-quiz-option:hover,
-.mm-quiz-option.active { border-color: rgb(var(--color-gold) / .54); color: rgb(var(--color-gold)); background: rgb(var(--color-gold) / .06); transform: translateY(-1px); }
-.mm-quiz-result { margin-top: 22px; padding: 18px; border: 1px solid rgba(255,255,255,.08); border-radius: 18px; background: rgba(0,0,0,.16); font-family: 'Manrope', sans-serif; color: rgb(var(--text-platinum) / .78); line-height: 1.6; }
-.mm-service-route { display: grid; gap: 7px; margin-top: 12px; max-width: 560px; }
-.mm-service-route span { display: block; color: rgb(var(--text-platinum) / .68); font-family: 'Manrope', sans-serif; font-size: .75rem; line-height: 1.45; }
-.mm-service-route b { color: rgb(var(--color-gold)); font-weight: 900; letter-spacing: .08em; text-transform: uppercase; font-size: .68rem; }
-.mm-calc-next { margin-top: 42px; }
-.mm-faq-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-.mm-faq-item { padding: 24px; border: 1px solid rgba(255,255,255,.08); border-radius: 22px; background: rgba(255,255,255,.022); }
-.mm-faq-item h3 { color: rgb(var(--text-platinum)); font-family: 'Cormorant Garamond', serif; font-size: 1.65rem; margin: 0 0 .8rem; }
-.mm-faq-item p { color: rgb(var(--text-platinum) / .70); font-family: 'Manrope', sans-serif; font-size: .92rem; line-height: 1.65; margin: 0; }
-body.theme-light .mm-conversion-section { background: rgb(var(--bg-obsidian)); }
-body.theme-light .mm-premium-card,
-body.theme-light .mm-faq-item,
-body.theme-light .mm-quiz-shell { background: rgba(255,255,255,.56); border-color: rgba(24,22,18,.12); box-shadow: 0 24px 70px rgba(46,35,20,.08); }
-body.theme-light .mm-premium-card p,
-body.theme-light .mm-premium-card li,
-body.theme-light .mm-section-copy,
-body.theme-light .mm-ba-row,
-body.theme-light .mm-proof-item span,
-body.theme-light .mm-faq-item p { color: rgba(24,22,18,.70); }
-body.theme-light .mm-proof-item,
-body.theme-light .mm-ba-col { background: rgba(255,255,255,.58); }
-body.theme-light .mm-quiz-option { background: rgba(255,255,255,.55); color: rgba(24,22,18,.74); border-color: rgba(24,22,18,.12); }
-body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgba(24,22,18,.74); }
-@media (max-width: 1024px) {
-    .mm-card-grid,
-    .mm-card-grid-4,
-    .mm-proof-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .mm-proof-list { border-radius: 22px; }
-}
-@media (max-width: 720px) {
-    .mm-card-grid,
-    .mm-card-grid-4,
-    .mm-card-grid-2,
-    .mm-proof-list,
-    .mm-before-after,
-    .mm-antipromise-wrap,
-    .mm-quiz-grid,
-    .mm-faq-grid { grid-template-columns: 1fr; }
-    .mm-section-inner { width: min(100% - 28px, 1180px); }
-    .mm-premium-card { padding: 22px; border-radius: 22px; }
-    .mm-process-card { padding-left: 72px; }
-    .mm-process-card::before { left: 22px; top: 27px; font-size: 2rem; }
-    .mm-ba-col { padding: 24px; }
-}
-@media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .001ms !important; }
-}
+<style id="markovmade-v13-compact-conversion-css">
+/* === V13: compact conversion architecture. Less length, more decision clarity. === */
+.mm-v13-section{position:relative;overflow:hidden;background:rgb(var(--bg-obsidian));color:rgb(var(--text-platinum));border-top:1px solid rgb(var(--color-gold)/.13)}
+.mm-v13-section:before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 18% 8%,rgb(var(--color-gold)/.08),transparent 30%),radial-gradient(circle at 85% 88%,rgba(255,255,255,.035),transparent 34%);opacity:.9}
+.mm-v13-inner{position:relative;z-index:2;width:min(1180px,calc(100% - 32px));margin:0 auto}
+.mm-v13-head{max-width:900px;margin:0 auto 38px;text-align:center}.mm-v13-kicker{display:inline-flex;align-items:center;justify-content:center;margin-bottom:18px;min-height:34px;padding:.55rem 1rem;border-radius:999px;border:1px solid rgb(var(--color-gold)/.28);background:rgb(var(--color-gold)/.045);color:rgb(var(--color-gold));font-family:'Manrope',sans-serif;font-size:.62rem;font-weight:900;letter-spacing:.22em;text-transform:uppercase}.mm-v13-title{margin:0 auto 18px;font-family:'Cormorant Garamond','Tenor Sans',serif;font-size:clamp(2.35rem,5.2vw,5.05rem);line-height:.98;letter-spacing:-.045em;color:rgb(var(--text-platinum));text-wrap:balance}.mm-v13-copy{max-width:760px;margin:0 auto;font-family:'Manrope',sans-serif;font-size:clamp(.98rem,1.45vw,1.12rem);line-height:1.72;color:rgb(var(--text-platinum)/.74)}
+.mm-v13-chipline{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:30px auto 0;max-width:920px}.mm-v13-chip{display:inline-flex;align-items:center;gap:8px;min-height:38px;padding:.65rem .9rem;border:1px solid rgba(255,255,255,.1);border-radius:999px;background:rgba(255,255,255,.025);color:rgb(var(--text-platinum)/.78);font-family:'Manrope',sans-serif;font-size:.72rem;font-weight:850;letter-spacing:.1em;text-transform:uppercase}.mm-v13-chip:before{content:'';width:6px;height:6px;border-radius:99px;background:rgb(var(--color-gold));box-shadow:0 0 14px rgb(var(--color-gold)/.35)}
+.mm-v13-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.mm-v13-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.mm-v13-card{position:relative;min-height:100%;padding:24px;border:1px solid rgba(255,255,255,.085);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.044),rgba(255,255,255,.014));box-shadow:0 24px 80px rgba(0,0,0,.16),inset 0 1px 0 rgba(255,255,255,.04);transition:transform .35s ease,border-color .35s ease,background .35s ease}.mm-v13-card:hover{transform:translateY(-3px);border-color:rgb(var(--color-gold)/.34);background:linear-gradient(180deg,rgb(var(--color-gold)/.055),rgba(255,255,255,.016))}.mm-v13-icon{width:42px;height:42px;margin-bottom:18px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgb(var(--color-gold)/.25);background:rgb(var(--color-gold)/.055);color:rgb(var(--color-gold))}.mm-v13-icon svg{width:20px;height:20px}.mm-v13-card h3{margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(1.42rem,1.95vw,1.95rem);line-height:1.08;letter-spacing:-.025em;color:rgb(var(--text-platinum))}.mm-v13-card p{margin:0;font-family:'Manrope',sans-serif;font-size:.94rem;line-height:1.62;color:rgb(var(--text-platinum)/.72)}
+.mm-v13-hero-panel{border:1px solid rgb(var(--color-gold)/.18);border-radius:30px;padding:clamp(24px,4vw,46px);background:radial-gradient(circle at 50% 0%,rgb(var(--color-gold)/.09),transparent 48%),rgba(255,255,255,.018);box-shadow:0 38px 120px rgba(0,0,0,.22)}.mm-v13-goldline{color:rgb(var(--color-gold));position:relative;display:inline-block}.mm-v13-goldline:after{content:'';position:absolute;left:0;right:0;bottom:.03em;height:1px;background:linear-gradient(90deg,transparent,rgb(var(--color-gold)/.75),transparent)}
+.mm-v13-bridge{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;align-items:stretch}.mm-v13-bridge-main{padding:clamp(26px,4vw,46px);border:1px solid rgb(var(--color-gold)/.20);border-radius:28px;background:radial-gradient(circle at 10% 0%,rgb(var(--color-gold)/.10),transparent 45%),rgba(255,255,255,.018)}.mm-v13-bridge-main h2{margin:0 0 16px;font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.4vw,4.45rem);line-height:1;letter-spacing:-.04em;color:rgb(var(--text-platinum))}.mm-v13-bridge-main p{font-family:'Manrope',sans-serif;font-size:1.02rem;line-height:1.7;color:rgb(var(--text-platinum)/.74)}.mm-v13-mini-list{display:grid;gap:10px}.mm-v13-mini{padding:17px 18px;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.023);font-family:'Manrope',sans-serif;color:rgb(var(--text-platinum)/.78);line-height:1.5}.mm-v13-mini b{display:block;margin-bottom:4px;color:rgb(var(--color-gold));font-size:.66rem;letter-spacing:.16em;text-transform:uppercase}.mm-v13-cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:26px}.mm-v13-cta{min-height:52px;display:inline-flex;align-items:center;justify-content:center;padding:.95rem 1.25rem;border-radius:999px;border:1px solid rgb(var(--color-gold)/.34);background:rgb(var(--color-gold)/.055);color:rgb(var(--color-gold));font-family:'Manrope',sans-serif;font-size:.68rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;transition:all .34s ease}.mm-v13-cta:hover{background:rgb(var(--color-gold));color:rgb(var(--bg-obsidian));transform:translateY(-2px);box-shadow:0 20px 50px rgb(var(--color-gold)/.14)}.mm-v13-cta.secondary{background:rgba(255,255,255,.022);border-color:rgba(255,255,255,.12);color:rgb(var(--text-platinum)/.78)}.mm-v13-cta.secondary:hover{color:rgb(var(--color-gold));border-color:rgb(var(--color-gold)/.45);background:rgb(var(--color-gold)/.045)}
+.mm-service-route{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px;max-width:720px}.mm-service-route span{display:block;padding:.72rem .78rem;border:1px solid rgba(255,255,255,.09);border-radius:14px;background:rgba(255,255,255,.025);color:rgb(var(--text-platinum)/.82);font-family:'Manrope',sans-serif;font-size:.78rem;line-height:1.45}.mm-service-route b{display:block;margin-bottom:4px;color:rgb(var(--color-gold));font-size:.65rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase}.service-item .service-header-sub{font-size:.96rem!important;line-height:1.6!important;color:rgb(var(--text-platinum)/.78)!important}.service-item:hover .service-header-sub{color:rgb(var(--text-platinum)/.92)!important}
+.mm-v13-process{display:grid;grid-template-columns:1fr 1fr;gap:18px}.mm-v13-steps{display:grid;gap:10px}.mm-v13-step{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start;padding:18px;border:1px solid rgba(255,255,255,.08);border-radius:20px;background:rgba(255,255,255,.023)}.mm-v13-step-num{font-family:'Cormorant Garamond',serif;font-size:2rem;line-height:1;color:rgb(var(--color-gold))}.mm-v13-step strong{display:block;margin-bottom:4px;font-family:'Cormorant Garamond',serif;font-size:1.42rem;font-weight:500;color:rgb(var(--text-platinum));line-height:1.1}.mm-v13-step span{font-family:'Manrope',sans-serif;font-size:.92rem;line-height:1.55;color:rgb(var(--text-platinum)/.72)}.mm-v13-compare{display:grid;grid-template-columns:1fr 1fr;gap:1px;border:1px solid rgba(255,255,255,.08);border-radius:24px;overflow:hidden;background:rgba(255,255,255,.08)}.mm-v13-col{padding:24px;background:rgba(255,255,255,.024)}.mm-v13-col h3{margin:0 0 18px;font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgb(var(--color-gold))}.mm-v13-row{padding:12px 0;border-top:1px solid rgba(255,255,255,.08);font-family:'Manrope',sans-serif;color:rgb(var(--text-platinum)/.78);line-height:1.45}.mm-v13-row:first-of-type{border-top:0}.mm-v13-promise{margin-top:16px;padding:20px;border:1px solid rgb(var(--color-gold)/.22);border-radius:22px;background:rgb(var(--color-gold)/.045);font-family:'Manrope',sans-serif;color:rgb(var(--text-platinum)/.78);line-height:1.65}.mm-v13-promise b{color:rgb(var(--color-gold))}
+.mm-v13-quiz{max-width:940px;margin:0 auto 44px;padding:clamp(22px,4vw,38px);border:1px solid rgb(var(--color-gold)/.20);border-radius:28px;background:radial-gradient(circle at 50% 0%,rgb(var(--color-gold)/.075),transparent 48%),rgba(255,255,255,.018);box-shadow:0 28px 90px rgba(0,0,0,.17)}.mm-v13-quiz h3{margin:0 0 10px;text-align:center;font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.6rem);line-height:1;color:rgb(var(--text-platinum))}.mm-v13-quiz p{max-width:640px;margin:0 auto 22px;text-align:center;font-family:'Manrope',sans-serif;color:rgb(var(--text-platinum)/.72);line-height:1.6}.mm-v13-quiz-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}.mm-v13-quiz-label{margin-top:20px;font-family:'Manrope',sans-serif;color:rgb(var(--color-gold));font-size:.66rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;text-align:center}.mm-v13-option{min-height:46px;border:1px solid rgba(255,255,255,.11);border-radius:999px;background:rgba(255,255,255,.024);color:rgb(var(--text-platinum)/.80);font-family:'Manrope',sans-serif;font-size:.74rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase;padding:.72rem .9rem;transition:all .25s ease}.mm-v13-option:hover,.mm-v13-option.active{border-color:rgb(var(--color-gold)/.55);color:rgb(var(--color-gold));background:rgb(var(--color-gold)/.06);transform:translateY(-1px)}.mm-v13-quiz-result{margin-top:20px;padding:16px 18px;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(0,0,0,.16);font-family:'Manrope',sans-serif;color:rgb(var(--text-platinum)/.78);line-height:1.6;text-align:center}
+body.theme-light .mm-v13-section{background:rgb(var(--bg-obsidian))}body.theme-light .mm-v13-card,body.theme-light .mm-v13-hero-panel,body.theme-light .mm-v13-bridge-main,body.theme-light .mm-v13-mini,body.theme-light .mm-v13-step,body.theme-light .mm-v13-col,body.theme-light .mm-v13-quiz{background:rgba(255,255,255,.56);border-color:rgba(24,22,18,.12);box-shadow:0 24px 70px rgba(46,35,20,.08)}body.theme-light .mm-v13-chip,body.theme-light .mm-service-route span,body.theme-light .mm-v13-quiz-result{background:rgba(255,255,255,.52);border-color:rgba(24,22,18,.12);color:rgba(24,22,18,.76)}body.theme-light .mm-v13-copy,body.theme-light .mm-v13-card p,body.theme-light .mm-v13-bridge-main p,body.theme-light .mm-v13-mini,body.theme-light .mm-v13-step span,body.theme-light .mm-v13-row,body.theme-light .mm-v13-promise,body.theme-light .mm-v13-quiz p{color:rgba(24,22,18,.70)}body.theme-light .mm-v13-option{background:rgba(255,255,255,.58);color:rgba(24,22,18,.74);border-color:rgba(24,22,18,.14)}
+@media(max-width:1024px){.mm-v13-grid,.mm-v13-grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}.mm-v13-bridge,.mm-v13-process{grid-template-columns:1fr}.mm-v13-quiz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:720px){.mm-v13-inner{width:min(100% - 28px,1180px)}.mm-v13-grid,.mm-v13-grid.three,.mm-service-route,.mm-v13-compare,.mm-v13-quiz-grid{grid-template-columns:1fr}.mm-v13-card{padding:22px;border-radius:22px}.mm-v13-chipline{justify-content:flex-start}.mm-v13-chip{font-size:.66rem}.mm-v13-cta-row{justify-content:center}.mm-v13-cta{width:100%;text-align:center}.mm-v13-step{grid-template-columns:40px 1fr}.mm-v13-step-num{font-size:1.7rem}}
 </style>
 
-<script type="application/ld+json" id="markovmade-v12-faq-schema">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Это только про тренировки?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Нет. Тренировки — часть системы. MARKOVMADE смотрит на тело, питание, режим, восстановление, мышление, ограничения и реальный график человека."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Можно начать с одного разбора?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Да. Разбор помогает увидеть точку А, главные тормоза и подходящий формат работы без лишнего давления."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Что отправить в первом сообщении?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Цель, рост, вес, режим, питание, тренировки, ограничения, главный блокер и скрин расчётов с сайта, если уже прошли калькулятор."
-      }
-    }
-  ]
-}
-</script>
 
+<style id="markovmade-v14-i18n-and-conversion-polish">
+/* === MARKOVMADE V14: bilingual correctness, stronger visibility, shorter conversion path === */
+.mm-v13-kicker {
+    border-color: rgb(var(--color-gold) / .42) !important;
+    background: linear-gradient(180deg, rgb(var(--color-gold) / .105), rgb(var(--color-gold) / .035)) !important;
+    color: rgb(var(--color-gold)) !important;
+    box-shadow: 0 14px 42px rgb(var(--color-gold) / .08), inset 0 1px 0 rgb(255 255 255 / .07) !important;
+}
+.mm-v13-head .mm-v13-title {
+    position: relative !important;
+    padding-bottom: .16em !important;
+}
+.mm-v13-head .mm-v13-title::after {
+    content: '';
+    display: block;
+    width: min(220px, 40vw);
+    height: 1px;
+    margin: .28em auto 0;
+    background: linear-gradient(90deg, transparent, rgb(var(--color-gold) / .78), transparent);
+    box-shadow: 0 0 20px rgb(var(--color-gold) / .16);
+}
+.mm-v13-copy {
+    color: rgb(var(--text-platinum) / .84) !important;
+    font-weight: 520 !important;
+}
+.mm-v13-goldline {
+    text-shadow: 0 0 24px rgb(var(--color-gold) / .20) !important;
+}
+.mm-v13-goldline::after {
+    bottom: -0.03em !important;
+    height: 2px !important;
+    background: linear-gradient(90deg, transparent, rgb(var(--color-gold) / .92), transparent) !important;
+}
+.mm-v13-card {
+    border-color: rgb(var(--color-gold) / .13) !important;
+}
+.mm-v13-card p,
+.mm-v13-mini,
+.mm-v13-step span,
+.mm-v13-row,
+.mm-v13-promise,
+.mm-v13-quiz p,
+.mm-v13-quiz-result {
+    color: rgb(var(--text-platinum) / .84) !important;
+}
+.mm-service-route {
+    gap: 10px !important;
+    max-width: 860px !important;
+}
+.mm-service-route span {
+    padding: .92rem 1rem !important;
+    border-color: rgb(var(--color-gold) / .20) !important;
+    background: radial-gradient(circle at 0% 0%, rgb(var(--color-gold) / .07), transparent 44%), rgba(255,255,255,.035) !important;
+    color: rgb(var(--text-platinum) / .93) !important;
+    font-size: clamp(.84rem, .95vw, .92rem) !important;
+    line-height: 1.58 !important;
+    font-weight: 560 !important;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / .045), 0 14px 42px rgb(0 0 0 / .12) !important;
+}
+.mm-service-route b {
+    margin-bottom: .34rem !important;
+    color: rgb(var(--color-gold)) !important;
+    font-size: .70rem !important;
+    letter-spacing: .18em !important;
+}
+.mm-v13-quiz-result {
+    border-color: rgb(var(--color-gold) / .20) !important;
+    background: rgb(var(--color-gold) / .045) !important;
+    font-weight: 650 !important;
+}
+body.theme-light .mm-v13-copy,
+body.theme-light .mm-v13-card p,
+body.theme-light .mm-v13-mini,
+body.theme-light .mm-v13-step span,
+body.theme-light .mm-v13-row,
+body.theme-light .mm-v13-promise,
+body.theme-light .mm-v13-quiz p,
+body.theme-light .mm-v13-quiz-result,
+body.theme-light .mm-service-route span {
+    color: rgba(24,22,18,.82) !important;
+}
+body.theme-light .mm-service-route span {
+    background: linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.52)) !important;
+    border-color: rgba(166,124,34,.30) !important;
+    box-shadow: 0 16px 42px rgba(46,35,20,.07) !important;
+}
+@media (max-width: 768px) {
+    .mm-service-route { grid-template-columns: 1fr !important; }
+    .mm-service-route span { font-size: .88rem !important; }
+    .mm-v13-head .mm-v13-title::after { width: min(180px, 54vw); }
+}
+</style>
 </head>
 
 <body class="bg-obsidian antialiased selection:bg-gold selection:text-obsidian">
@@ -6368,7 +6228,7 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
 <section id="hero" class="section-block hero-premium relative h-[100svh] w-full overflow-hidden bg-obsidian flex items-center" data-insight="Где внимание — там и результат.">
             <div class="mm-luxe-bg" aria-hidden="true"></div>
             <div class="hero-visual-premium" aria-hidden="true">
-                <img src="https://i.ibb.co/svzfjY90/image.png" alt="Павел Марков — MARKOVMADE" decoding="async" fetchpriority="high">
+                <img src="https://i.ibb.co/svzfjY90/image.png" alt="" decoding="async">
             </div>
 
             <div class="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
@@ -6439,56 +6299,34 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
             </div>
         </section>
 
-
-
-<section id="for-whom" class="mm-conversion-section py-24 md:py-32" data-insight="Узнать себя — первый шаг к системе.">
-    <div class="mm-section-inner">
-        <div class="mm-section-head fade-in-up">
-            <span class="mm-kicker">01. Кому это нужно</span>
-            <h2 class="mm-section-title">Это для вас, если внутри уже есть запрос на порядок</h2>
-            <p class="mm-section-copy">MARKOVMADE нужен не тем, кто ищет ещё одну мотивационную фразу. Он нужен тем, кто устал гадать, срываться и начинать заново — и хочет собрать тело, питание, режим и дисциплину в одну рабочую систему.</p>
+        <!-- CALCULATORS / РАСЧЁТ -->
+        
+<section id="decision-hub" class="mm-v13-section py-20 md:py-28" data-insight="Человек быстрее оставляет заявку, когда узнаёт себя и видит следующий шаг.">
+  <div class="mm-v13-inner">
+    <div class="mm-v13-hero-panel fade-in-up">
+      <div class="mm-v13-head" style="margin-bottom:30px">
+        <span class="mm-v13-kicker">Для кого / результат</span>
+        <h2 class="mm-v13-title">Вы приходите не за мотивацией. Вы приходите за <span class="mm-v13-goldline">ясностью</span>.</h2>
+        <p class="mm-v13-copy">Я быстро показываю, что именно тормозит тело, питание, режим и дисциплину — и собираю это в понятный маршрут действий без хаоса, догадок и очередного старта «с понедельника».</p>
+        <div class="mm-v13-chipline" aria-label="Ситуации, с которыми приходят">
+          <span class="mm-v13-chip">вес стоит</span><span class="mm-v13-chip">срывы повторяются</span><span class="mm-v13-chip">питание плавает</span><span class="mm-v13-chip">нет контроля</span><span class="mm-v13-chip">режим ломается</span><span class="mm-v13-chip">нужен личный маршрут</span>
         </div>
-        <div class="mm-card-grid mm-card-grid-3">
-            <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15v-3M12 15V8M16 15v-5"/></svg></span>
-        <h3>Тренировки есть, но форма не меняется</h3>
-        <p>Вы что-то делаете, но не понимаете, почему тело не отвечает так, как должно.</p>
-    </article>
-            <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
-        <h3>Питание вроде есть, но системы нет</h3>
-        <p>Калории, БЖУ и режим существуют отдельно, а не работают как единый механизм.</p>
-    </article>
-            <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18c4-8 8 4 16-8"/><path d="M16 10h4v4"/><circle cx="5" cy="18" r="1.5"/><circle cx="20" cy="10" r="1.5"/></svg></span>
-        <h3>Каждый понедельник начинается заново</h3>
-        <p>Проблема не в желании, а в том, что нет маршрута, который выдерживает реальную жизнь.</p>
-    </article>
-            <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8a3 3 0 0 1 6-1.1A3 3 0 0 1 19 9a3 3 0 0 1-.7 5.9A3.2 3.2 0 0 1 14 19a3.5 3.5 0 0 1-6 0 3.2 3.2 0 0 1-4.3-4.1A3 3 0 0 1 5 9a3 3 0 0 1 3-1z"/><path d="M12 7v12"/></svg></span>
-        <h3>Дисциплина держится на настроении</h3>
-        <p>Когда много стресса, работы и хаоса, система разваливается быстрее, чем появляется результат.</p>
-    </article>
-            <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></span>
-        <h3>Нужен не шаблон, а контроль</h3>
-        <p>Вам важно понимать, что отслеживать, когда корректировать и как не слить прогресс.</p>
-    </article>
-            <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M15.5 8.5l-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2z"/></svg></span>
-        <h3>Нужен человек, который видит шире</h3>
-        <p>Не только тело, но и режим, мышление, ограничения, ресурс и настоящую точку А.</p>
-    </article>
-        </div>
-        <div class="mm-cta-row fade-in-up">
-            <a href="#calculators" class="mm-cta-pill interactive" data-analytics="for_whom_calculator">Понять свою точку А</a>
-            <a href="#contact" class="mm-cta-pill secondary interactive" data-analytics="for_whom_contact">Перейти к заявке</a>
-        </div>
+      </div>
+      <div class="mm-v13-grid">
+        <article class="mm-v13-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span><h3>Ясная точка А</h3><p>Где вы сейчас по телу, питанию, режиму, восстановлению и дисциплине — без самообмана.</p></article>
+        <article class="mm-v13-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18c4-8 8 4 16-8"/><path d="M16 10h4v4"/><circle cx="5" cy="18" r="1.5"/><circle cx="20" cy="10" r="1.5"/></svg></span><h3>Первые действия</h3><p>Что делать сразу, чтобы появился сдвиг, а не очередной красивый план без исполнения.</p></article>
+        <article class="mm-v13-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Подходящий формат</h3><p>Разбор, система, питание, сопровождение или менторство — без навязывания лишнего.</p></article>
+        <article class="mm-v13-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15v-3M12 15V8M16 15v-5"/></svg></span><h3>Контроль результата</h3><p>Вес, фото, замеры, БЖУ, сон, стресс, самочувствие и динамика собираются в одну управляемую систему.</p></article>
+      </div>
+      <div class="mm-v13-cta-row" style="justify-content:center">
+        <a href="#calculators" class="mm-v13-cta interactive" data-analytics="v13_hub_calculators">Сначала пройти расчёт</a>
+        <a href="#contact" class="mm-v13-cta secondary interactive" data-analytics="v13_hub_contact">Сразу оставить заявку</a>
+      </div>
     </div>
+  </div>
 </section>
 
-        <!-- CALCULATORS / РАСЧЁТ -->
-        <section id="calculators" class="section-block relative py-24 md:py-32 bg-charcoal/50 border-t border-white/5 overflow-hidden transition-colors duration-500" data-insight="Точные данные бьют любые мотивационные речи.">
+<section id="calculators" class="section-block relative py-24 md:py-32 bg-charcoal/50 border-t border-white/5 overflow-hidden transition-colors duration-500" data-insight="Точные данные бьют любые мотивационные речи.">
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,_rgb(var(--color-gold)/0.025),_transparent_60%)] pointer-events-none"></div>
             <div class="absolute top-0 right-0 w-[40vw] h-[40vw] bg-white rounded-full blur-[160px] opacity-[0.01] pointer-events-none"></div>
 
@@ -7099,42 +6937,28 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
             </div>
         </section>
 
-<section id="calculator-bridge" class="mm-conversion-section py-20 md:py-28" data-insight="Цифры сильны только тогда, когда вокруг них есть действия.">
-    <div class="mm-section-inner">
-        <div class="mm-section-head fade-in-up">
-            <span class="mm-kicker">После расчёта</span>
-            <h2 class="mm-section-title">Цифры показывают точку А. Система превращает её в результат.</h2>
-            <p class="mm-section-copy">FFMI, КБЖУ, восстановление и динамика — это не финал. Это входные данные для решения: как тренироваться, что есть, что отслеживать, где риски и какой формат работы даст самый быстрый понятный сдвиг.</p>
-        </div>
-        <div class="mm-card-grid mm-card-grid-4 mm-calc-next">
-            <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
-        <h3>Композиция тела</h3>
-        <p>Теперь важно понять, что делать с сухой массой, жиром, FFMI и реальной целью.</p>
-    </article>
-            <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15v-3M12 15V8M16 15v-5"/></svg></span>
-        <h3>Калории и БЖУ</h3>
-        <p>Цифры нужно адаптировать под режим, срывы, работу, сон и уровень активности.</p>
-    </article>
-            <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></span>
-        <h3>Восстановление</h3>
-        <p>Сон, стресс и ЦНС влияют на форму так же сильно, как питание и тренировки.</p>
-    </article>
-            <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M15.5 8.5l-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2z"/></svg></span>
-        <h3>Формат работы</h3>
-        <p>Не всем нужен одинаковый маршрут. Кому-то нужен разбор, кому-то система, кому-то сопровождение.</p>
-    </article>
-        </div>
-        <div class="mm-cta-row fade-in-up">
-            <a href="#contact" class="mm-cta-pill interactive" data-analytics="calculator_bridge_contact">Разобрать мои показатели</a>
-            <a href="#services" class="mm-cta-pill secondary interactive" data-analytics="calculator_bridge_services">Понять формат работы</a>
-        </div>
-    </div>
-</section>
 
+
+<section id="calculator-decision" class="mm-v13-section py-16 md:py-24" data-insight="Цифры становятся ценностью только тогда, когда превращаются в действия.">
+  <div class="mm-v13-inner">
+    <div class="mm-v13-bridge fade-in-up">
+      <div class="mm-v13-bridge-main">
+        <span class="mm-v13-kicker">После расчёта</span>
+        <h2>Цифры уже показали точку А. Теперь нужен маршрут.</h2>
+        <p>FFMI, КБЖУ, восстановление и динамика — это не финал. Это материал для решения: как тренироваться, что есть, что отслеживать, где риски и какой формат работы даст самый понятный сдвиг именно под вашу жизнь.</p>
+        <div class="mm-v13-cta-row">
+          <a href="#contact" class="mm-v13-cta interactive" data-analytics="v13_calc_contact">Разобрать мои показатели</a>
+          <a href="#services" class="mm-v13-cta secondary interactive" data-analytics="v13_calc_services">Выбрать формат</a>
+        </div>
+      </div>
+      <div class="mm-v13-mini-list">
+        <div class="mm-v13-mini"><b>Не гадать</b>Понять, что реально мешает прогрессу.</div>
+        <div class="mm-v13-mini"><b>Не перегружать</b>Выбрать первые действия, которые можно удержать.</div>
+        <div class="mm-v13-mini"><b>Не бросать</b>Корректировать питание, тренировки и режим по факту.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="services" class="section-block relative py-24 bg-obsidian text-platinum" data-insight="Инвестируйте в единственное, что нельзя отнять — в себя.">
             <div class="container mx-auto px-6 md:px-12">
@@ -7168,8 +6992,8 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
                             </div>
                             <div class="flex flex-col gap-2 md:w-1/2">
                                 <h3 class="font-serif text-2xl md:text-3xl text-platinum group-hover:text-gold transition-colors duration-300">💪 Архитектура Мужской Силы</h3>
-                                <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300">Построение тела, которое вызывает уважение без слов. Силовой и функциональный тренинг. Питание. Работа с мышлением.</p>
-                                <div class="mm-service-route"><span><b>Для кого:</b> если вы не понимаете, что именно тормозит результат.</span><span><b>Результат:</b> точка А, первые шаги и подходящий формат работы.</span></div>
+                                <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300 service-header-sub">Построение тела, которое вызывает уважение без слов. Силовой и функциональный тренинг, питание и мышление в одной системе.</p>
+                                <div class="mm-service-route"><span><b>Для кого:</b>если нужен старт без хаоса и тело, которое говорит за вас.</span><span><b>Результат:</b>точка А, силовой маршрут, питание и первые действия под ваш режим.</span></div>
                             </div>
                             <div class="md:w-1/4 flex justify-end">
                                 <div class="rotate-icon w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-gold/50 transition-colors duration-300">
@@ -7217,8 +7041,8 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
                             </div>
                             <div class="flex flex-col gap-2 md:w-1/2">
                                 <h3 class="font-serif text-2xl md:text-3xl text-platinum group-hover:text-gold transition-colors duration-300">✨ Скульптура Тела & Женственность</h3>
-                                <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300">Умный подход к стройности. Работа с анализами, циклом и качеством тела без изнурительных диет и вечных срывов.</p>
-                                <div class="mm-service-route"><span><b>Для кого:</b> если нужен результат без голодовок и откатов.</span><span><b>Результат:</b> стройность, питание, контроль и спокойная работа с телом.</span></div>
+                                <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300 service-header-sub">Умный подход к стройности, качеству тела и самочувствию без изнурительных диет, хаоса и вечных откатов.</p>
+                                <div class="mm-service-route"><span><b>Для кого:</b>если нужен результат без голодовок, вины и бесконечных срывов.</span><span><b>Результат:</b>стройность, контроль питания, понятная динамика и спокойная работа с телом.</span></div>
                             </div>
                             <div class="md:w-1/4 flex justify-end">
                                 <div class="rotate-icon w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-gold/50 transition-colors duration-300">
@@ -7266,8 +7090,8 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
                             </div>
                             <div class="flex flex-col gap-2 md:w-1/2">
                                 <h3 class="font-serif text-2xl md:text-3xl text-platinum group-hover:text-gold transition-colors duration-300">🥗 Клиническая Нутрициология</h3>
-                                <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300">Биохимия вашей продуктивности. Коррекция дефицитов, чистая кожа и энергия через питание, а не таблетки.</p>
-                                <div class="mm-service-route"><span><b>Для кого:</b> если питание, энергия, кожа и самочувствие требуют системы.</span><span><b>Результат:</b> понятная стратегия питания, дефицитов и восстановления.</span></div>
+                                <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300 service-header-sub">Биохимия продуктивности: питание, дефициты, энергия, кожа и восстановление через систему, а не случайные советы.</p>
+                                <div class="mm-service-route"><span><b>Для кого:</b>если питание, энергия, кожа и самочувствие требуют точной настройки.</span><span><b>Результат:</b>понятная стратегия питания, восстановления и контроля состояния.</span></div>
                             </div>
                             <div class="md:w-1/4 flex justify-end">
                                 <div class="rotate-icon w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-gold/50 transition-colors duration-300">
@@ -7315,8 +7139,8 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
                             </div>
                             <div class="flex flex-col gap-2 md:w-1/2">
                                 <h3 class="font-serif text-2xl md:text-3xl text-platinum group-hover:text-gold transition-colors duration-300">🧠 Психология & Менторство</h3>
-                                <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300">Честный диалог для сильных решений. Выход из эмоционального тупика и кризисов к масштабу личности и ясности целей.</p>
-                                <div class="mm-service-route"><span><b>Для кого:</b> если нужно собрать тело, режим, мышление и цели в одну систему.</span><span><b>Результат:</b> приоритеты, структура и движение без распада.</span></div>
+                                <p class="font-sans text-platinum/70 text-sm leading-relaxed max-w-lg group-hover:text-platinum/90 transition-colors duration-300 service-header-sub">Честный диалог для сильных решений: цели, режим, дисциплина, кризисы и масштаб личности без пустой мотивации.</p>
+                                <div class="mm-service-route"><span><b>Для кого:</b>если нужно собрать тело, режим, мышление и цели в одну траекторию.</span><span><b>Результат:</b>приоритеты, ясность, дисциплина и движение без распада.</span></div>
                             </div>
                             <div class="md:w-1/4 flex justify-end">
                                 <div class="rotate-icon w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-gold/50 transition-colors duration-300">
@@ -7373,42 +7197,33 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
 
 
 
+        
+<section id="method-proof" class="mm-v13-section py-20 md:py-28" data-insight="Короткий путь: заявка, разбор, маршрут, контроль.">
+  <div class="mm-v13-inner">
+    <div class="mm-v13-head fade-in-up">
+      <span class="mm-v13-kicker">Как это работает</span>
+      <h2 class="mm-v13-title">Минимум шума. Максимум понимания, что делать дальше.</h2>
+      <p class="mm-v13-copy">Я не растягиваю путь лишними словами. Моя задача — быстро довести вас до ясного решения: оставить вводные, пройти разбор и выйти с маршрутом, который можно выполнять, отслеживать и корректировать в реальной жизни.</p>
+    </div>
+    <div class="mm-v13-process">
+      <div class="mm-v13-steps fade-in-up">
+        <div class="mm-v13-step"><span class="mm-v13-step-num">01</span><div><strong>Вы оставляете вводные</strong><span>Цель, проблема, ограничения, режим, питание, тренировки и что сейчас больше всего мешает.</span></div></div>
+        <div class="mm-v13-step"><span class="mm-v13-step-num">02</span><div><strong>Я разбираю точку А</strong><span>Не по ощущениям, а по фактам: тело, питание, восстановление, дисциплина, риски и слабые места.</span></div></div>
+        <div class="mm-v13-step"><span class="mm-v13-step-num">03</span><div><strong>Собираем маршрут</strong><span>Что делать первым, что контролировать, какой формат подходит и как корректировать путь по реальности.</span></div></div>
+      </div>
+      <div class="fade-in-up">
+        <div class="mm-v13-compare">
+          <div class="mm-v13-col"><h3>До</h3><div class="mm-v13-row">Догадки</div><div class="mm-v13-row">Хаос в питании</div><div class="mm-v13-row">Срывы и откаты</div><div class="mm-v13-row">Мотивация вместо системы</div></div>
+          <div class="mm-v13-col"><h3>После</h3><div class="mm-v13-row">Цифры и точка А</div><div class="mm-v13-row">Понятный маршрут</div><div class="mm-v13-row">Корректировки под жизнь</div><div class="mm-v13-row">Контроль результата</div></div>
+        </div>
+        <div class="mm-v13-promise"><b>Без ложной магии:</b> я не обещаю чудо за 7 дней. Я даю систему, честную обратную связь, контроль и корректировки, которые помогают удерживать результат в реальной жизни.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
         <!-- BRIDGE: DATA TO BRAND -->
-
-<section id="client-scenarios" class="mm-conversion-section py-24 md:py-32" data-insight="Сильный продукт начинается с точного узнавания проблемы.">
-    <div class="mm-section-inner">
-        <div class="mm-section-head fade-in-up">
-            <span class="mm-kicker">03. С чем приходят</span>
-            <h2 class="mm-section-title">Ситуации, в которых человеку уже нужен не совет, а система</h2>
-            <p class="mm-section-copy">Это не про слабость. Это про момент, когда старый способ больше не работает: мотивация заканчивается, хаос возвращается, а тело требует не давления, а точной настройки.</p>
-        </div>
-        <div class="mm-card-grid mm-card-grid-3">
-            <article class="mm-premium-card mm-scenario-card fade-in-up"><div class="mm-scenario-quote">«Я тренируюсь, но не понимаю, почему тело не меняется»</div><span class="mm-scenario-label">форма без ответа</span></article>
-            <article class="mm-premium-card mm-scenario-card fade-in-up"><div class="mm-scenario-quote">«Я знаю, что надо делать, но постоянно выпадаю из режима»</div><span class="mm-scenario-label">дисциплина без опоры</span></article>
-            <article class="mm-premium-card mm-scenario-card fade-in-up"><div class="mm-scenario-quote">«Я хочу форму, но без жизни в стиле курица, гречка и ненависть»</div><span class="mm-scenario-label">результат без фанатизма</span></article>
-            <article class="mm-premium-card mm-scenario-card fade-in-up"><div class="mm-scenario-quote">«Я устал от мотивации. Мне нужна система, которая выдерживает мою реальность»</div><span class="mm-scenario-label">система под жизнь</span></article>
-            <article class="mm-premium-card mm-scenario-card fade-in-up"><div class="mm-scenario-quote">«Мне нужен человек, который разберёт не только питание, но и весь образ жизни»</div><span class="mm-scenario-label">целостный разбор</span></article>
-            <article class="mm-premium-card mm-scenario-card fade-in-up"><div class="mm-scenario-quote">«Я хочу наконец понять, что именно мне делать дальше»</div><span class="mm-scenario-label">ясный следующий шаг</span></article>
-        </div>
-    </div>
-</section>
-
-<section id="trust-system" class="mm-conversion-section py-20 md:py-28" data-insight="Доверие рождается из системы, а не из громких обещаний.">
-    <div class="mm-section-inner">
-        <div class="mm-section-head fade-in-up">
-            <span class="mm-kicker">Почему мне можно доверять</span>
-            <h2 class="mm-section-title">Я не отделяю тело от жизни, в которой оно должно работать</h2>
-        </div>
-        <div class="mm-proof-list fade-in-up" aria-label="Почему подход MARKOVMADE работает">
-            <div class="mm-proof-item"><strong>01</strong><span>Я не отделяю тело от режима, питания, стресса и мышления.</span></div>
-            <div class="mm-proof-item"><strong>02</strong><span>Я смотрю не только на цель, но и на ограничения человека.</span></div>
-            <div class="mm-proof-item"><strong>03</strong><span>Я не продаю универсальный шаблон для всех.</span></div>
-            <div class="mm-proof-item"><strong>04</strong><span>Я собираю систему, которую можно удерживать в реальной жизни.</span></div>
-            <div class="mm-proof-item"><strong>05</strong><span>Я работаю через цифры, наблюдение, корректировки и честную обратную связь.</span></div>
-        </div>
-    </div>
-</section>
-
         <section id="brand-logic" class="section-block relative py-24 md:py-32 bg-obsidian overflow-hidden transition-colors duration-500" data-insight="Метод важнее мотивации.">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,_rgb(var(--color-gold)/0.06),_transparent_55%)] pointer-events-none"></div>
     <div class="container mx-auto px-6 md:px-12 relative z-10">
@@ -7796,6 +7611,35 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
                     </p>
                 </div>
 
+                
+<div id="request-quiz" class="mm-v13-quiz fade-in-up">
+  <h3>Соберите заявку за 7 секунд</h3>
+  <p>Выберите главное — и я сразу вижу цель, проблему и точку входа. Заявка становится не общей, а конкретной.</p>
+  <div class="mm-v13-quiz-label">Главная цель</div>
+  <div class="mm-v13-quiz-grid" data-quiz-group="goal">
+    <button type="button" class="mm-v13-option interactive" data-value="снизить вес">снизить вес</button>
+    <button type="button" class="mm-v13-option interactive" data-value="набрать мышечную массу">набрать мышечную массу</button>
+    <button type="button" class="mm-v13-option interactive" data-value="вернуть дисциплину">вернуть дисциплину</button>
+    <button type="button" class="mm-v13-option interactive" data-value="разобраться с питанием">разобраться с питанием</button>
+    <button type="button" class="mm-v13-option interactive" data-value="настроить режим">настроить режим</button>
+    <button type="button" class="mm-v13-option interactive" data-value="получить личный план">получить личный план</button>
+  </div>
+  <div class="mm-v13-quiz-label">Что мешает</div>
+  <div class="mm-v13-quiz-grid" data-quiz-group="blocker">
+    <button type="button" class="mm-v13-option interactive" data-value="хаос">хаос</button>
+    <button type="button" class="mm-v13-option interactive" data-value="срывы">срывы</button>
+    <button type="button" class="mm-v13-option interactive" data-value="нет понимания">нет понимания</button>
+    <button type="button" class="mm-v13-option interactive" data-value="нет контроля">нет контроля</button>
+    <button type="button" class="mm-v13-option interactive" data-value="стресс">стресс</button>
+    <button type="button" class="mm-v13-option interactive" data-value="нехватка времени">нехватка времени</button>
+  </div>
+  <div class="mm-v13-quiz-result" id="quiz-summary">Выберите пункты выше — и заявка станет точнее.</div>
+  <div class="mm-v13-cta-row" style="justify-content:center;margin-top:20px">
+    <a id="quiz-telegram-link" href="https://t.me/markovmade?text=Здравствуйте!%20Хочу%20разобрать%20мою%20ситуацию%20и%20понять%20формат%20работы%20MARKOVMADE." target="_blank" class="mm-v13-cta interactive" data-analytics="v13_quiz_telegram">Отправить заявку в Telegram</a>
+    <a href="https://wa.me/79819722516" target="_blank" class="mm-v13-cta secondary interactive" data-analytics="v13_quiz_whatsapp">Написать в WhatsApp</a>
+  </div>
+</div>
+
                 <div class="relative max-w-xl mx-auto min-h-[400px]">
                     <form id="manifest-form" class="lead-form space-y-8 transition-all duration-700 ease-[0.7,0,0.3,1]" novalidate>
                         <div class="lead-form-grid">
@@ -7920,100 +7764,6 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
         <!-- === СЕКЦИЯ РАСЧЁТОВ (ИНСТРУМЕНТЫ) === -->
         
 
-
-
-<section id="work-process" class="mm-conversion-section py-24 md:py-32" data-insight="Понятный процесс снижает тревогу и ускоряет решение.">
-    <div class="mm-section-inner">
-        <div class="mm-section-head fade-in-up">
-            <span class="mm-kicker">Как всё происходит</span>
-            <h2 class="mm-section-title">От заявки до системы, которую можно держать</h2>
-            <p class="mm-section-copy">Человек не проваливается в неизвестность. После заявки появляется понятный путь: вводные, разбор, маршрут, контроль и корректировки по фактам.</p>
-        </div>
-        <div class="mm-card-grid mm-card-grid-3 mm-process-grid">
-            <article class="mm-premium-card mm-process-card fade-in-up"><h3>Вы оставляете заявку</h3><p>Я смотрю вводные и понимаю, с чем вы приходите: цель, ограничения, режим, питание, тренировки и главный блокер.</p></article>
-            <article class="mm-premium-card mm-process-card fade-in-up"><h3>Проводим разбор</h3><p>Разбираем тело, питание, режим, цель, ограничения, мышление и слабые места, которые мешают удерживать прогресс.</p></article>
-            <article class="mm-premium-card mm-process-card fade-in-up"><h3>Собираем маршрут</h3><p>Определяем первые действия, формат работы, точки контроля и то, что нужно менять уже сейчас.</p></article>
-            <article class="mm-premium-card mm-process-card fade-in-up"><h3>Включаем систему</h3><p>Питание, тренировки, задачи, отчёты и корректировки начинают работать вместе, а не отдельными кусками.</p></article>
-            <article class="mm-premium-card mm-process-card fade-in-up"><h3>Двигаемся по фактам</h3><p>Смотрим на цифры, фото, замеры, самочувствие, стресс, срывы и реальную динамику.</p></article>
-            <article class="mm-premium-card mm-process-card fade-in-up"><h3>Закрепляем результат</h3><p>Не просто получаем форму, а строим систему, которая помогает возвращаться в курс после откатов.</p></article>
-        </div>
-    </div>
-</section>
-
-<section id="before-after" class="mm-conversion-section py-20 md:py-28" data-insight="Контраст показывает ценность быстрее длинного объяснения.">
-    <div class="mm-section-inner">
-        <div class="mm-section-head fade-in-up">
-            <span class="mm-kicker">До / После</span>
-            <h2 class="mm-section-title">Что меняется после системного подхода</h2>
-        </div>
-        <div class="mm-before-after fade-in-up">
-            <div class="mm-ba-col">
-                <h3>До</h3>
-                <div class="mm-ba-row"><span>Догадки</span><span>→</span></div>
-                <div class="mm-ba-row"><span>Хаос</span><span>→</span></div>
-                <div class="mm-ba-row"><span>Мотивация рывками</span><span>→</span></div>
-                <div class="mm-ba-row"><span>Срывы без анализа</span><span>→</span></div>
-                <div class="mm-ba-row"><span>Разрозненные действия</span><span>→</span></div>
-                <div class="mm-ba-row"><span>«Я не понимаю, что не так»</span><span>→</span></div>
-            </div>
-            <div class="mm-ba-col">
-                <h3>После</h3>
-                <div class="mm-ba-row"><span>Цифры</span><span>✓</span></div>
-                <div class="mm-ba-row"><span>Маршрут</span><span>✓</span></div>
-                <div class="mm-ba-row"><span>Система действий</span><span>✓</span></div>
-                <div class="mm-ba-row"><span>Корректировки по факту</span><span>✓</span></div>
-                <div class="mm-ba-row"><span>Единая структура</span><span>✓</span></div>
-                <div class="mm-ba-row"><span>«Я вижу, что делать дальше»</span><span>✓</span></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="anti-promise" class="mm-conversion-section py-20 md:py-28" data-insight="Честные рамки продают сильнее пустых обещаний.">
-    <div class="mm-section-inner">
-        <div class="mm-section-head fade-in-up">
-            <span class="mm-kicker">Честные рамки</span>
-            <h2 class="mm-section-title">Я не продаю магию. Я собираю управляемую систему.</h2>
-        </div>
-        <div class="mm-antipromise-wrap fade-in-up">
-            <article class="mm-premium-card mm-antipromise-card no">
-                <h3>Что я не обещаю</h3>
-                <ul>
-                    <li><span class="mm-dot"></span><span>Магию за 7 дней.</span></li>
-                    <li><span class="mm-dot"></span><span>Мотивацию вместо работы.</span></li>
-                    <li><span class="mm-dot"></span><span>Шаблон, который якобы подходит всем.</span></li>
-                    <li><span class="mm-dot"></span><span>План, который ломается при первом стрессе.</span></li>
-                </ul>
-            </article>
-            <article class="mm-premium-card mm-antipromise-card yes">
-                <h3>Что я даю</h3>
-                <ul>
-                    <li><span class="mm-dot"></span><span>Ясную точку А.</span></li>
-                    <li><span class="mm-dot"></span><span>Цифры, маршрут и первые действия.</span></li>
-                    <li><span class="mm-dot"></span><span>Честную обратную связь и корректировки.</span></li>
-                    <li><span class="mm-dot"></span><span>Систему, которую можно удерживать в вашей реальной жизни.</span></li>
-                </ul>
-            </article>
-        </div>
-    </div>
-</section>
-
-
-<section id="faq" class="mm-conversion-section py-20 md:py-28" data-insight="Хороший вопрос сокращает путь к решению.">
-    <div class="mm-section-inner">
-        <div class="mm-section-head fade-in-up">
-            <span class="mm-kicker">FAQ</span>
-            <h2 class="mm-section-title">Коротко о главном перед заявкой</h2>
-        </div>
-        <div class="mm-faq-grid fade-in-up">
-            <article class="mm-faq-item"><h3>Это только про тренировки?</h3><p>Нет. Тренировки — часть системы. Я смотрю на тело, питание, режим, восстановление, мышление, ограничения и реальный график человека.</p></article>
-            <article class="mm-faq-item"><h3>Можно начать с одного разбора?</h3><p>Да. Разбор нужен, чтобы увидеть точку А, понять главные тормоза и выбрать формат работы без лишнего давления.</p></article>
-            <article class="mm-faq-item"><h3>Если у меня хаос в режиме?</h3><p>Именно для этого система и нужна. План должен адаптироваться к жизни, а не ломаться при первой рабочей неделе, стрессе или поездке.</p></article>
-            <article class="mm-faq-item"><h3>Что отправить в первом сообщении?</h3><p>Цель, рост, вес, режим, питание, тренировки, ограничения, главный блокер и скрин расчётов с сайта, если уже прошли калькулятор.</p></article>
-        </div>
-    </div>
-</section>
-
 <section id="contact" class="section-block relative w-full py-24 md:py-36 overflow-hidden contact-container" data-insight="Принятое решение — это и есть начало трансформации.">
     <div class="absolute inset-0 bg-gradient-to-b from-obsidian to-charcoal transition-colors duration-500"></div>
     <canvas id="gold-dust" class="absolute inset-0 w-full h-full pointer-events-none z-10 opacity-40 mix-blend-screen"></canvas>
@@ -8081,79 +7831,6 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
             <p>
                 После первого контакта человек уже ясно видит себя со стороны: где сейчас тело, питание, режим, дисциплина и мышление; что тормозит прогресс; какие первые шаги дают сдвиг; какой формат работы подходит именно ему. Вместо хаоса — понятный маршрут: что делать, что отслеживать, что корректировать и как довести форму до результата, который виден в теле и чувствуется внутри.
             </p>
-        </div>
-
-
-
-        <div id="audit-outcomes" class="max-w-6xl mx-auto mb-16 md:mb-24 fade-in-up">
-            <div class="mm-section-head mb-10">
-                <span class="mm-kicker">Что вы получаете после разбора</span>
-                <h2 class="mm-section-title">Не эмоцию. А ясность, маршрут и контроль.</h2>
-            </div>
-            <div class="mm-card-grid mm-card-grid-4">
-                <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
-        <h3>Ясная точка А</h3>
-        <p>Не ощущения и догадки, а понимание, где вы сейчас по телу, питанию, режиму и дисциплине.</p>
-    </article>
-                <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18c4-8 8 4 16-8"/><path d="M16 10h4v4"/><circle cx="5" cy="18" r="1.5"/><circle cx="20" cy="10" r="1.5"/></svg></span>
-        <h3>Первые действия</h3>
-        <p>Что сделать сразу, чтобы появился сдвиг без хаоса, перегруза и случайных решений.</p>
-    </article>
-                <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M15.5 8.5l-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2z"/></svg></span>
-        <h3>Подходящий формат</h3>
-        <p>Разбор, система, сопровождение или личная стратегия — без навязывания лишнего.</p>
-    </article>
-                <article class="mm-premium-card fade-in-up">
-        <span class="mm-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15v-3M12 15V8M16 15v-5"/></svg></span>
-        <h3>Контроль результата</h3>
-        <p>Что отслеживать: вес, фото, замеры, питание, сон, стресс, самочувствие и динамику.</p>
-    </article>
-            </div>
-        </div>
-
-
-
-        <div id="request-quiz" class="max-w-5xl mx-auto mb-16 md:mb-24 fade-in-up">
-            <div class="mm-quiz-shell">
-                <div class="mm-section-head mb-8">
-                    <span class="mm-kicker">Быстрая заявка</span>
-                    <h2 class="mm-section-title">Соберите запрос перед сообщением</h2>
-                    <p class="mm-section-copy">Выберите, что сейчас важнее всего и что мешает больше всего. После выбора кнопка Telegram сформирует более точное первое сообщение.</p>
-                </div>
-
-                <div class="mb-8">
-                    <h3 class="font-serif text-2xl md:text-3xl text-platinum mb-4 text-center">Что сейчас важнее всего?</h3>
-                    <div class="mm-quiz-grid" data-quiz-group="goal">
-                        <button type="button" class="mm-quiz-option interactive" data-value="снизить вес">снизить вес</button>
-                        <button type="button" class="mm-quiz-option interactive" data-value="набрать мышечную массу">набрать мышечную массу</button>
-                        <button type="button" class="mm-quiz-option interactive" data-value="вернуть дисциплину">вернуть дисциплину</button>
-                        <button type="button" class="mm-quiz-option interactive" data-value="разобраться с питанием">разобраться с питанием</button>
-                        <button type="button" class="mm-quiz-option interactive" data-value="настроить режим">настроить режим</button>
-                        <button type="button" class="mm-quiz-option interactive" data-value="получить личный план">получить личный план</button>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="font-serif text-2xl md:text-3xl text-platinum mb-4 text-center">Что мешает больше всего?</h3>
-                    <div class="mm-quiz-grid" data-quiz-group="blocker">
-                        <button type="button" class="mm-quiz-option interactive" data-value="хаос">хаос</button>
-                        <button type="button" class="mm-quiz-option interactive" data-value="срывы">срывы</button>
-                        <button type="button" class="mm-quiz-option interactive" data-value="нет понимания">нет понимания</button>
-                        <button type="button" class="mm-quiz-option interactive" data-value="нет контроля">нет контроля</button>
-                        <button type="button" class="mm-quiz-option interactive" data-value="стресс">стресс</button>
-                        <button type="button" class="mm-quiz-option interactive" data-value="нехватка времени">нехватка времени</button>
-                    </div>
-                </div>
-
-                <div class="mm-quiz-result" id="quiz-summary">Выберите пункты выше — и заявка станет точнее.</div>
-                <div class="mm-cta-row">
-                    <a id="quiz-telegram-link" href="https://t.me/markovmade?text=Здравствуйте!%20Хочу%20разобрать%20мою%20ситуацию%20и%20понять%20формат%20работы%20MARKOVMADE." target="_blank" class="mm-cta-pill interactive" data-analytics="quiz_telegram">Получить разбор под мою ситуацию</a>
-                    <a href="https://wa.me/79819722516" target="_blank" class="mm-cta-pill secondary interactive" data-analytics="quiz_whatsapp">Написать в WhatsApp</a>
-                </div>
-            </div>
         </div>
 
         <div class="relative max-w-5xl mx-auto fade-in-up mb-24 md:mb-28">
@@ -10053,6 +9730,75 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
 </script>
 
 
+
+<script id="markovmade-v13-quiz-js">
+(function(){
+  'use strict';
+  var EN_VALUE = {
+    'снизить вес': 'lose weight',
+    'набрать мышечную массу': 'gain muscle mass',
+    'вернуть дисциплину': 'restore discipline',
+    'разобраться с питанием': 'fix nutrition',
+    'настроить режим': 'set routine',
+    'получить личный план': 'get a personal plan',
+    'хаос': 'chaos',
+    'срывы': 'breakdowns',
+    'нет понимания': 'no clarity',
+    'нет контроля': 'no control',
+    'стресс': 'stress',
+    'нехватка времени': 'lack of time'
+  };
+  function isEnglish(){
+    return document.documentElement.lang === 'en' || localStorage.getItem('markovmade_lang') === 'en';
+  }
+  function formatValue(raw){
+    return isEnglish() ? (EN_VALUE[raw] || raw) : raw;
+  }
+  function initV13Quiz(){
+    var root=document.getElementById('request-quiz');
+    if(!root || root.__v13Ready) return;
+    root.__v13Ready=true;
+    var summary=document.getElementById('quiz-summary');
+    var tg=document.getElementById('quiz-telegram-link');
+    function collect(group){
+      return Array.prototype.slice.call(root.querySelectorAll('[data-quiz-group="'+group+'"] .mm-v13-option.active')).map(function(btn){
+        var raw=(btn.getAttribute('data-value')||btn.textContent||'').trim();
+        return formatValue(raw);
+      });
+    }
+    function update(){
+      var en=isEnglish();
+      var goals=collect('goal');
+      var blockers=collect('blocker');
+      var emptyGoal=en?'choose a point':'выберите пункт';
+      var emptyBlocker=en?'choose a point':'выберите пункт';
+      var defaultGoal=en?'still choosing':'пока выбираю';
+      var defaultBlocker=en?'to clarify during the audit':'нужно понять на разборе';
+      var text=en
+        ? 'Hello! I want a MARKOVMADE audit. Goal: '+(goals.length?goals.join(', '):defaultGoal)+'. Blocker: '+(blockers.length?blockers.join(', '):defaultBlocker)+'. I want to understand my point A, work format and first actions.'
+        : 'Здравствуйте! Хочу разбор MARKOVMADE. Цель: '+(goals.length?goals.join(', '):defaultGoal)+'. Мешает: '+(blockers.length?blockers.join(', '):defaultBlocker)+'. Хочу понять точку А, формат работы и первые действия.';
+      if(summary) summary.textContent=en
+        ? 'Request assembled: goal — '+(goals.length?goals.join(', '):emptyGoal)+'; blocker — '+(blockers.length?blockers.join(', '):emptyBlocker)+'.'
+        : 'Заявка собрана: цель — '+(goals.length?goals.join(', '):emptyGoal)+'; мешает — '+(blockers.length?blockers.join(', '):emptyBlocker)+'.';
+      if(tg) tg.href='https://t.me/markovmade?text='+encodeURIComponent(text);
+    }
+    window.mmV13QuizUpdate = update;
+    root.querySelectorAll('.mm-v13-option').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        btn.classList.toggle('active');
+        update();
+        if(window.mmTrack) window.mmTrack('v13_quiz_select',{value:btn.getAttribute('data-value')});
+      });
+    });
+    document.querySelectorAll('[data-lang-toggle]').forEach(function(btn){
+      btn.addEventListener('click',function(){ setTimeout(update, 90); });
+    });
+    update();
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initV13Quiz,{once:true}); else initV13Quiz();
+})();
+</script>
+
 <script id="markovmade-bilingual-script">
 (function() {
     'use strict';
@@ -10640,147 +10386,92 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
   "Сначала выполните расчёт на сайте MARKOVMADE.": "First complete the calculation on the MARKOVMADE site.",
   "Заявка": "Request",
   "Наверх": "To top",
-  "Скопировано": "Copied",
-  "01. Кому это нужно": "01. Who this is for",
-  "Это для вас, если внутри уже есть запрос на порядок": "This is for you if you already want order inside the system",
-  "MARKOVMADE нужен не тем, кто ищет ещё одну мотивационную фразу. Он нужен тем, кто устал гадать, срываться и начинать заново — и хочет собрать тело, питание, режим и дисциплину в одну рабочую систему.": "MARKOVMADE is not for people looking for another motivational phrase. It is for those tired of guessing, falling off, and starting over — and ready to connect body, nutrition, routine, and discipline into one working system.",
-  "Тренировки есть, но форма не меняется": "You train, but your body does not change",
-  "Вы что-то делаете, но не понимаете, почему тело не отвечает так, как должно.": "You are doing something, but you do not understand why the body is not responding the way it should.",
-  "Питание вроде есть, но системы нет": "Nutrition exists, but the system does not",
-  "Калории, БЖУ и режим существуют отдельно, а не работают как единый механизм.": "Calories, macros, and routine exist separately instead of working as one mechanism.",
-  "Каждый понедельник начинается заново": "Every Monday starts from zero again",
-  "Проблема не в желании, а в том, что нет маршрута, который выдерживает реальную жизнь.": "The problem is not desire. The problem is the lack of a route that survives real life.",
-  "Дисциплина держится на настроении": "Discipline depends on mood",
-  "Когда много стресса, работы и хаоса, система разваливается быстрее, чем появляется результат.": "When stress, work, and chaos build up, the system collapses faster than the result appears.",
-  "Нужен не шаблон, а контроль": "You need control, not a template",
-  "Вам важно понимать, что отслеживать, когда корректировать и как не слить прогресс.": "You need to know what to track, when to adjust, and how not to lose progress.",
-  "Нужен человек, который видит шире": "You need someone who sees wider",
-  "Не только тело, но и режим, мышление, ограничения, ресурс и настоящую точку А.": "Not just the body, but routine, mindset, limitations, energy, and the real Point A.",
-  "Понять свою точку А": "Understand my Point A",
-  "Перейти к заявке": "Go to the request",
-  "После расчёта": "After the calculation",
-  "Цифры показывают точку А. Система превращает её в результат.": "Numbers show Point A. A system turns it into a result.",
-  "FFMI, КБЖУ, восстановление и динамика — это не финал. Это входные данные для решения: как тренироваться, что есть, что отслеживать, где риски и какой формат работы даст самый быстрый понятный сдвиг.": "FFMI, macros, recovery, and dynamics are not the finish line. They are input data for decisions: how to train, what to eat, what to track, where the risks are, and which work format will create the fastest clear shift.",
-  "Теперь важно понять, что делать с сухой массой, жиром, FFMI и реальной целью.": "Now it matters what to do with lean mass, fat mass, FFMI, and the real goal.",
-  "Цифры нужно адаптировать под режим, срывы, работу, сон и уровень активности.": "Numbers must be adapted to routine, breakdowns, work, sleep, and activity level.",
-  "Сон, стресс и ЦНС влияют на форму так же сильно, как питание и тренировки.": "Sleep, stress, and the CNS affect shape as much as nutrition and training.",
-  "Не всем нужен одинаковый маршрут. Кому-то нужен разбор, кому-то система, кому-то сопровождение.": "Not everyone needs the same route. Some need an audit, some need a system, some need support.",
-  "Разобрать мои показатели": "Audit my metrics",
-  "Понять формат работы": "Find the right work format",
-  "Для кого:": "For whom:",
-  "Результат:": "Result:",
-  "если вы не понимаете, что именно тормозит результат.": "if you do not understand what exactly blocks the result.",
-  "точка А, первые шаги и подходящий формат работы.": "Point A, first steps, and the right work format.",
-  "если нужен результат без голодовок и откатов.": "if you need results without starvation and setbacks.",
-  "стройность, питание, контроль и спокойная работа с телом.": "leanness, nutrition, control, and calm body work.",
-  "если питание, энергия, кожа и самочувствие требуют системы.": "if nutrition, energy, skin, and well-being need a system.",
-  "понятная стратегия питания, дефицитов и восстановления.": "a clear strategy for nutrition, deficiencies, and recovery.",
-  "если нужно собрать тело, режим, мышление и цели в одну систему.": "if you need to connect body, routine, mindset, and goals into one system.",
-  "приоритеты, структура и движение без распада.": "priorities, structure, and movement without falling apart.",
-  "03. С чем приходят": "03. What people come with",
-  "Ситуации, в которых человеку уже нужен не совет, а система": "Situations where a person needs a system, not another tip",
-  "Это не про слабость. Это про момент, когда старый способ больше не работает: мотивация заканчивается, хаос возвращается, а тело требует не давления, а точной настройки.": "This is not about weakness. It is the moment when the old approach stops working: motivation runs out, chaos returns, and the body needs precision, not pressure.",
-  "«Я тренируюсь, но не понимаю, почему тело не меняется»": "“I train, but I don’t understand why my body is not changing”",
-  "форма без ответа": "body without response",
-  "«Я знаю, что надо делать, но постоянно выпадаю из режима»": "“I know what to do, but I keep falling out of routine”",
-  "дисциплина без опоры": "discipline without support",
-  "«Я хочу форму, но без жизни в стиле курица, гречка и ненависть»": "“I want shape, but not a life of chicken, buckwheat, and hate”",
-  "результат без фанатизма": "result without fanaticism",
-  "«Я устал от мотивации. Мне нужна система, которая выдерживает мою реальность»": "“I am tired of motivation. I need a system that survives my reality”",
-  "система под жизнь": "system for real life",
-  "«Мне нужен человек, который разберёт не только питание, но и весь образ жизни»": "“I need someone who audits not only nutrition, but the whole lifestyle”",
-  "целостный разбор": "holistic audit",
-  "«Я хочу наконец понять, что именно мне делать дальше»": "“I finally want to understand exactly what to do next”",
-  "ясный следующий шаг": "clear next step",
-  "Почему мне можно доверять": "Why you can trust me",
-  "Я не отделяю тело от жизни, в которой оно должно работать": "I do not separate the body from the life it has to function in",
-  "Я не отделяю тело от режима, питания, стресса и мышления.": "I do not separate the body from routine, nutrition, stress, and mindset.",
-  "Я смотрю не только на цель, но и на ограничения человека.": "I look not only at the goal, but also at the person’s limitations.",
-  "Я не продаю универсальный шаблон для всех.": "I do not sell a universal template for everyone.",
-  "Я собираю систему, которую можно удерживать в реальной жизни.": "I build a system that can be maintained in real life.",
-  "Я работаю через цифры, наблюдение, корректировки и честную обратную связь.": "I work through numbers, observation, adjustments, and honest feedback.",
-  "Как всё происходит": "How it works",
-  "От заявки до системы, которую можно держать": "From request to a system you can sustain",
-  "Человек не проваливается в неизвестность. После заявки появляется понятный путь: вводные, разбор, маршрут, контроль и корректировки по фактам.": "You do not fall into uncertainty. After the request, there is a clear path: inputs, audit, route, control, and fact-based adjustments.",
-  "Вы оставляете заявку": "You submit a request",
-  "Я смотрю вводные и понимаю, с чем вы приходите: цель, ограничения, режим, питание, тренировки и главный блокер.": "I review the inputs and understand what you come with: goal, limitations, routine, nutrition, training, and the main blocker.",
-  "Проводим разбор": "We run the audit",
-  "Разбираем тело, питание, режим, цель, ограничения, мышление и слабые места, которые мешают удерживать прогресс.": "We audit body, nutrition, routine, goal, limitations, mindset, and the weak points that block progress.",
-  "Собираем маршрут": "We build the route",
-  "Определяем первые действия, формат работы, точки контроля и то, что нужно менять уже сейчас.": "We define first actions, work format, control points, and what needs to change now.",
-  "Включаем систему": "We turn on the system",
-  "Питание, тренировки, задачи, отчёты и корректировки начинают работать вместе, а не отдельными кусками.": "Nutrition, training, tasks, reports, and adjustments begin to work together, not as separate fragments.",
-  "Двигаемся по фактам": "We move by facts",
-  "Смотрим на цифры, фото, замеры, самочувствие, стресс, срывы и реальную динамику.": "We look at numbers, photos, measurements, well-being, stress, breakdowns, and real dynamics.",
-  "Закрепляем результат": "We lock in the result",
-  "Не просто получаем форму, а строим систему, которая помогает возвращаться в курс после откатов.": "We do not just get shape; we build a system that helps you return to the course after setbacks.",
-  "До / После": "Before / After",
-  "Что меняется после системного подхода": "What changes after a system-based approach",
-  "До": "Before",
-  "После": "After",
-  "Догадки": "Guessing",
-  "Хаос": "Chaos",
-  "Мотивация рывками": "Motivation in bursts",
-  "Срывы без анализа": "Breakdowns without analysis",
-  "Разрозненные действия": "Scattered actions",
-  "«Я не понимаю, что не так»": "“I don’t understand what is wrong”",
-  "Цифры": "Numbers",
-  "Маршрут": "Route",
-  "Система действий": "Action system",
-  "Корректировки по факту": "Fact-based adjustments",
-  "Единая структура": "Single structure",
-  "«Я вижу, что делать дальше»": "“I see what to do next”",
-  "Честные рамки": "Honest boundaries",
-  "Я не продаю магию. Я собираю управляемую систему.": "I do not sell magic. I build a controllable system.",
-  "Что я не обещаю": "What I do not promise",
-  "Магию за 7 дней.": "Magic in 7 days.",
-  "Мотивацию вместо работы.": "Motivation instead of work.",
-  "Шаблон, который якобы подходит всем.": "A template that supposedly fits everyone.",
-  "План, который ломается при первом стрессе.": "A plan that breaks at the first stress.",
-  "Что я даю": "What I give",
-  "Ясную точку А.": "A clear Point A.",
-  "Цифры, маршрут и первые действия.": "Numbers, a route, and first actions.",
-  "Честную обратную связь и корректировки.": "Honest feedback and adjustments.",
-  "Систему, которую можно удерживать в вашей реальной жизни.": "A system you can maintain in your real life.",
-  "Что вы получаете после разбора": "What you get after the audit",
-  "Не эмоцию. А ясность, маршрут и контроль.": "Not emotion. Clarity, route, and control.",
-  "Ясная точка А": "Clear Point A",
-  "Не ощущения и догадки, а понимание, где вы сейчас по телу, питанию, режиму и дисциплине.": "Not feelings and guesses, but understanding where you are now in body, nutrition, routine, and discipline.",
-  "Первые действия": "First actions",
-  "Что сделать сразу, чтобы появился сдвиг без хаоса, перегруза и случайных решений.": "What to do immediately to create movement without chaos, overload, and random decisions.",
-  "Подходящий формат": "Right format",
-  "Разбор, система, сопровождение или личная стратегия — без навязывания лишнего.": "Audit, system, support, or personal strategy — without pushing what you do not need.",
-  "Контроль результата": "Result control",
-  "Что отслеживать: вес, фото, замеры, питание, сон, стресс, самочувствие и динамику.": "What to track: weight, photos, measurements, nutrition, sleep, stress, well-being, and dynamics.",
-  "Быстрая заявка": "Quick request",
-  "Соберите запрос перед сообщением": "Build your request before messaging",
-  "Выберите, что сейчас важнее всего и что мешает больше всего. После выбора кнопка Telegram сформирует более точное первое сообщение.": "Choose what matters most now and what blocks you most. After selection, the Telegram button will create a more precise first message.",
-  "Что сейчас важнее всего?": "What matters most right now?",
-  "снизить вес": "lose weight",
-  "набрать мышечную массу": "gain muscle mass",
-  "вернуть дисциплину": "restore discipline",
-  "разобраться с питанием": "fix nutrition",
-  "настроить режим": "set up routine",
-  "получить личный план": "get a personal plan",
-  "Что мешает больше всего?": "What blocks you most?",
-  "срывы": "breakdowns",
-  "нет понимания": "no understanding",
-  "нет контроля": "no control",
-  "стресс": "stress",
-  "нехватка времени": "lack of time",
-  "Выберите пункты выше — и заявка станет точнее.": "Choose the points above — and the request will become more precise.",
-  "Получить разбор под мою ситуацию": "Get an audit for my situation",
-  "Написать в WhatsApp": "Message on WhatsApp",
-  "FAQ": "FAQ",
-  "Коротко о главном перед заявкой": "Key points before the request",
-  "Это только про тренировки?": "Is it only about training?",
-  "Нет. Тренировки — часть системы. Я смотрю на тело, питание, режим, восстановление, мышление, ограничения и реальный график человека.": "No. Training is part of the system. I look at body, nutrition, routine, recovery, mindset, limitations, and the person’s real schedule.",
-  "Можно начать с одного разбора?": "Can I start with one audit?",
-  "Да. Разбор нужен, чтобы увидеть точку А, понять главные тормоза и выбрать формат работы без лишнего давления.": "Yes. The audit is needed to see Point A, understand the main blockers, and choose the work format without unnecessary pressure.",
-  "Если у меня хаос в режиме?": "What if my routine is chaotic?",
-  "Именно для этого система и нужна. План должен адаптироваться к жизни, а не ломаться при первой рабочей неделе, стрессе или поездке.": "That is exactly why the system exists. The plan must adapt to life, not break during the first work week, stress, or travel.",
-  "Что отправить в первом сообщении?": "What should I send in the first message?",
-  "Цель, рост, вес, режим, питание, тренировки, ограничения, главный блокер и скрин расчётов с сайта, если уже прошли калькулятор.": "Goal, height, weight, routine, nutrition, training, limitations, main blocker, and a screenshot of the site calculations if you have already used the calculator."
+
+  'Вы приходите не за мотивацией. Вы приходите за': 'You are not here for motivation. You are here for',
+  'ясностью': 'clarity',
+  'Для кого / результат': 'Who it’s for / outcome',
+  'Вы приходите не за мотивацией. Вы приходите за ясностью.': 'You are not here for motivation. You are here for clarity.',
+  'Я быстро показываю, что именно тормозит тело, питание, режим и дисциплину — и собираю это в понятный маршрут действий без хаоса, догадок и очередного старта «с понедельника».': 'I quickly show what blocks your body, nutrition, routine and discipline — and turn it into a clear action route without chaos, guessing, or another “Monday restart.”',
+  'вес стоит': 'stuck weight',
+  'срывы повторяются': 'breakdowns repeat',
+  'питание плавает': 'nutrition is unstable',
+  'нет контроля': 'no control',
+  'режим ломается': 'routine breaks',
+  'нужен личный маршрут': 'need a personal route',
+  'Ясная точка А': 'Clear point A',
+  'Где вы сейчас по телу, питанию, режиму, восстановлению и дисциплине — без самообмана.': 'Where you are now in body, nutrition, routine, recovery and discipline — without self-deception.',
+  'Первые действия': 'First actions',
+  'Что делать сразу, чтобы появился сдвиг, а не очередной красивый план без исполнения.': 'What to do immediately to create movement, not another beautiful plan without execution.',
+  'Подходящий формат': 'Right format',
+  'Разбор, система, питание, сопровождение или менторство — без навязывания лишнего.': 'Audit, system, nutrition, support or mentoring — without pushing what you do not need.',
+  'Контроль результата': 'Result control',
+  'Вес, фото, замеры, БЖУ, сон, стресс, самочувствие и динамика собираются в одну управляемую систему.': 'Weight, photos, measurements, macros, sleep, stress, well-being and dynamics come together into one manageable system.',
+  'Сначала пройти расчёт': 'Run assessment first',
+  'Сразу оставить заявку': 'Send request now',
+  'После расчёта': 'After the assessment',
+  'Цифры уже показали точку А. Теперь нужен маршрут.': 'The numbers have shown point A. Now you need a route.',
+  'FFMI, КБЖУ, восстановление и динамика — это не финал. Это материал для решения: как тренироваться, что есть, что отслеживать, где риски и какой формат работы даст самый понятный сдвиг именно под вашу жизнь.': 'FFMI, macros, recovery and dynamics are not the finish line. They are decision material: how to train, what to eat, what to track, where the risks are, and which format creates the clearest shift for your life.',
+  'Не гадать': 'Stop guessing',
+  'Понять, что реально мешает прогрессу.': 'Understand what truly blocks progress.',
+  'Не перегружать': 'Do not overload',
+  'Выбрать первые действия, которые можно удержать.': 'Choose first actions you can actually sustain.',
+  'Не бросать': 'Do not quit',
+  'Корректировать питание, тренировки и режим по факту.': 'Adjust nutrition, training and routine based on facts.',
+  'Разобрать мои показатели': 'Analyze my numbers',
+  'Выбрать формат': 'Choose format',
+  'Для кого:': 'For whom:',
+  'Результат:': 'Result:',
+  'если нужен старт без хаоса и тело, которое говорит за вас.': 'if you need a start without chaos and a body that speaks for you.',
+  'точка А, силовой маршрут, питание и первые действия под ваш режим.': 'point A, strength route, nutrition and first actions for your schedule.',
+  'если нужен результат без голодовок, вины и бесконечных срывов.': 'if you need results without starvation, guilt and endless breakdowns.',
+  'стройность, контроль питания, понятная динамика и спокойная работа с телом.': 'leanness, nutrition control, clear dynamics and calm body work.',
+  'если питание, энергия, кожа и самочувствие требуют точной настройки.': 'if nutrition, energy, skin and well-being need precise tuning.',
+  'понятная стратегия питания, восстановления и контроля состояния.': 'a clear strategy for nutrition, recovery and condition control.',
+  'если нужно собрать тело, режим, мышление и цели в одну траекторию.': 'if body, routine, mindset and goals need one trajectory.',
+  'приоритеты, ясность, дисциплина и движение без распада.': 'priorities, clarity, discipline and movement without falling apart.',
+  'Как это работает': 'How it works',
+  'Минимум шума. Максимум понимания, что делать дальше.': 'Minimum noise. Maximum clarity on what to do next.',
+  'Я не растягиваю путь лишними словами. Моя задача — быстро довести вас до ясного решения: оставить вводные, пройти разбор и выйти с маршрутом, который можно выполнять, отслеживать и корректировать в реальной жизни.': 'I do not stretch the path with extra words. My job is to bring you quickly to a clear decision: submit your inputs, go through the audit and leave with a route you can execute, track and adjust in real life.',
+  'Вы оставляете вводные': 'You send the inputs',
+  'Цель, проблема, ограничения, режим, питание, тренировки и что сейчас больше всего мешает.': 'Goal, problem, limitations, routine, nutrition, training, and what blocks you most now.',
+  'Я разбираю точку А': 'I audit point A',
+  'Не по ощущениям, а по фактам: тело, питание, восстановление, дисциплина, риски и слабые места.': 'Not by feelings, but by facts: body, nutrition, recovery, discipline, risks and weak points.',
+  'Собираем маршрут': 'We build the route',
+  'Что делать первым, что контролировать, какой формат подходит и как корректировать путь по реальности.': 'What to do first, what to control, which format fits, and how to adjust to reality.',
+  'До': 'Before',
+  'После': 'After',
+  'Догадки': 'Guessing',
+  'Хаос в питании': 'Nutrition chaos',
+  'Срывы и откаты': 'Breakdowns and setbacks',
+  'Мотивация вместо системы': 'Motivation instead of system',
+  'Цифры и точка А': 'Numbers and point A',
+  'Понятный маршрут': 'Clear route',
+  'Корректировки под жизнь': 'Adjustments for real life',
+  'Без ложной магии:': 'No false magic:',
+  'я не обещаю чудо за 7 дней. Я даю систему, честную обратную связь, контроль и корректировки, которые помогают удерживать результат в реальной жизни.': 'I do not promise a miracle in 7 days. I give a system, honest feedback, control and adjustments that help hold results in real life.',
+  'Соберите заявку за 7 секунд': 'Build your request in 7 seconds',
+  'Выберите главное — и я сразу вижу цель, проблему и точку входа. Заявка становится не общей, а конкретной.': 'Choose the key points — and I immediately see your goal, problem and entry point. The request becomes specific instead of generic.',
+  'Главная цель': 'Main goal',
+  'Что мешает': 'What blocks you',
+  'снизить вес': 'lose weight',
+  'набрать мышечную массу': 'gain muscle mass',
+  'вернуть дисциплину': 'restore discipline',
+  'разобраться с питанием': 'fix nutrition',
+  'настроить режим': 'set routine',
+  'получить личный план': 'get a personal plan',
+  'хаос': 'chaos',
+  'срывы': 'breakdowns',
+  'нет понимания': 'no clarity',
+  'стресс': 'stress',
+  'нехватка времени': 'lack of time',
+  'Выберите пункты выше — и заявка станет точнее.': 'Choose the points above — and your request becomes more precise.',
+  'Отправить заявку в Telegram': 'Send request in Telegram',
+  'Написать в WhatsApp': 'Write on WhatsApp',
+  'Построение тела, которое вызывает уважение без слов. Силовой и функциональный тренинг, питание и мышление в одной системе.': 'Building a body that earns respect without words. Strength and functional training, nutrition and mindset in one system.',
+  'Умный подход к стройности, качеству тела и самочувствию без изнурительных диет, хаоса и вечных откатов.': 'A smart approach to leanness, body quality and well-being without exhausting diets, chaos or endless setbacks.',
+  'Биохимия продуктивности: питание, дефициты, энергия, кожа и восстановление через систему, а не случайные советы.': 'Productivity biochemistry: nutrition, deficiencies, energy, skin and recovery through a system, not random advice.',
+  'Честный диалог для сильных решений: цели, режим, дисциплина, кризисы и масштаб личности без пустой мотивации.': 'Honest dialogue for strong decisions: goals, routine, discipline, crises and personal scale without empty motivation.',
+  "Скопировано": "Copied"
 };
     var ATTR_DICT = {
   "Сменить тему: тёмная / светлая": "Switch theme: dark / light",
@@ -10798,8 +10489,8 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
             description: 'MARKOVMADE — камерная система Павла Маркова для формы, дисциплины, питания, тела и личной собранности. Расчёты, форматы работы и заявка на персональный разбор.'
         },
         en: {
-            title: 'MARKOVMADE | Body transformation, discipline and personal system',
-            description: 'MARKOVMADE is a premium body transformation and personal discipline system: body composition, nutrition, recovery, coaching formats and a personal audit request.'
+            title: 'MARKOVMADE | Pavel Markov — body, discipline, nutrition and personal system',
+            description: 'MARKOVMADE is Pavel Markov’s premium system for body transformation, discipline, nutrition and personal structure. Calculators, work formats and a request for a personal audit.'
         }
     };
     var currentLang = localStorage.getItem('markovmade_lang') || 'ru';
@@ -10923,102 +10614,6 @@ body.theme-light .mm-quiz-result { background: rgba(255,255,255,.50); color: rgb
     }
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initBilingual, { once: true });
     else initBilingual();
-})();
-</script>
-
-
-
-<script id="markovmade-conversion-v12-js">
-(function(){
-    function mmTrack(name, detail) {
-        try {
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ event: 'markovmade_event', action: name, detail: detail || null });
-        } catch (e) {}
-    }
-    window.mmTrack = mmTrack;
-
-    function initAnalyticsHooks() {
-        document.addEventListener('click', function(e) {
-            var el = e.target.closest && e.target.closest('[data-analytics], a[href*="wa.me"], a[href*="t.me"], a[href^="mailto:"], [data-calc-tab], .service-item button');
-            if (!el) return;
-            var action = el.getAttribute('data-analytics') || 'click';
-            if (el.matches('a[href*="wa.me"]')) action = 'whatsapp_click';
-            if (el.matches('a[href*="t.me"]')) action = 'telegram_click';
-            if (el.matches('a[href^="mailto:"]')) action = 'email_click';
-            if (el.matches('[data-calc-tab]')) action = 'calculator_tab_' + el.getAttribute('data-calc-tab');
-            if (el.matches('.service-item button')) action = 'service_open';
-            mmTrack(action, { text: (el.innerText || '').trim().slice(0, 120), href: el.href || null });
-        }, { passive: true });
-    }
-
-    function updateContactLinks() {
-        var isEn = document.documentElement.lang === 'en';
-        var msg = isEn
-            ? 'Hello! I want to audit my Point A, goal, limitations, and the right MARKOVMADE work format.'
-            : 'Здравствуйте! Хочу разобрать точку А, цель, ограничения и формат работы MARKOVMADE.';
-        document.querySelectorAll('a[href*="t.me/markovmade"]').forEach(function(a){
-            if (a.id === 'quiz-telegram-link') return;
-            a.href = 'https://t.me/markovmade?text=' + encodeURIComponent(msg);
-        });
-    }
-
-    function initQuiz() {
-        var root = document.getElementById('request-quiz');
-        if (!root) return;
-        var summary = document.getElementById('quiz-summary');
-        var tg = document.getElementById('quiz-telegram-link');
-        var state = { goal: [], blocker: [] };
-        function collect() {
-            ['goal', 'blocker'].forEach(function(group){
-                state[group] = Array.prototype.slice.call(root.querySelectorAll('[data-quiz-group="' + group + '"] .mm-quiz-option.active')).map(function(btn){ return (btn.textContent || btn.getAttribute('data-value') || '').trim(); });
-            });
-            var isEn = document.documentElement.lang === 'en';
-            var goal = state.goal.length ? state.goal.join(', ') : (isEn ? 'goal not selected' : 'цель не выбрана');
-            var blocker = state.blocker.length ? state.blocker.join(', ') : (isEn ? 'blocker not selected' : 'препятствие не выбрано');
-            var text = isEn
-                ? ('My request: goal — ' + goal + '. Blocker — ' + blocker + '. I want to understand my Point A, work format, and first actions.')
-                : ('Моя заявка: цель — ' + goal + '. Мешает — ' + blocker + '. Хочу понять точку А, формат работы и первые действия.');
-            if (summary) summary.textContent = text;
-            if (tg) tg.href = 'https://t.me/markovmade?text=' + encodeURIComponent((isEn ? 'Hello! ' : 'Здравствуйте! ') + text);
-        }
-        root.querySelectorAll('.mm-quiz-option').forEach(function(btn){
-            btn.addEventListener('click', function(){
-                btn.classList.toggle('active');
-                btn.setAttribute('aria-pressed', btn.classList.contains('active') ? 'true' : 'false');
-                collect();
-                mmTrack('quiz_select', { value: btn.getAttribute('data-value') });
-            });
-            btn.setAttribute('aria-pressed', 'false');
-        });
-        root.__collectQuiz = collect;
-        collect();
-    }
-
-    function polishImages() {
-        var hero = document.querySelector('#hero .hero-visual-premium img[alt=""]');
-        if (hero) hero.setAttribute('alt', 'Павел Марков — MARKOVMADE');
-        document.querySelectorAll('img:not([loading])').forEach(function(img){
-            if (!img.closest('#hero, header')) img.setAttribute('loading', 'lazy');
-        });
-        document.querySelectorAll('img:not([decoding])').forEach(function(img){ img.setAttribute('decoding', 'async'); });
-    }
-
-    function initV12() {
-        initAnalyticsHooks();
-        initQuiz();
-        polishImages();
-        updateContactLinks();
-        try {
-            new MutationObserver(function(){
-                updateContactLinks();
-                var quiz = document.getElementById('request-quiz');
-                if (quiz && typeof quiz.__collectQuiz === 'function') quiz.__collectQuiz();
-            }).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
-        } catch (e) {}
-    }
-    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initV12, { once: true });
-    else initV12();
 })();
 </script>
 
