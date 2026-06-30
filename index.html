@@ -6091,6 +6091,35 @@ body.theme-light .mm-service-route span {
     .mm-v13-head .mm-v13-title::after { width: min(180px, 54vw); }
 }
 </style>
+<style id="markovmade-v15-brand-lead-polish">
+/* === MARKOVMADE V15: remove repetition, sharpen lead path, stronger step emphasis === */
+.mm-v15-section { border-top-color: rgb(var(--color-gold) / .10) !important; }
+.mm-v15-hero-panel { padding: clamp(22px, 3.8vw, 42px) !important; }
+.mm-v15-tight-grid { gap: 12px !important; }
+.mm-v15-card { min-height: 100% !important; padding: clamp(20px, 2.2vw, 26px) !important; }
+.mm-v15-card h3 { font-size: clamp(1.42rem, 1.85vw, 1.88rem) !important; }
+.mm-v15-card p { font-size: .95rem !important; line-height: 1.66 !important; }
+.mm-v15-chipline { margin-top: 24px !important; }
+.mm-v15-bridge { grid-template-columns: 1.18fr .82fr !important; }
+.mm-v15-bridge-main h2 { max-width: 760px !important; }
+.mm-v15-mini-list .mm-v13-mini { border-color: rgb(var(--color-gold) / .16) !important; background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.018)) !important; }
+.mm-v15-steps { gap: 12px !important; }
+.mm-v15-step { position: relative !important; overflow: hidden !important; border-color: rgb(var(--color-gold) / .18) !important; background: radial-gradient(circle at 0% 0%, rgb(var(--color-gold) / .06), transparent 42%), rgba(255,255,255,.026) !important; box-shadow: inset 0 1px 0 rgba(255,255,255,.045), 0 18px 58px rgba(0,0,0,.12) !important; }
+.mm-v15-step::before { content:''; position:absolute; left:0; top:16px; bottom:16px; width:2px; background: linear-gradient(180deg, transparent, rgb(var(--color-gold) / .72), transparent); opacity:.78; }
+.mm-v15-step .mm-v13-step-num { font-size: clamp(1.7rem, 2.4vw, 2.18rem) !important; text-shadow: 0 0 24px rgb(var(--color-gold) / .16); }
+.mm-v15-step-mark { color: rgb(var(--text-platinum)); position: relative; display: inline-block; padding-bottom: .12em; }
+.mm-v15-step-mark::after { content:''; position:absolute; left:0; right:0; bottom:0; height:2px; border-radius:999px; background: linear-gradient(90deg, rgb(var(--color-gold) / .15), rgb(var(--color-gold) / .92), rgb(var(--color-gold) / .15)); box-shadow: 0 0 18px rgb(var(--color-gold) / .18); }
+.mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-gold)); }
+.mm-v15-compare .mm-v13-row { font-weight: 620 !important; }
+.mm-v15-promise { font-size: .97rem !important; }
+body.theme-light .mm-v15-mini-list .mm-v13-mini,
+body.theme-light .mm-v15-step { background: linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.55)) !important; border-color: rgba(166,124,34,.26) !important; box-shadow: 0 18px 48px rgba(46,35,20,.06) !important; }
+body.theme-light .mm-v15-step-mark { color: rgb(var(--text-platinum)); }
+body.theme-light .mm-v15-step:hover .mm-v15-step-mark { color: rgb(var(--color-gold)); }
+@media (max-width: 980px) { .mm-v15-bridge { grid-template-columns: 1fr !important; } .mm-v15-tight-grid { grid-template-columns: 1fr !important; } }
+@media (max-width: 640px) { .mm-v15-step { grid-template-columns: 42px 1fr !important; padding: 16px !important; } .mm-v15-step .mm-v13-step-num { font-size: 1.6rem !important; } .mm-v15-card { border-radius: 20px !important; } }
+</style>
+
 </head>
 
 <body class="bg-obsidian antialiased selection:bg-gold selection:text-obsidian">
@@ -6301,26 +6330,25 @@ body.theme-light .mm-service-route span {
 
         <!-- CALCULATORS / РАСЧЁТ -->
         
-<section id="decision-hub" class="mm-v13-section py-20 md:py-28" data-insight="Человек быстрее оставляет заявку, когда узнаёт себя и видит следующий шаг.">
+<section id="decision-hub" class="mm-v13-section mm-v15-section py-18 md:py-24" data-insight="Человек быстрее оставляет заявку, когда узнаёт себя и видит конкретную пользу.">
   <div class="mm-v13-inner">
-    <div class="mm-v13-hero-panel fade-in-up">
-      <div class="mm-v13-head" style="margin-bottom:30px">
-        <span class="mm-v13-kicker">Для кого / результат</span>
-        <h2 class="mm-v13-title">Вы приходите не за мотивацией. Вы приходите за <span class="mm-v13-goldline">ясностью</span>.</h2>
-        <p class="mm-v13-copy">Я быстро показываю, что именно тормозит тело, питание, режим и дисциплину — и собираю это в понятный маршрут действий без хаоса, догадок и очередного старта «с понедельника».</p>
-        <div class="mm-v13-chipline" aria-label="Ситуации, с которыми приходят">
-          <span class="mm-v13-chip">вес стоит</span><span class="mm-v13-chip">срывы повторяются</span><span class="mm-v13-chip">питание плавает</span><span class="mm-v13-chip">нет контроля</span><span class="mm-v13-chip">режим ломается</span><span class="mm-v13-chip">нужен личный маршрут</span>
+    <div class="mm-v13-hero-panel mm-v15-hero-panel fade-in-up">
+      <div class="mm-v13-head" style="margin-bottom:28px">
+        <span class="mm-v13-kicker">Кому это нужно</span>
+        <h2 class="mm-v13-title">Если вы узнаёте себя — разбор уже <span class="mm-v13-goldline">экономит месяцы хаоса</span>.</h2>
+        <p class="mm-v13-copy">Я работаю с теми, кто устал собирать форму на догадках: тренировки есть, питание вроде есть, желание есть — но нет ясной системы, которая выдерживает реальный режим, стресс, откаты и ограничения.</p>
+        <div class="mm-v13-chipline mm-v15-chipline" aria-label="Ситуации, с которыми приходят">
+          <span class="mm-v13-chip">форма стоит</span><span class="mm-v13-chip">режим ломается</span><span class="mm-v13-chip">питание плавает</span><span class="mm-v13-chip">нет контроля</span><span class="mm-v13-chip">срывы повторяются</span><span class="mm-v13-chip">нужен личный маршрут</span>
         </div>
       </div>
-      <div class="mm-v13-grid">
-        <article class="mm-v13-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span><h3>Ясная точка А</h3><p>Где вы сейчас по телу, питанию, режиму, восстановлению и дисциплине — без самообмана.</p></article>
-        <article class="mm-v13-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18c4-8 8 4 16-8"/><path d="M16 10h4v4"/><circle cx="5" cy="18" r="1.5"/><circle cx="20" cy="10" r="1.5"/></svg></span><h3>Первые действия</h3><p>Что делать сразу, чтобы появился сдвиг, а не очередной красивый план без исполнения.</p></article>
-        <article class="mm-v13-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Подходящий формат</h3><p>Разбор, система, питание, сопровождение или менторство — без навязывания лишнего.</p></article>
-        <article class="mm-v13-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15v-3M12 15V8M16 15v-5"/></svg></span><h3>Контроль результата</h3><p>Вес, фото, замеры, БЖУ, сон, стресс, самочувствие и динамика собираются в одну управляемую систему.</p></article>
+      <div class="mm-v13-grid three mm-v15-tight-grid">
+        <article class="mm-v13-card mm-v15-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="M12 4v16"/><circle cx="12" cy="12" r="7"/></svg></span><h3>Вы не понимаете, что тормозит</h3><p>Вес, форма, энергия или дисциплина стоят на месте — и уже непонятно, проблема в питании, тренировках, восстановлении или режиме.</p></article>
+        <article class="mm-v13-card mm-v15-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V5"/><path d="M5 19h14"/><path d="M8 16l3-4 3 2 4-7"/></svg></span><h3>Система не держится</h3><p>Вы начинаете сильно, но жизнь возвращает хаос: работа, сон, стресс, поездки, срывы и отсутствие понятных правил коррекции.</p></article>
+        <article class="mm-v13-card mm-v15-card"><span class="mm-v13-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Нужен взгляд со стороны</h3><p>Не общий шаблон, а честный разбор вашей ситуации: что убрать, что оставить, что делать первым и какой формат даст самый быстрый сдвиг.</p></article>
       </div>
       <div class="mm-v13-cta-row" style="justify-content:center">
-        <a href="#calculators" class="mm-v13-cta interactive" data-analytics="v13_hub_calculators">Сначала пройти расчёт</a>
-        <a href="#contact" class="mm-v13-cta secondary interactive" data-analytics="v13_hub_contact">Сразу оставить заявку</a>
+        <a href="#calculators" class="mm-v13-cta interactive" data-analytics="v15_hub_calculators">Понять свою точку А</a>
+        <a href="#contact" class="mm-v13-cta secondary interactive" data-analytics="v15_hub_contact">Оставить заявку на разбор</a>
       </div>
     </div>
   </div>
@@ -6939,22 +6967,22 @@ body.theme-light .mm-service-route span {
 
 
 
-<section id="calculator-decision" class="mm-v13-section py-16 md:py-24" data-insight="Цифры становятся ценностью только тогда, когда превращаются в действия.">
+<section id="calculator-decision" class="mm-v13-section mm-v15-section py-14 md:py-20" data-insight="Цифры становятся ценностью только тогда, когда превращаются в решение.">
   <div class="mm-v13-inner">
-    <div class="mm-v13-bridge fade-in-up">
-      <div class="mm-v13-bridge-main">
+    <div class="mm-v13-bridge mm-v15-bridge fade-in-up">
+      <div class="mm-v13-bridge-main mm-v15-bridge-main">
         <span class="mm-v13-kicker">После расчёта</span>
-        <h2>Цифры уже показали точку А. Теперь нужен маршрут.</h2>
-        <p>FFMI, КБЖУ, восстановление и динамика — это не финал. Это материал для решения: как тренироваться, что есть, что отслеживать, где риски и какой формат работы даст самый понятный сдвиг именно под вашу жизнь.</p>
+        <h2>Расчёт показал факты. Я превращаю их в решение.</h2>
+        <p>Сами по себе FFMI, КБЖУ, восстановление и динамика ничего не меняют. Ценность начинается там, где цифры превращаются в приоритеты: что делать первым, что контролировать, где риск отката и какой формат работы подходит под ваш режим.</p>
         <div class="mm-v13-cta-row">
-          <a href="#contact" class="mm-v13-cta interactive" data-analytics="v13_calc_contact">Разобрать мои показатели</a>
-          <a href="#services" class="mm-v13-cta secondary interactive" data-analytics="v13_calc_services">Выбрать формат</a>
+          <a href="#contact" class="mm-v13-cta interactive" data-analytics="v15_calc_contact">Разобрать мои показатели</a>
+          <a href="#services" class="mm-v13-cta secondary interactive" data-analytics="v15_calc_services">Выбрать формат работы</a>
         </div>
       </div>
-      <div class="mm-v13-mini-list">
-        <div class="mm-v13-mini"><b>Не гадать</b>Понять, что реально мешает прогрессу.</div>
-        <div class="mm-v13-mini"><b>Не перегружать</b>Выбрать первые действия, которые можно удержать.</div>
-        <div class="mm-v13-mini"><b>Не бросать</b>Корректировать питание, тренировки и режим по факту.</div>
+      <div class="mm-v13-mini-list mm-v15-mini-list">
+        <div class="mm-v13-mini"><b>Показатели</b>Что говорят цифры о теле, питании и восстановлении.</div>
+        <div class="mm-v13-mini"><b>Приоритет</b>Что даст сдвиг быстрее всего без перегруза.</div>
+        <div class="mm-v13-mini"><b>Контроль</b>Что отслеживать, чтобы результат не развалился по дороге.</div>
       </div>
     </div>
   </div>
@@ -7198,25 +7226,25 @@ body.theme-light .mm-service-route span {
 
 
         
-<section id="method-proof" class="mm-v13-section py-20 md:py-28" data-insight="Короткий путь: заявка, разбор, маршрут, контроль.">
+<section id="method-proof" class="mm-v13-section mm-v15-section py-18 md:py-24" data-insight="Короткий путь: заявка, разбор, маршрут, контроль.">
   <div class="mm-v13-inner">
     <div class="mm-v13-head fade-in-up">
       <span class="mm-v13-kicker">Как это работает</span>
-      <h2 class="mm-v13-title">Минимум шума. Максимум понимания, что делать дальше.</h2>
-      <p class="mm-v13-copy">Я не растягиваю путь лишними словами. Моя задача — быстро довести вас до ясного решения: оставить вводные, пройти разбор и выйти с маршрутом, который можно выполнять, отслеживать и корректировать в реальной жизни.</p>
+      <h2 class="mm-v13-title">Меньше шума. Больше ясности, контроля и действия.</h2>
+      <p class="mm-v13-copy">Я не продаю ощущение «новой жизни с понедельника». Я быстро собираю вашу ситуацию в понятную систему: где вы сейчас, что мешает, что делать первым и как не потерять результат, когда начинается реальная жизнь.</p>
     </div>
-    <div class="mm-v13-process">
-      <div class="mm-v13-steps fade-in-up">
-        <div class="mm-v13-step"><span class="mm-v13-step-num">01</span><div><strong>Вы оставляете вводные</strong><span>Цель, проблема, ограничения, режим, питание, тренировки и что сейчас больше всего мешает.</span></div></div>
-        <div class="mm-v13-step"><span class="mm-v13-step-num">02</span><div><strong>Я разбираю точку А</strong><span>Не по ощущениям, а по фактам: тело, питание, восстановление, дисциплина, риски и слабые места.</span></div></div>
-        <div class="mm-v13-step"><span class="mm-v13-step-num">03</span><div><strong>Собираем маршрут</strong><span>Что делать первым, что контролировать, какой формат подходит и как корректировать путь по реальности.</span></div></div>
+    <div class="mm-v13-process mm-v15-process">
+      <div class="mm-v13-steps mm-v15-steps fade-in-up">
+        <div class="mm-v13-step mm-v15-step"><span class="mm-v13-step-num">01</span><div><strong><span class="mm-v15-step-mark">Вы оставляете вводные</span></strong><span>Цель, проблема, ограничения, график, питание и тренировки — я вижу не абстрактное «хочу форму», а вашу реальную ситуацию.</span></div></div>
+        <div class="mm-v13-step mm-v15-step"><span class="mm-v13-step-num">02</span><div><strong><span class="mm-v15-step-mark">Я разбираю точку А</span></strong><span>По фактам: тело, питание, восстановление, дисциплина, риски и слабые места — становится понятно, что исправлять первым.</span></div></div>
+        <div class="mm-v13-step mm-v15-step"><span class="mm-v13-step-num">03</span><div><strong><span class="mm-v15-step-mark">Собираем маршрут</span></strong><span>Первые действия, контрольные точки, формат работы и корректировки под реальность — чтобы путь не рассыпался после первого отката.</span></div></div>
       </div>
       <div class="fade-in-up">
-        <div class="mm-v13-compare">
-          <div class="mm-v13-col"><h3>До</h3><div class="mm-v13-row">Догадки</div><div class="mm-v13-row">Хаос в питании</div><div class="mm-v13-row">Срывы и откаты</div><div class="mm-v13-row">Мотивация вместо системы</div></div>
-          <div class="mm-v13-col"><h3>После</h3><div class="mm-v13-row">Цифры и точка А</div><div class="mm-v13-row">Понятный маршрут</div><div class="mm-v13-row">Корректировки под жизнь</div><div class="mm-v13-row">Контроль результата</div></div>
+        <div class="mm-v13-compare mm-v15-compare">
+          <div class="mm-v13-col"><h3>До</h3><div class="mm-v13-row">Догадки и распыление</div><div class="mm-v13-row">Питание без правил</div><div class="mm-v13-row">Откаты после стресса</div><div class="mm-v13-row">Мотивация вместо контроля</div></div>
+          <div class="mm-v13-col"><h3>После</h3><div class="mm-v13-row">Ясная точка А</div><div class="mm-v13-row">Первые действия</div><div class="mm-v13-row">Корректировки под жизнь</div><div class="mm-v13-row">Система, которую можно удержать</div></div>
         </div>
-        <div class="mm-v13-promise"><b>Без ложной магии:</b> я не обещаю чудо за 7 дней. Я даю систему, честную обратную связь, контроль и корректировки, которые помогают удерживать результат в реальной жизни.</div>
+        <div class="mm-v13-promise mm-v15-promise"><b>Без инфобизнесовой магии:</b> я не обещаю чудо за 7 дней. Я даю ясность, систему, честную обратную связь и корректировки, которые помогают двигаться по фактам, а не по настроению.</div>
       </div>
     </div>
   </div>
@@ -10471,6 +10499,42 @@ body.theme-light .mm-service-route span {
   'Умный подход к стройности, качеству тела и самочувствию без изнурительных диет, хаоса и вечных откатов.': 'A smart approach to leanness, body quality and well-being without exhausting diets, chaos or endless setbacks.',
   'Биохимия продуктивности: питание, дефициты, энергия, кожа и восстановление через систему, а не случайные советы.': 'Productivity biochemistry: nutrition, deficiencies, energy, skin and recovery through a system, not random advice.',
   'Честный диалог для сильных решений: цели, режим, дисциплина, кризисы и масштаб личности без пустой мотивации.': 'Honest dialogue for strong decisions: goals, routine, discipline, crises and personal scale without empty motivation.',
+  'Кому это нужно': 'Who this is for',
+  'Если вы узнаёте себя — разбор уже': 'If you recognize yourself here, the audit already',
+  'Если вы узнаёте себя — разбор уже экономит месяцы хаоса.': 'If you recognize yourself here, the audit already saves months of chaos.',
+  'экономит месяцы хаоса': 'saves months of chaos',
+  'Я работаю с теми, кто устал собирать форму на догадках: тренировки есть, питание вроде есть, желание есть — но нет ясной системы, которая выдерживает реальный режим, стресс, откаты и ограничения.': 'I work with people who are tired of building their shape on guesses: training exists, nutrition sort of exists, the desire is there — but there is no clear system that survives real routine, stress, setbacks and limitations.',
+  'форма стоит': 'stuck shape',
+  'Вы не понимаете, что тормозит': 'You do not see what blocks you',
+  'Вес, форма, энергия или дисциплина стоят на месте — и уже непонятно, проблема в питании, тренировках, восстановлении или режиме.': 'Weight, shape, energy or discipline are stuck — and it is no longer clear whether the issue is nutrition, training, recovery or routine.',
+  'Система не держится': 'The system does not hold',
+  'Вы начинаете сильно, но жизнь возвращает хаос: работа, сон, стресс, поездки, срывы и отсутствие понятных правил коррекции.': 'You start strong, but life brings chaos back: work, sleep, stress, travel, breakdowns and no clear rules for adjustment.',
+  'Нужен взгляд со стороны': 'You need an outside view',
+  'Не общий шаблон, а честный разбор вашей ситуации: что убрать, что оставить, что делать первым и какой формат даст самый быстрый сдвиг.': 'Not a generic template, but an honest audit of your situation: what to remove, what to keep, what to do first and which format creates the fastest shift.',
+  'Понять свою точку А': 'Understand my point A',
+  'Оставить заявку на разбор': 'Request an audit',
+  'Расчёт показал факты. Я превращаю их в решение.': 'The assessment showed the facts. I turn them into a decision.',
+  'Сами по себе FFMI, КБЖУ, восстановление и динамика ничего не меняют. Ценность начинается там, где цифры превращаются в приоритеты: что делать первым, что контролировать, где риск отката и какой формат работы подходит под ваш режим.': 'FFMI, macros, recovery and dynamics change nothing by themselves. Value starts when numbers become priorities: what to do first, what to control, where the setback risk is and which work format fits your routine.',
+  'Выбрать формат работы': 'Choose work format',
+  'Показатели': 'Indicators',
+  'Что говорят цифры о теле, питании и восстановлении.': 'What the numbers say about body, nutrition and recovery.',
+  'Приоритет': 'Priority',
+  'Что даст сдвиг быстрее всего без перегруза.': 'What creates the fastest shift without overload.',
+  'Контроль': 'Control',
+  'Что отслеживать, чтобы результат не развалился по дороге.': 'What to track so the result does not fall apart on the way.',
+  'Меньше шума. Больше ясности, контроля и действия.': 'Less noise. More clarity, control and action.',
+  'Я не продаю ощущение «новой жизни с понедельника». Я быстро собираю вашу ситуацию в понятную систему: где вы сейчас, что мешает, что делать первым и как не потерять результат, когда начинается реальная жизнь.': 'I do not sell the feeling of a “new life from Monday.” I quickly organize your situation into a clear system: where you are now, what blocks you, what to do first and how not to lose the result when real life begins.',
+  'Цель, проблема, ограничения, график, питание и тренировки — я вижу не абстрактное «хочу форму», а вашу реальную ситуацию.': 'Goal, problem, limitations, schedule, nutrition and training — I see not an abstract “I want shape,” but your real situation.',
+  'По фактам: тело, питание, восстановление, дисциплина, риски и слабые места — становится понятно, что исправлять первым.': 'Based on facts: body, nutrition, recovery, discipline, risks and weak spots — it becomes clear what to fix first.',
+  'Первые действия, контрольные точки, формат работы и корректировки под реальность — чтобы путь не рассыпался после первого отката.': 'First actions, control points, work format and adjustments to reality — so the path does not fall apart after the first setback.',
+  'Догадки и распыление': 'Guessing and dispersion',
+  'Питание без правил': 'Nutrition without rules',
+  'Откаты после стресса': 'Setbacks after stress',
+  'Мотивация вместо контроля': 'Motivation instead of control',
+  'Первые действия': 'First actions',
+  'Система, которую можно удержать': 'A system you can sustain',
+  'Без инфобизнесовой магии:': 'No infobusiness magic:',
+  'я не обещаю чудо за 7 дней. Я даю ясность, систему, честную обратную связь и корректировки, которые помогают двигаться по фактам, а не по настроению.': 'I do not promise a miracle in 7 days. I give clarity, a system, honest feedback and adjustments that help you move by facts, not by mood.',
   "Скопировано": "Copied"
 };
     var ATTR_DICT = {
