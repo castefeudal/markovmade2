@@ -30,7 +30,7 @@
     <meta property="og:title" content="MARKOVMADE | Перепрошивка тела и разума — расчёт, стратегия, приложение">
     <meta property="og:description" content="Персональный разбор Павла Маркова: тело, питание, мышление, восстановление, прогресс и приложение под вашу цель. Сначала расчёт — потом стратегия.">
     <meta property="og:image" content="https://i.ibb.co/kVRyGvyn/3.png">
-    <meta property="og:image:secure_url" content="https://i.ibb.co/wHJG6xW/seo.png">
+    <meta property="og:image:secure_url" content="https://i.ibb.co/kVRyGvyn/3.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="576">
@@ -41,7 +41,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="MARKOVMADE — персональная система тела, питания и дисциплины">
     <meta name="twitter:description" content="Расчёт FFMI, КБЖУ, восстановление, прогресс, форматы работы и персональное приложение под вашу цель.">
-    <meta name="twitter:image" content="https://i.ibb.co/wHJG6xW/seo.png">
+    <meta name="twitter:image" content="https://i.ibb.co/kVRyGvyn/3.png">
     <meta name="twitter:image:alt" content="MARKOVMADE — перепрошивка тела и разума, персональное приложение и личный разбор">
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%23D4AF37%22/></svg>">
@@ -82,8 +82,8 @@
     {
       "@type": "ImageObject",
       "@id": "https://markovmade.com/#primaryimage",
-      "url": "https://i.ibb.co/wHJG6xW/seo.png",
-      "contentUrl": "https://i.ibb.co/wHJG6xW/seo.png",
+      "url": "https://i.ibb.co/kVRyGvyn/3.png",
+      "contentUrl": "https://i.ibb.co/kVRyGvyn/3.png",
       "width": 1024,
       "height": 576,
       "caption": "MARKOVMADE — перепрошивка тела и разума: расчёт, стратегия, персональное приложение"
@@ -104,7 +104,7 @@
       "@id": "https://markovmade.com/#service",
       "name": "MARKOVMADE — персональный разбор, тренировки, питание и приложение под результат",
       "url": "https://markovmade.com",
-      "image": "https://i.ibb.co/wHJG6xW/seo.png",
+      "image": "https://i.ibb.co/kVRyGvyn/3.png",
       "priceRange": "$$$",
       "areaServed": ["Онлайн", "Минск", "Москва", "Санкт-Петербург", "Сочи"],
       "telephone": "+79819722516",
@@ -6691,6 +6691,180 @@ body.theme-light .result-format-card p{
 }
 </style>
 
+
+
+<style id="markovmade-2026-07-01-user-final-fixes">
+/* === 2026-07-01: точечные правки по задаче Павла === */
+:root { --mm-header-height: 72px; }
+
+/* Шапка: приложение вынесено в главный маршрут, но без перегруза навигации. */
+#main-header {
+  padding-top: .82rem !important;
+  padding-bottom: .82rem !important;
+  background: linear-gradient(180deg, rgb(var(--bg-obsidian) / .84), rgb(var(--bg-obsidian) / .60)) !important;
+  backdrop-filter: blur(18px) saturate(115%) !important;
+  border-bottom: 1px solid rgb(var(--color-gold) / .24) !important;
+}
+#main-header .container { max-width: 1440px; }
+#main-header nav.hidden.md\:flex { gap: clamp(.45rem, 1.05vw, 1.25rem) !important; }
+#main-header nav.hidden.md\:flex > a {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: .52rem .74rem !important;
+  letter-spacing: .16em !important;
+  white-space: nowrap;
+}
+#main-header .header-app-link {
+  color: rgb(var(--color-gold)) !important;
+  border: 1px solid rgb(var(--color-gold) / .36) !important;
+  background: radial-gradient(circle at 50% 0%, rgb(var(--color-gold) / .16), transparent 75%), rgb(var(--color-gold) / .065) !important;
+  box-shadow: 0 12px 30px rgb(var(--color-gold) / .08), inset 0 1px 0 rgb(255 255 255 / .06);
+}
+#main-header .header-app-link::after { display: none !important; }
+#main-header .header-app-link:hover {
+  color: rgb(var(--bg-obsidian)) !important;
+  background: rgb(var(--color-gold)) !important;
+  transform: translateY(-1px);
+}
+body.theme-light #main-header .header-app-link:hover { color: #17140f !important; }
+
+/* Hero/mobile: меньше риска наложений, лучше читаемость и аккуратная высота. */
+@media (max-width: 1024px) {
+  #main-header { padding: .65rem 1rem !important; }
+  #main-header .container { min-height: 52px; }
+  #hero {
+    min-height: 100svh !important;
+    height: auto !important;
+    padding-top: 6.4rem !important;
+    padding-bottom: 2.4rem !important;
+    align-items: flex-start !important;
+  }
+  .hero-content-premium { padding-top: 0 !important; max-width: 100% !important; }
+  .hero-visual-premium img {
+    width: 100% !important;
+    right: 0 !important;
+    object-position: center top !important;
+    opacity: .38 !important;
+    filter: grayscale(35%) contrast(104%) brightness(66%) !important;
+  }
+  .hero-premium::after {
+    background: linear-gradient(180deg, rgb(var(--bg-obsidian) / .78), rgb(var(--bg-obsidian) / .42) 42%, rgb(var(--bg-obsidian) / .90) 100%) !important;
+  }
+  .hero-proof-grid {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+  }
+  .hero-proof-item { min-height: 78px !important; padding: 1rem !important; }
+  .hero-scroll-cue { display: none !important; }
+}
+@media (max-width: 640px) {
+  #mobile-menu nav { gap: 1.15rem !important; padding-top: 5.5rem !important; padding-bottom: 2.2rem !important; }
+  #mobile-menu a { width: 100%; max-width: 340px; text-align: center; border: 1px solid rgba(255,255,255,.08); border-radius: 999px; padding: .95rem 1rem; background: rgba(255,255,255,.022); }
+  #mobile-menu .mobile-app-link { border-color: rgb(var(--color-gold) / .38); background: rgb(var(--color-gold) / .08); }
+  .hero-kicker { width: 100%; justify-content: center; text-align: center; font-size: 9px !important; letter-spacing: .14em !important; padding: .6rem .72rem !important; }
+  .hero-title-premium { margin-bottom: 1.15rem !important; }
+  .hero-content-premium p { font-size: .96rem !important; line-height: 1.66 !important; margin-bottom: 1.35rem !important; }
+}
+
+/* Блоки с крупными заголовками: компактнее, без ощущения рекламного плаката. */
+#method-proof .mm-v13-head,
+#quick-faq .mm-v13-head { max-width: 760px !important; margin-bottom: 30px !important; }
+#method-proof .mm-v13-title,
+#quick-faq .mm-v13-title {
+  font-size: clamp(1.95rem, 3.25vw, 3.05rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.026em !important;
+  max-width: 760px !important;
+}
+#method-proof .mm-v13-copy { max-width: 680px !important; }
+@media (max-width: 640px) {
+  #method-proof .mm-v13-title,
+  #quick-faq .mm-v13-title { font-size: clamp(1.72rem, 8.2vw, 2.35rem) !important; }
+  #method-proof .mm-v13-head,
+  #quick-faq .mm-v13-head { margin-bottom: 22px !important; }
+}
+
+/* Кейсы «В каждом формате...» — фото на десктопе больше не обрезаются. */
+.mm-v21-case-card { align-items: stretch !important; }
+.mm-v21-case-image {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 100% !important;
+  padding: clamp(.7rem, 1.3vw, 1.05rem) !important;
+  background: radial-gradient(circle at 50% 0%, rgb(var(--color-gold) / .09), transparent 65%), rgba(0,0,0,.25) !important;
+}
+.mm-v21-case-image img {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: 360px !important;
+  object-fit: contain !important;
+  border-radius: 18px !important;
+  transform: none !important;
+}
+.mm-v21-case-card:hover .mm-v21-case-image img { transform: none !important; }
+@media (min-width: 1181px) {
+  .mm-v21-cases-grid { gap: 1.15rem !important; }
+  .mm-v21-case-card { grid-template-columns: minmax(220px, .78fr) 1.22fr !important; }
+}
+@media (max-width: 768px) {
+  .mm-v21-case-image { min-height: auto !important; padding: .75rem !important; }
+  .mm-v21-case-image img { max-height: none !important; }
+}
+
+/* Фото внутри услуг: сохраняем полную картинку и убираем случайную обрезку на широких экранах. */
+#services .service-item .accordion-content img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: 520px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: rgba(0,0,0,.18) !important;
+}
+#services .service-item .accordion-content .group\/image,
+#services .service-item .accordion-content .relative.group\/image {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 0 !important;
+}
+@media (max-width: 768px) {
+  #services { padding-top: 4.25rem !important; padding-bottom: 4.25rem !important; }
+  #services .mb-20 { margin-bottom: 2.5rem !important; }
+  #services .service-item > button { align-items: stretch !important; }
+  #services .service-item > button > div { width: 100% !important; }
+  #services .service-item .accordion-content > div > div { padding-left: 1rem !important; padding-right: 1rem !important; padding-bottom: 2.2rem !important; }
+  #services .service-item .accordion-content img { max-height: none !important; }
+}
+
+/* Персональное приложение: визуально как один из главных смыслов, не второстепенная вставка. */
+#app-ecosystem { scroll-margin-top: 92px; }
+#app-ecosystem .app-showcase-shell-v22 {
+  border-color: rgb(var(--color-gold) / .24) !important;
+  box-shadow: 0 38px 120px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.06) !important;
+}
+#app-ecosystem .app-kicker { box-shadow: 0 12px 34px rgb(var(--color-gold) / .09); }
+#app-ecosystem .app-image-card img {
+  object-fit: contain !important;
+  background: rgba(0,0,0,.16) !important;
+}
+@media (max-width: 768px) {
+  #app-ecosystem .app-showcase-head h2 { font-size: clamp(1.85rem, 8.8vw, 2.42rem) !important; }
+  #app-ecosystem .app-copy-v22 { font-size: .96rem !important; line-height: 1.72 !important; }
+}
+
+/* Общая страховка мобильной верстки: без горизонтального скролла и сломанных переполнений. */
+html, body { max-width: 100%; overflow-x: hidden !important; }
+section, header, footer, main, .container, .mm-v13-inner { min-width: 0; }
+img, video, canvas, svg { max-width: 100%; }
+</style>
+
 </head>
 
 <body class="bg-obsidian antialiased selection:bg-gold selection:text-obsidian">
@@ -6736,9 +6910,10 @@ body.theme-light .result-format-card p{
             <nav class="hidden md:flex gap-7 lg:gap-9 items-center">
                 <a href="#calculators" class="interactive nav-link relative font-sans text-[12px] uppercase tracking-luxury transition-all duration-300 pb-1">I. Расчёт</a>
                 <a href="#services" class="interactive relative font-sans text-[12px] uppercase tracking-luxury transition-all duration-300 pb-1 menu-highlight-gold">II. Услуги</a>
-                <a href="#about" class="interactive nav-link font-sans text-[12px] uppercase tracking-luxury text-dim hover:text-platinum transition-colors">III. Обо мне</a>
-                <a href="#biography" class="interactive nav-link font-sans text-[12px] uppercase tracking-luxury text-dim hover:text-platinum transition-colors">IV. Эволюция</a>
-                <a href="#team" class="interactive nav-link font-sans text-[12px] uppercase tracking-luxury text-dim hover:text-platinum transition-colors">V. Команда</a>
+                <a href="#app-ecosystem" class="interactive nav-link header-app-link relative font-sans text-[12px] uppercase tracking-luxury transition-all duration-300 pb-1">III. Приложение</a>
+                <a href="#about" class="interactive nav-link font-sans text-[12px] uppercase tracking-luxury text-dim hover:text-platinum transition-colors">IV. Обо мне</a>
+                <a href="#biography" class="interactive nav-link font-sans text-[12px] uppercase tracking-luxury text-dim hover:text-platinum transition-colors">V. Эволюция</a>
+                <a href="#team" class="interactive nav-link font-sans text-[12px] uppercase tracking-luxury text-dim hover:text-platinum transition-colors">VI. Команда</a>
 
                 <div class="flex items-center ml-2 border-l border-white/10 pl-6 gap-5">
                     <button onclick="toggleTheme()" class="interactive theme-switch" title="Сменить тему: тёмная / светлая" aria-label="Сменить тему: тёмная или светлая">
@@ -6786,10 +6961,11 @@ body.theme-light .result-format-card p{
         <nav class="flex flex-col items-center gap-8 min-h-min py-16 w-full">
             <a href="#calculators" class="interactive font-sans text-sm md:text-base font-bold tracking-[0.35em] uppercase text-platinum transition-colors block" onclick="toggleMenu()">I. Расчёт</a>
             <a href="#services" class="interactive font-sans text-sm md:text-base font-bold tracking-[0.35em] uppercase text-gold transition-colors block" onclick="toggleMenu()">II. Услуги</a>
-            <a href="#about" class="interactive font-sans text-sm md:text-base font-bold tracking-[0.35em] uppercase text-platinum hover:text-gold transition-colors block" onclick="toggleMenu()">III. Обо мне</a>
-            <a href="#biography" class="interactive font-sans text-sm md:text-base font-bold tracking-[0.35em] uppercase text-platinum hover:text-gold transition-colors block" onclick="toggleMenu()">IV. Эволюция</a>
-            <a href="#team" class="interactive font-sans text-sm md:text-base font-bold tracking-[0.35em] uppercase text-platinum hover:text-gold transition-colors block" onclick="toggleMenu()">V. Команда</a>
-            <a href="#contact" class="interactive font-sans text-sm md:text-base font-bold tracking-[0.35em] uppercase text-platinum hover:text-gold transition-colors block" onclick="toggleMenu()">VI. Контакты</a>
+            <a href="#app-ecosystem" class="interactive mobile-app-link font-sans text-sm md:text-base font-bold tracking-[0.35em] uppercase text-gold transition-colors block" onclick="toggleMenu()">III. Приложение</a>
+            <a href="#about" class="interactive font-sans text-sm md:text-base font-bold tracking-[0.35em] uppercase text-platinum hover:text-gold transition-colors block" onclick="toggleMenu()">IV. Обо мне</a>
+            <a href="#biography" class="interactive font-sans text-sm md:text-base font-bold tracking-[0.35em] uppercase text-platinum hover:text-gold transition-colors block" onclick="toggleMenu()">V. Эволюция</a>
+            <a href="#team" class="interactive font-sans text-sm md:text-base font-bold tracking-[0.35em] uppercase text-platinum hover:text-gold transition-colors block" onclick="toggleMenu()">VI. Команда</a>
+            <a href="#contact" class="interactive font-sans text-sm md:text-base font-bold tracking-[0.35em] uppercase text-platinum hover:text-gold transition-colors block" onclick="toggleMenu()">VII. Контакты</a>
             <button type="button" class="interactive lang-switch lang-switch-menu" data-lang-toggle title="Switch language" aria-label="Switch language"><span class="lang-switch-flag lang-flag-en" aria-hidden="true"></span><span class="lang-switch-label">EN</span></button>
         </nav>
     </div>
@@ -7891,7 +8067,7 @@ body.theme-light .result-format-card p{
   <div class="mm-v13-inner">
     <div class="mm-v13-head fade-in-up">
       <span class="mm-v13-kicker">Как это работает</span>
-      <h2 class="mm-v13-title">Меньше разговоров вокруг цели — больше <span class="mm-v13-goldline">точных действий</span>.</h2>
+      <h2 class="mm-v13-title">Меньше разговоров — больше <span class="mm-v13-goldline">точных действий</span>.</h2>
       <p class="mm-v13-copy">Первый контакт нужен для ясности: увидеть текущую картину, отделить главное от второстепенного и собрать действия, которые реально помещаются в ваш день.</p>
     </div>
     <div class="mm-v13-process mm-v15-process">
@@ -7909,78 +8085,6 @@ body.theme-light .result-format-card p{
       </div>
     </div>
   </div>
-</section>
-
-
-<section id="brand-logic" class="section-block relative py-24 md:py-32 bg-obsidian overflow-hidden transition-colors duration-500" data-insight="Метод важнее мотивации.">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,_rgb(var(--color-gold)/0.06),_transparent_55%)] pointer-events-none"></div>
-    <div class="container mx-auto px-6 md:px-12 relative z-10">
-        <div class="lead-panel path-logic-panel max-w-6xl mx-auto rounded-sm">
-            <div class="path-logic-head">
-                <span class="text-[10px] font-sans tracking-luxury text-gold uppercase block">03. ЛОГИКА ПУТИ</span>
-                <h2 class="font-serif text-3xl md:text-5xl leading-tight text-platinum">
-                    Не мотивация. А маршрут, который выдерживает реальную жизнь.
-                </h2>
-                <p class="font-sans text-dim text-base md:text-lg leading-relaxed">
-                    Сначала мы не «начинаем с понедельника», а честно фиксируем точку А: тело, питание, режим, энергию, ограничения, мышление и главный тормоз. Потом собираем систему действий, где понятно, что делать сегодня, что отслеживать каждую неделю и где корректировать курс, если жизнь снова вмешалась в план.
-                </p>
-            </div>
-
-            <div class="path-stage-grid" aria-label="Три этапа пути MARKOVMADE">
-                <article class="bridge-card path-stage-card path-stage-card-diagnostic">
-                    <div class="path-stage-topline">
-                        <span class="path-stage-number">01</span>
-                        <i class="path-stage-main-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></i>
-                    </div>
-                    <h3>Диагностика</h3>
-                    <p>Сначала фиксируем реальную точку А: тело, питание, мышление, цель, ограничения, жизненную траекторию и то, что мешает результату прямо сейчас.</p>
-                    <ul class="path-stage-list">
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></i><strong>живой разбор точки А</strong><span>тело, питание, мышление, цель, ограничения</span></li>
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18c4-8 8 4 16-8"/><path d="M16 10h4v4"/><circle cx="5" cy="18" r="1.5"/><circle cx="20" cy="10" r="1.5"/><path d="M8 15l4-4 3 3"/></svg></i><strong>коррекция траектории жизни</strong><span>решения, режим, ограничения, энергия, приоритеты и следующий шаг без самообмана</span></li>
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4V5z"/><path d="M8 9h8M8 13h5"/></svg></i><strong>честная обратная связь</strong><span>без шаблонов, иллюзий и пустой мотивации</span></li>
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5h10v16H5V5h4"/><path d="M9 5a3 3 0 0 1 6 0"/><path d="M8 12l2 2 4-4"/><path d="M8 17h8"/></svg></i><strong>план первых действий</strong><span>что делать сразу после встречи</span></li>
-                    </ul>
-                </article>
-
-                <article class="bridge-card path-stage-card path-stage-card-system">
-                    <div class="path-stage-topline">
-                        <span class="path-stage-number">02</span>
-                        <i class="path-stage-main-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.8" width="10" height="18.4" rx="2.2"/><path d="M10 6h4"/><path d="M10 16h4"/><path d="M11.7 19h.6"/></svg></i>
-                    </div>
-                    <h3>Система</h3>
-                    <p>После диагностики цель переводится в рабочую систему: приложение, недельный маршрут, контроль питания и понятные корректировки под вашу реальную жизнь.</p>
-                    <ul class="path-stage-list">
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.8" width="10" height="18.4" rx="2.2"/><path d="M10 6h4"/><path d="M10 16h4"/><path d="M11.7 19h.6"/></svg></i><strong>персональное приложение</strong><span>план, питание, задачи, отчёты и динамика в одном месте</span></li>
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/><path d="M8 14h.01M12 14h.01M16 14h.01"/></svg></i><strong>недельный маршрут</strong><span>что делать, когда тренироваться, что отслеживать</span></li>
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15v-3M12 15V8M16 15v-5"/><path d="M7 19l11-11"/></svg></i><strong>контроль питания и формы</strong><span>цифры, фото, замеры, самочувствие, прогресс</span></li>
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10"/><path d="M18 7h2"/><circle cx="16" cy="7" r="2"/><path d="M4 17h2"/><path d="M10 17h10"/><circle cx="8" cy="17" r="2"/></svg></i><strong>корректировки под жизнь</strong><span>работа, сон, стресс, срывы, поездки, ограничения</span></li>
-                    </ul>
-                </article>
-
-                <article class="bridge-card path-stage-card path-stage-card-support">
-                    <div class="path-stage-topline">
-                        <span class="path-stage-number">03</span>
-                        <i class="path-stage-main-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></i>
-                    </div>
-                    <h3>Сопровождение</h3>
-                    <p>Дальше система держится на обратной связи: не ломаем человека под идеальный график, а адаптируем план под реальность и возвращаем курс после откатов.</p>
-                    <ul class="path-stage-list">
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2 7.5 14 3 9.6l6.2-.9L12 3z"/></svg></i><strong>приоритеты без хаоса</strong><span>что важно сейчас, а что только ворует ресурс</span></li>
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/><path d="M8 5v4M14 10v4M10 15v4"/></svg></i><strong>система под режим</strong><span>без копирования чужой жизни и чужого графика</span></li>
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v6h-6"/></svg></i><strong>адаптация по ходу</strong><span>план меняется вместе с реальностью, а не ломается от неё</span></li>
-                        <li><i class="path-stage-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg></i><strong>мышление и дисциплина</strong><span>опора, решения и возврат в систему после отката</span></li>
-                    </ul>
-                </article>
-            </div>
-
-            <div class="path-proof-strip" aria-label="Что получает человек внутри пути MARKOVMADE">
-                <span><i class="path-proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-4.8 7-11a7 7 0 1 0-14 0c0 6.2 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></i><em>ясная точка А</em></span>
-                <span><i class="path-proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5h10v16H5V5h4"/><path d="M9 5a3 3 0 0 1 6 0"/><path d="M8 12l2 2 4-4"/><path d="M8 17h8"/></svg></i><em>план без догадок</em></span>
-                <span><i class="path-proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8a3 3 0 0 1 6-1.1A3 3 0 0 1 19 9a3 3 0 0 1-.7 5.9A3.2 3.2 0 0 1 14 19a3.5 3.5 0 0 1-6 0 3.2 3.2 0 0 1-4.3-4.1A3 3 0 0 1 5 9a3 3 0 0 1 3-1z"/><path d="M12 7v12"/></svg></i><em>мышление под результат</em></span>
-                <span><i class="path-proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10"/><path d="M18 7h2"/><circle cx="16" cy="7" r="2"/><path d="M4 17h2"/><path d="M10 17h10"/><circle cx="8" cy="17" r="2"/></svg></i><em>корректировки по факту</em></span>
-            </div>
-        </div>
-    </div>
 </section>
 
 <section id="about" class="section-block relative w-full bg-obsidian overflow-hidden" data-insight="Ваш опыт = Ваш капитал">
@@ -8457,7 +8561,7 @@ body.theme-light .result-format-card p{
   <div class="mm-v13-inner">
     <div class="mm-v13-head mm-v18-compact-head fade-in-up">
       <span class="mm-v13-kicker">Коротко перед заявкой</span>
-      <h2 class="mm-v13-title">Если остался вопрос — вот <span class="mm-v13-goldline">честный ответ</span>.</h2>
+      <h2 class="mm-v13-title">Короткие <span class="mm-v13-goldline">ответы</span> перед заявкой.</h2>
     </div>
     <div class="mm-v18-faq-grid fade-in-up">
       <article class="mm-v18-faq-card"><h3>Это только про тренировки?</h3><p>Нет. Я смотрю на тело, питание, режим, восстановление, дисциплину и ограничения — иначе форма быстро упирается в быт.</p></article>
@@ -11453,7 +11557,7 @@ body.theme-light .result-format-card p{
   "Честная рамка:": "Honest frame:",
   "я не обещаю чудо за 7 дней. Я даю трезвую оценку, порядок действий, обратную связь и корректировки, которые возвращают движение, когда идеальные условия заканчиваются.": "I do not promise a miracle in 7 days. I give a sober assessment, an order of actions, feedback, and adjustments that restore movement when ideal conditions end.",
   "Коротко перед заявкой": "Before you apply",
-  "Если остался вопрос — вот честный ответ.": "If a question remains — here is the honest answer.",
+  "Короткие ответы перед заявкой.": "Short answers before applying.",
   "Это только про тренировки?": "Is this only about training?",
   "Нет. Я смотрю на тело, питание, режим, восстановление, дисциплину и ограничения — иначе форма быстро упирается в быт.": "No. I look at body, nutrition, routine, recovery, discipline, and constraints — otherwise physique quickly runs into daily life.",
   "Можно начать без идеальной формы?": "Can I start without being in shape?",
@@ -11499,7 +11603,7 @@ body.theme-light .result-format-card p{
   'Разбираем стартовую позицию, ограничения, опыт, риски и ближайший шаг, который даст заметный сдвиг.': 'We review the starting position, constraints, experience, risks, and the nearest step that creates a visible shift.',
   'Понятный формат работы: разбор, система, сопровождение или персональный план под текущий ресурс.': 'A clear work format: personal assessment, system, coaching, or a plan matched to the current resources.',
   'Важно: этот блок не выдаёт придуманные результаты за реальные отзывы. Он показывает структуру кейса. Для максимального доверия сюда стоит постепенно добавить подтверждённые клиентские данные: срок, фото, замеры, вес, талию и описание работы.': 'Important: this block does not present invented results as real testimonials. It shows the structure of a case. For maximum trust, gradually add verified client data here: timeframe, photos, measurements, weight, waist, and work description.',
-  'Меньше разговоров вокруг цели — больше точных действий.': 'Less talk around the goal — more precise action.',
+  'Меньше разговоров — больше точных действий.': 'Less talk — more precise action.',
   'точных действий': 'precise action',
   'Первый контакт нужен для ясности: увидеть текущую картину, отделить главное от второстепенного и собрать действия, которые реально помещаются в ваш день.': 'The first contact is for clarity: to see the current picture, separate what matters from what does not, and build actions that actually fit into your day.',
   'Я разбираю картину': 'I review the full picture',
@@ -11511,6 +11615,7 @@ body.theme-light .result-format-card p{
   'Отметьте пункты выше — и заявка станет конкретной.': 'Select the points above — and your request becomes specific.',
   'Кому подходит': 'Best for',
   'Что получаете': 'You get',
+  'Приложение': 'App',
   'Персональное приложение': 'Personal app',
   'Всё, что должно работать вместе, я собираю в одном приложении.': 'Everything that must work together, I bring together in one app.',
   'Не отдельные файлы, не разрозненные заметки и не бесконечные чаты. План, питание, тренировки, задачи, отчёты, динамика и база знаний собираются в одном понятном пространстве под вашу цель, график и образ жизни. Так человек видит не просто список действий, а рабочую систему под себя.': 'Not separate files, scattered notes, or endless chats. Plan, nutrition, training, tasks, reports, progress, and a knowledge base come together in one clear space built around your goal, schedule, and lifestyle. That means a person sees not just a task list, but a working system built around them.',
@@ -11621,7 +11726,7 @@ body.theme-light .result-format-card p{
   'Разбираем стартовую позицию, ограничения, опыт, риски и ближайший шаг, который даст заметный сдвиг.': 'We review the starting position, constraints, experience, risks, and the nearest step that creates a visible shift.',
   'Понятный формат работы: разбор, система, сопровождение или персональный план под текущий ресурс.': 'A clear work format: personal assessment, system, coaching, or a plan matched to the current resources.',
   'Важно: этот блок не выдаёт придуманные результаты за реальные отзывы. Он показывает структуру кейса. Для максимального доверия сюда стоит постепенно добавить подтверждённые клиентские данные: срок, фото, замеры, вес, талию и описание работы.': 'Important: this block does not present invented results as real testimonials. It shows the structure of a case. For maximum trust, gradually add verified client data here: timeframe, photos, measurements, weight, waist, and work description.',
-  'Меньше разговоров вокруг цели — больше точных действий.': 'Less talk around the goal — more precise action.',
+  'Меньше разговоров — больше точных действий.': 'Less talk — more precise action.',
   'точных действий': 'precise action',
   'Первый контакт нужен для ясности: увидеть текущую картину, отделить главное от второстепенного и собрать действия, которые реально помещаются в ваш день.': 'The first contact is for clarity: to see the current picture, separate what matters from what does not, and build actions that actually fit into your day.',
   'Я разбираю картину': 'I review the full picture',
@@ -11862,7 +11967,7 @@ body.theme-light .result-format-card p{
 
 <script id="markovmade-v21-seo-runtime">
 (function(){
-  var SEO_IMAGE = 'https://i.ibb.co/wHJG6xW/seo.png';
+  var SEO_IMAGE = 'https://i.ibb.co/kVRyGvyn/3.png';
   function setMeta(selector, value){ var el=document.querySelector(selector); if(el) el.setAttribute('content', value); }
   function applySeoMeta(){
     var en = document.documentElement.lang === 'en' || document.body.classList.contains('lang-en');
