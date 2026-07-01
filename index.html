@@ -6509,6 +6509,188 @@ body.theme-light .mm-v21-cases-cta{background:rgba(154,112,26,.07);border-color:
 }
 </style>
 
+
+<style id="markovmade-v22-final-layout-polish">
+/* v22: финальная сборка блока приложения */
+#app-ecosystem .app-showcase-shell-v22{
+  max-width: 1100px !important;
+  padding: clamp(1.05rem, 2.2vw, 1.7rem) !important;
+  border-radius: 30px !important;
+}
+#app-ecosystem .app-showcase-head{
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+#app-ecosystem .app-showcase-head h2{
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(2rem, 4.2vw, 4.15rem) !important;
+  line-height: 1.04 !important;
+}
+#app-ecosystem .app-copy-v22{
+  max-width: 68ch !important;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(.98rem, 1.25vw, 1.08rem) !important;
+  line-height: 1.76 !important;
+}
+#app-ecosystem .app-image-card-v22{
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#app-ecosystem .app-image-card-v22 img{
+  width: 100%;
+  max-height: 610px;
+  object-fit: cover;
+  object-position: center;
+}
+#app-ecosystem .app-image-caption-v22{
+  justify-content: center !important;
+  text-align: center;
+  padding: .95rem 1.2rem !important;
+}
+#app-ecosystem .app-image-caption-v22 span{
+  max-width: 760px;
+  margin: 0 auto;
+}
+#app-ecosystem .app-metrics-v22{
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+#app-ecosystem .app-metrics-v22 .app-metric{
+  min-height: 136px;
+}
+#app-ecosystem .app-cta-row-v22{
+  justify-content: center !important;
+  margin-top: 1.35rem !important;
+}
+
+/* v22: сценарии результата без фото — компактно и не перегружает сайт */
+.result-format-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1rem;
+}
+.result-format-card{
+  position:relative;
+  min-height: 250px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:24px;
+  padding:1.25rem;
+  background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.014));
+  overflow:hidden;
+  transition:transform .35s ease,border-color .35s ease,background-color .35s ease;
+}
+.result-format-card::before{
+  content:'';
+  position:absolute;
+  inset:auto -30% -35% auto;
+  width:180px;
+  height:180px;
+  border-radius:999px;
+  background:radial-gradient(circle,rgb(var(--color-gold)/.10),transparent 64%);
+  pointer-events:none;
+}
+.result-format-card:hover{
+  transform:translateY(-4px);
+  border-color:rgb(var(--color-gold)/.28);
+  background:rgb(var(--color-gold)/.045);
+}
+.result-format-card > span{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  border-radius:999px;
+  border:1px solid rgb(var(--color-gold)/.28);
+  color:rgb(var(--color-gold));
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:1.15rem;
+  line-height:1;
+  margin-bottom:1.1rem;
+}
+.result-format-card h3{
+  color:rgb(var(--text-platinum));
+  font-size:clamp(1.2rem,1.7vw,1.45rem) !important;
+  line-height:1.15 !important;
+  margin-bottom:.75rem;
+}
+.result-format-card p{
+  color:rgb(var(--text-platinum)/.72);
+  line-height:1.72;
+  font-size:.94rem;
+}
+.result-format-card a{
+  position:absolute;
+  left:1.25rem;
+  bottom:1.2rem;
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  color:rgb(var(--color-gold));
+  font-size:.68rem;
+  font-weight:900;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.result-format-card a::after{content:'→';font-size:.85rem;}
+
+/* v22: единая мобильная читабельность без огромных заголовков */
+@media (max-width: 1024px){
+  .result-format-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  #app-ecosystem .app-metrics-v22{grid-template-columns:1fr !important;}
+  #app-ecosystem .app-metrics-v22 .app-metric{min-height:auto;}
+}
+@media (max-width: 640px){
+  section.section-block{padding-top:4.25rem !important;padding-bottom:4.25rem !important;}
+  #app-ecosystem .app-showcase-shell-v22{border-radius:24px !important;padding:1rem !important;}
+  #app-ecosystem .app-showcase-head h2{font-size:clamp(1.9rem,10vw,2.65rem) !important;line-height:1.06 !important;}
+  #app-ecosystem .app-copy-v22{font-size:.96rem !important;line-height:1.72 !important;}
+  #app-ecosystem .app-image-card-v22{border-radius:22px !important;}
+  #app-ecosystem .app-image-card-v22 img{max-height:420px;object-fit:cover;}
+  #app-ecosystem .app-image-caption-v22{padding:.9rem !important;}
+  .result-format-grid{grid-template-columns:1fr;}
+  .result-format-card{min-height:220px;padding:1.1rem;}
+  .result-format-card a{position:static;margin-top:1.2rem;}
+  #case-scenarios h2,
+  #proof-system h2,
+  #decision-hub h2,
+  #calculator-decision h2,
+  #method-proof h2,
+  #quick-faq h2,
+  #contact h2{
+    font-size:clamp(1.9rem,9.2vw,2.75rem) !important;
+    line-height:1.08 !important;
+  }
+  .mm-v13-kicker,
+  .app-kicker{
+    font-size:.62rem !important;
+    letter-spacing:.14em !important;
+  }
+  .mm-v13-cta,
+  .calc-primary-btn,
+  .calc-secondary-btn,
+  .calc-gold-link{
+    width:100%;
+    min-height:52px;
+  }
+}
+body.theme-light .result-format-card{
+  background:rgba(255,255,255,.58) !important;
+  border-color:rgba(22,19,15,.1) !important;
+  box-shadow:0 22px 58px rgba(46,35,20,.07);
+}
+body.theme-light .result-format-card p{
+  color:rgba(22,19,15,.72) !important;
+}
+</style>
+
 </head>
 
 <body class="bg-obsidian antialiased selection:bg-gold selection:text-obsidian">
@@ -7435,34 +7617,32 @@ body.theme-light .mm-v21-cases-cta{background:rgba(154,112,26,.07);border-color:
 
 
 
-<section id="app-ecosystem" class="section-block relative py-24 bg-obsidian text-platinum" data-insight="Приложение должно собирать систему человека в одно рабочее пространство, а не просто красиво выглядеть.">
+
+<section id="app-ecosystem" class="section-block relative py-20 md:py-24 bg-obsidian text-platinum" data-insight="Персональное приложение собирает план, питание, задачи и динамику в одну рабочую систему.">
   <div class="container mx-auto px-6 md:px-8">
-    <div class="max-w-7xl mx-auto app-showcase-shell">
-      <div class="grid grid-cols-1 lg:grid-cols-[1.04fr_.96fr] gap-10 lg:gap-14 items-center">
-        <div class="order-2 lg:order-1">
-          <span class="app-kicker">Персональное приложение</span>
-          <h2 class="font-serif text-platinum mt-5 mb-6">Всё, что должно работать вместе, я собираю в одном приложении.</h2>
-          <p class="app-copy">Не отдельные файлы, не разрозненные заметки и не бесконечные чаты. План, питание, тренировки, задачи, отчёты, динамика и база знаний собираются в одном понятном пространстве под вашу цель, график и образ жизни. Так человек видит не просто список действий, а рабочую систему под себя.</p>
-          <div class="app-metrics mt-8">
-            <div class="app-metric"><b>Под вашу реальность</b><span>Цель, график, ограничения и ритм жизни учитываются сразу — без шаблонного копирования чужого режима.</span></div>
-            <div class="app-metric"><b>Прогресс виден по факту</b><span>Питание, самочувствие, форма, задачи и движение к цели видны в одном месте, без догадок.</span></div>
-            <div class="app-metric"><b>Одна рабочая среда</b><span>Тренировки, питание, знания и корректировки не распадаются на разные чаты и заметки.</span></div>
-            <div class="app-metric"><b>Пример — по запросу</b><span>Показываю, как это выглядит вживую и какой формат приложения будет полезен именно вам.</span></div>
-          </div>
-          <div class="app-cta-row">
-            <a href="#contact" class="mm-v13-cta interactive" data-analytics="v20_app_example">Запросить пример приложения</a>
-            <a href="#services" class="mm-v13-cta secondary interactive" data-analytics="v20_app_services">Посмотреть форматы</a>
-          </div>
+    <div class="max-w-6xl mx-auto app-showcase-shell app-showcase-shell-v22">
+      <div class="app-showcase-head">
+        <span class="app-kicker">Персональное приложение</span>
+        <h2 class="font-serif text-platinum mt-5 mb-5">Я собираю вашу систему в понятном приложении.</h2>
+        <p class="app-copy app-copy-v22">План, питание, тренировки, задачи, отчёты и динамика находятся в одном месте. Не набор разрозненных файлов, а рабочее пространство под вашу цель, график и ограничения.</p>
+      </div>
+
+      <div class="app-image-card app-image-card-v22 mt-8">
+        <img src="https://i.ibb.co/8gKHFW26/image.png" alt="Пример персонального приложения MARKOVMADE" loading="lazy" decoding="async">
+        <div class="app-image-caption app-image-caption-v22">
+          <span>Приложение показывает не просто список действий, а систему: что делать, что отслеживать и как видеть движение к результату.</span>
         </div>
-        <div class="order-1 lg:order-2">
-          <div class="app-image-card">
-            <img src="https://i.ibb.co/8gKHFW26/image.png" alt="Пример персонального приложения MARKOVMADE" loading="lazy" decoding="async">
-            <div class="app-image-caption">
-              <span>Это не просто красивый интерфейс. Это пространство, в котором человеку легче держать фокус, видеть прогресс и не терять важное.</span>
-              <span class="app-example-pill">Ссылка на пример — по запросу</span>
-            </div>
-          </div>
-        </div>
+      </div>
+
+      <div class="app-metrics app-metrics-v22 mt-8">
+        <div class="app-metric"><b>Под цель</b><span>Форма, питание, режим и задачи собираются вокруг конкретного результата.</span></div>
+        <div class="app-metric"><b>Под график</b><span>План учитывает работу, сон, стресс, поездки и реальные ограничения.</span></div>
+        <div class="app-metric"><b>Под контроль</b><span>Фото, замеры, питание, самочувствие и динамика не теряются в разных местах.</span></div>
+      </div>
+
+      <div class="app-cta-row app-cta-row-v22">
+        <a href="#contact" class="mm-v13-cta interactive" data-analytics="v22_app_contact">Понять, какое приложение нужно мне</a>
+        <a href="#services" class="mm-v13-cta secondary interactive" data-analytics="v22_app_services">Посмотреть форматы</a>
       </div>
     </div>
   </div>
@@ -11378,7 +11558,27 @@ body.theme-light .mm-v21-cases-cta{background:rgba(154,112,26,.07);border-color:
   'Каждый кейс начинается не с шаблона, а с вашей ситуации. Поэтому первый шаг — оставить вводные и понять, какой формат даст самый быстрый понятный сдвиг.': 'Every case starts not with a template, but with your actual situation. The first step is to send your starting details and understand which format will create the clearest first shift.',
   'Разобрать мой запрос': 'Review my request',
   'Нажмите': 'Tap',
-  'чтобы открыть детали': 'to open details'
+  'чтобы открыть детали': 'to open details',
+  'Я собираю вашу систему в понятном приложении.': 'I bring your system together in a clear personal app.',
+  'План, питание, тренировки, задачи, отчёты и динамика находятся в одном месте. Не набор разрозненных файлов, а рабочее пространство под вашу цель, график и ограничения.': 'Plan, nutrition, training, tasks, reports, and progress stay in one place. Not a pile of separate files, but a working space built around your goal, schedule, and constraints.',
+  'Под цель': 'For the goal',
+  'Форма, питание, режим и задачи собираются вокруг конкретного результата.': 'Physique, nutrition, schedule, and tasks are built around one concrete result.',
+  'Под график': 'For the schedule',
+  'План учитывает работу, сон, стресс, поездки и реальные ограничения.': 'The plan accounts for work, sleep, stress, travel, and real constraints.',
+  'Под контроль': 'For control',
+  'Фото, замеры, питание, самочувствие и динамика не теряются в разных местах.': 'Photos, measurements, nutrition, wellbeing, and progress do not get lost across different places.',
+  'Понять, какое приложение нужно мне': 'Find the app format I need',
+  'Приложение показывает не просто список действий, а систему: что делать, что отслеживать и как видеть движение к результату.': 'The app shows not just a task list, but a system: what to do, what to track, and how to see movement toward the result.',
+  'Фото и подробности логичнее смотреть внутри самих услуг. Здесь — коротко: какой смысл получает человек в каждом направлении и зачем ему переходить глубже.': 'Photos and details belong inside the service sections. Here is the short version: what each direction gives and why it is worth opening deeper.',
+  'Мужская сила': 'Male strength',
+  'Силовой вектор, питание, техника, режим и внешний образ, который считывается без объяснений.': 'Strength direction, nutrition, technique, schedule, and a physical image that reads without explanation.',
+  'Женская эстетика': 'Female aesthetics',
+  'Форма, тонус, питание, восстановление и мягкая дисциплина без жесткого насилия над собой.': 'Shape, tone, nutrition, recovery, and softer discipline without harsh pressure.',
+  'Питание и форма': 'Nutrition and physique',
+  'Понятные калории, БЖУ, контроль динамики и корректировки под реальный режим человека.': 'Clear calories, macros, progress tracking, and adjustments built around a real schedule.',
+  'Мышление и дисциплина': 'Mindset and discipline',
+  'Приоритеты, опора, решения и возвращение в систему после откатов, стресса и срывов.': 'Priorities, support, decisions, and returning to structure after setbacks, stress, and slips.',
+  'Открыть формат': 'Open format'
 };
     var ATTR_DICT = {
   "Сменить тему: тёмная / светлая": "Switch theme: dark / light",
